@@ -12,6 +12,7 @@
     "@alchemy/aa-accounts": "^0.1.1",
     "@alchemy/aa-alchemy": "^0.1.1",
     "@alchemy/aa-core": "^0.1.1",
+    "@tailwindcss/typography": "^0.5.10",
     "@web3auth/base": "^7.1.0",
     "@web3auth/modal": "^7.1.0",
     "@web3auth/web3auth-wagmi-connector": "^5.0.1",
