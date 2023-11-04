@@ -6,11 +6,15 @@ import { useClientRender } from "@/app/_hooks/useClientRender";
 const AuthButton = () => {
   const isClientRender = useClientRender();
   const { isConnected } = useAccount();
-  const { connect, connectors, error } = useConnect();
+  const { connectAsync, connectors } = useConnect();
   const { disconnect } = useDisconnect();
-  const handleSignIn = () => {
+  const handleSignIn = async () => {
     const web3AuthConnector = connectors[0];
-    connect({ connector: web3AuthConnector });
+    const result = await connectAsync({ connector: web3AuthConnector });
+    console.log(
+      "USER AUTH INFO:",
+      result
+    );
   };
   const handleSignOut = () => {
     disconnect();

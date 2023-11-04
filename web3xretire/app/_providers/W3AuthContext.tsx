@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect } from "react";
 import { WagmiConfig } from "wagmi";
 import { wagmiConfig, web3AuthInstance } from "../_utils/web3auth";
