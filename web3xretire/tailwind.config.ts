@@ -1,14 +1,17 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./sections/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./app/**/*.{js,ts,jsx,tsx,mdx}"],
   daisyui: {
-    themes: ["luxury"],
+    themes: [{
+      mytheme: {
+        "primary": "#F5791F",
+        "secondary": "#42B36D",
+        "accent": "#6D42B3",
+        "neutral": "#3d4451",
+        "base-100": "#1E1E1E",
+      },
+    },],
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
 };

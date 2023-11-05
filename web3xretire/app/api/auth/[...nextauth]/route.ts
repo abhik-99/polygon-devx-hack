@@ -14,7 +14,7 @@ export const authOptions: AuthOptions = {
         signedMessage: { label: "Signed Message", type: "text" }, // aka signature
       },
       async authorize(credentials, req) {
-        console.log("\n\nHIT", credentials)
+        console.log("\n\nHIT", credentials);
         if (!credentials?.signedMessage || !credentials?.message) {
           return null;
         }
@@ -44,7 +44,7 @@ export const authOptions: AuthOptions = {
 
           // if (new Date(result.data.expirationTime as string) < new Date())
           //   throw new Error("Signature Already expired");
-          console.log("Returning")
+          console.log("Returning");
           return {
             id: siwe.address,
           };
@@ -58,12 +58,12 @@ export const authOptions: AuthOptions = {
       id: "web3-login",
       name: "web3-login",
       credentials: {
-
+        walletAddress: { label: "walletAddress" },
         message: { label: "Message", type: "text" },
         signedMessage: { label: "Signed Message", type: "text" }, // aka signature
       },
       async authorize(credentials, req) {
-        console.log("\n\nHIT", credentials)
+        console.log("\n\nHIT", credentials);
         if (!credentials?.signedMessage || !credentials?.message) {
           return null;
         }
@@ -93,7 +93,7 @@ export const authOptions: AuthOptions = {
 
           // if (new Date(result.data.expirationTime as string) < new Date())
           //   throw new Error("Signature Already expired");
-          console.log("Returning")
+          console.log("Returning");
           return {
             id: siwe.address,
           };
@@ -102,8 +102,7 @@ export const authOptions: AuthOptions = {
           return null;
         }
       },
-    }),    
-
+    }),
   ],
   session: { strategy: "jwt" },
 
@@ -119,7 +118,11 @@ export const authOptions: AuthOptions = {
     },
   },
   pages: {
-    signIn:"/auth"
+    signIn: "/",
+    signOut: "/",
+    error: "/",
+    verifyRequest: "/e",
+    newUser: "/r",
   },
 };
 

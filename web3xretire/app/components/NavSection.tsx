@@ -1,29 +1,37 @@
+import classNames from "classnames";
 import React from "react";
+
 const OPEN_NAV_LINKS = [
   {
     name: "Home",
-    hoverColor: "bg-orange-500"
+    hoverColor: "bg-primary",
   },
   {
     name: "About",
-    hoverColor: "bg-violet-600"
+    hoverColor: "bg-secondary",
   },
   {
     name: "Team",
-    hoverColor: "bg-blue-600"
+    hoverColor: "bg-accent",
   },
   {
     name: "Tech Stack",
-    hoverColor: ""
+    // hoverColor: "",
   },
 ];
 
-const OpenNavSection = () => {
+export const OpenNavSection = () => {
   return (
     <div>
       <nav>
         {OPEN_NAV_LINKS.map((nav, idx) => (
-          <button className={`btn bg-transparent border-none hover:${nav.hoverColor} hover:text-black rounded-b-none`} key={"open-nav-" + idx}>
+          <button
+            className={classNames(
+              `btn bg-transparent border-none rounded-b-none hover:text-black`,
+              nav.hoverColor && `hover:${nav.hoverColor}`
+            )}
+            key={"open-nav-" + idx}
+          >
             {nav.name}
           </button>
         ))}
@@ -31,5 +39,3 @@ const OpenNavSection = () => {
     </div>
   );
 };
-
-export default OpenNavSection;

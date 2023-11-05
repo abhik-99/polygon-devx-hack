@@ -22,6 +22,9 @@ export const web3AuthInstance = new Web3Auth({
     blockExplorer: chains[0]?.blockExplorers.default?.url,
   },
   web3AuthNetwork: "sapphire_mainnet",
+  uiConfig: {
+    appName: "BlockSip",
+  }
 });
 
 export const wagmiConfig = createConfig({
