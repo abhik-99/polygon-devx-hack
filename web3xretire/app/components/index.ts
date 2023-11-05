@@ -1,3 +1,3 @@
-export * from "./AuthButton";
-export * from "./BlackButton";
-export * from "./NavSection";
+export * from "./AuthButton/AuthButton";
+export * from "./BlackButton/BlackButton";
+export * from "./NavSection/NavSection";

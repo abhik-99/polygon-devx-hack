@@ -1,16 +1,19 @@
 import classNames from "classnames";
+import styles from "./BlackButton.module.css";
 import React, { ButtonHTMLAttributes } from "react";
 
 export const BlackButton = ({
   children,
-  hoverFontColor = "text-base-content",
+  hoverFontColor = "orange",
   ...otherProps
-}: { hoverFontColor?: string } & ButtonHTMLAttributes<HTMLButtonElement>) => {
+}: {
+  hoverFontColor?: "orange" | "green" | "";
+} & ButtonHTMLAttributes<HTMLButtonElement>) => {
   return (
     <button
       className={classNames(
-        "btn bg-transparent text-black normal-case px-8 py-0.5 rounded-3xl border border-black hover:bg-black",
-        `hover:${hoverFontColor}`
+        styles.btn,
+        styles["hover-" + hoverFontColor]
       )}
       {...otherProps}
     >

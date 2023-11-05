@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { IBM_Plex_Sans } from "next/font/google";
 import "@/app/globals.css";
 import Providers from "../_providers/providers";
 import { OpenNavSection } from "../components";
 
-const inter = Inter({ subsets: ["latin"] });
+const ibmPS = IBM_Plex_Sans({
+  variable: "--font-ibm-plex-sans",
+  weight: ["100", "300", "500"],
+  subsets: ["latin"]
+});
 
 export const metadata: Metadata = {
   title: "BlockSip",
@@ -18,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={ibmPS.variable}>
         <Providers>
           <OpenNavSection />
           {children}

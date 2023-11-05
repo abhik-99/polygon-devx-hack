@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import React from "react";
+import styles from "./NavSection.module.css"
 
 const OPEN_NAV_LINKS = [
   {
@@ -26,10 +27,7 @@ export const OpenNavSection = () => {
       <nav>
         {OPEN_NAV_LINKS.map((nav, idx) => (
           <button
-            className={classNames(
-              `btn bg-transparent border-none rounded-b-none hover:text-black`,
-              nav.hoverColor && `hover:${nav.hoverColor}`
-            )}
+            className={classNames(styles["nav-link"])}
             key={"open-nav-" + idx}
           >
             {nav.name}

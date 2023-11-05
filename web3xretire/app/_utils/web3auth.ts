@@ -21,7 +21,7 @@ export const web3AuthInstance = new Web3Auth({
     ticker: chains[0].nativeCurrency?.symbol,
     blockExplorer: chains[0]?.blockExplorers.default?.url,
   },
-  web3AuthNetwork: "sapphire_mainnet",
+  web3AuthNetwork: "sapphire_devnet",
   uiConfig: {
     appName: "BlockSip",
   }

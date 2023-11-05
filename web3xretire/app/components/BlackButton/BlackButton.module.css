@@ -1,0 +1,23 @@
+.btn {
+  padding: 0.25rem 2rem;
+  border-radius: 30px;
+  border: 2px solid #1e1e1e;
+  background: none;
+  cursor: pointer;
+
+  font-family: var(--font-ibm-plex-sans);
+  
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #1e1e1e;
+}
+
+.btn:hover {
+  background-color: #1e1e1e;
+}
+
+.hover-orange:hover {
+  color: var(--orange);
+}

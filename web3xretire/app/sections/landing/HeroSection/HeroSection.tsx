@@ -1,9 +1,9 @@
 import { AuthButton, BlackButton } from "@/app/components";
 import React from "react";
-
+import styles from "./HeroSection.module.css"
 const HeroSection = () => {
   return (
-    <div className="min-w-full bg-primary text-black rounded-lg rounded-t-none p-10 flex flex-col items-center  justify-center text-center">
+    <div className={styles.container}>
       <p className="tracking-tighter text-3xl">
         with <b>BlockSip</b>
       </p>
@@ -16,9 +16,9 @@ const HeroSection = () => {
         how you invest. Welcome to the raw, unfiltered future of finance.
       </p>
       <div className="w-1/2 flex items-center justify-evenly">
-        <BlackButton hoverFontColor="text-primary">Get Started</BlackButton>
+        <BlackButton hoverFontColor="orange">Get Started</BlackButton>
         <AuthButton />
-        <BlackButton hoverFontColor="text-primary">Create Fund</BlackButton>
+        <BlackButton hoverFontColor="orange">Create Fund</BlackButton>
       </div>
     </div>
   );

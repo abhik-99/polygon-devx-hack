@@ -3,7 +3,7 @@ import React from "react";
 import { usePathname } from "next/navigation";
 import { useAccount } from "wagmi";
 import { useClientRender, useAuth } from "@/app/_hooks";
-import { BlackButton } from "./BlackButton";
+import { BlackButton } from "../BlackButton/BlackButton";
 
 export const AuthButton = () => {
   const isClientRender = useClientRender();
@@ -19,7 +19,7 @@ export const AuthButton = () => {
       </button>
     );
   return (
-    <BlackButton hoverFontColor="text-primary" onClick={handleSignIn}>
+    <BlackButton hoverFontColor="orange" onClick={handleSignIn}>
       {pathname === "/" && `Start Investing`}
     </BlackButton>
   );

@@ -12,7 +12,6 @@
     "@alchemy/aa-accounts": "^0.1.1",
     "@alchemy/aa-alchemy": "^0.1.1",
     "@alchemy/aa-core": "^0.1.1",
-    "@tailwindcss/typography": "^0.5.10",
     "@types/ethereum-checksum-address": "^0.0.1",
     "@types/secp256k1": "^4.0.5",
     "@web3auth/base": "^7.1.0",
@@ -40,7 +39,6 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.1",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }
 }

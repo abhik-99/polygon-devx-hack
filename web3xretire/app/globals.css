@@ -1,3 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --orange: #F5791F;
+  --violet: #6D42B3;
+  --green: #42B36D;
+  --default-bg: #1E1E1E;
+}
+
+body {
+  height: 100vh;
+  min-width: 100%;
+  background-color: var(--default-bg);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.text-violet {
+  color: var(--violet);
+}
+
+.text-green {
+  color: var(--green);
+}

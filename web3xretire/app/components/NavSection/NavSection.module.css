@@ -1,0 +1,13 @@
+.nav-link {
+  background-color: transparent;
+  color: #d9d9d9;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem 1rem;
+  border-radius: 15px;
+  font-family: var(--font-ibm-plex-sans);
+  font-weight: 300;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: center;
+}
