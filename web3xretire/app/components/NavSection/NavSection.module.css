@@ -10,4 +10,8 @@
   line-height: 31px;
   letter-spacing: 0em;
   text-align: center;
+
+}
+.nav-link:hover {
+  background-color: #0c0c0cfc;
 }

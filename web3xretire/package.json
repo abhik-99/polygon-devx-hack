@@ -12,6 +12,7 @@
     "@alchemy/aa-accounts": "^0.1.1",
     "@alchemy/aa-alchemy": "^0.1.1",
     "@alchemy/aa-core": "^0.1.1",
+    "@prisma/client": "^5.5.2",
     "@types/ethereum-checksum-address": "^0.0.1",
     "@types/secp256k1": "^4.0.5",
     "@web3auth/base": "^7.1.0",
@@ -39,6 +40,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.1",
     "postcss": "^8",
+    "prisma": "^5.5.2",
     "typescript": "^5"
   }
 }

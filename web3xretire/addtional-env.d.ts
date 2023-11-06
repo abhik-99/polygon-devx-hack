@@ -5,7 +5,10 @@ declare global {
       // NEXT_PUBLIC_W3C_PID: string;
       // NEXT_PUBLIC_SIGNIN_MESSAGE: string;
       NEXTAUTH_SECRET: string;
+      NEXTAUTH_URL: string;
       NEXT_PUBLIC_WEB3AUTH_CLIENT_ID: string;
+      DATABASE_URL: string;
+      URL: string;
       // SIWE_DOMAIN: string;
     }
   }
