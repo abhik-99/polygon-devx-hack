@@ -1,6 +1,9 @@
-import prisma from "@/lib/prisma";
+import { publicKeyToAddress } from "@/lib/utils/publicKeyToAddress";
+import prisma from "@/lib/utils/prisma";
 import * as jose from "jose";
-import { NextRequest } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
+import { Prisma } from "@prisma/client";
+import { signJwtAccessToken } from "@/lib/utils/jwt";
 
 interface RequestBody {
   email: string;
@@ -8,9 +11,7 @@ interface RequestBody {
   walletAddress: string;
 }
 export async function POST(req: NextRequest) {
-  console.log("REQ RECEIVED:", req)
-  const body: any = await req.json();
-  console.log("BODY RECEIVED", body)
+  const body: RequestBody = await req.json();
   const { email, walletAddress, idToken } = body;
 
   const jwks = jose.createRemoteJWKSet(
@@ -20,11 +21,13 @@ export async function POST(req: NextRequest) {
   const jwtDecoded = await jose.jwtVerify(idToken, jwks, {
     algorithms: ["ES256"],
   });
-
-  if ((jwtDecoded.payload as any).wallets[0].public_key === walletAddress) {
+  const publicKeys = (jwtDecoded.payload as any).wallets.map(
+    (wallet: { public_key: string }) => publicKeyToAddress(wallet.public_key)
+  );
+  if (publicKeys.includes(walletAddress)) {
     try {
-      if (email) {
-        const user = await prisma.user.findFirstOrThrow({
+      if (email && jwtDecoded.payload?.email === email) {
+        const user = await prisma.user.findFirst({
           where: {
             AND: [
               {
@@ -39,10 +42,16 @@ export async function POST(req: NextRequest) {
               },
             ],
           },
+          include: {
+            walletAddresses: true,
+          },
         });
-        return new Response(JSON.stringify(user));
+        if (user) {
+          const accessToken = signJwtAccessToken(user);
+          return NextResponse.json({ ...user, accessToken });
+        }
       }
-      const user = await prisma.user.findFirstOrThrow({
+      const user = await prisma.user.findFirst({
         where: {
           walletAddresses: {
             some: {
@@ -50,26 +59,33 @@ export async function POST(req: NextRequest) {
             },
           },
         },
+        include: {
+          walletAddresses: true,
+        },
       });
-      if(!user) {
+      if (!user) {
+        var data: Prisma.UserCreateInput = {};
+        if (email && jwtDecoded.payload?.email === email)
+          data = { ...data, email };
+        data = { ...data, walletAddresses: { create: { walletAddress } } };
         const newUser = await prisma.user.create({
-          data: {
-            email,
-            walletAddresses: {
-              create: {
-                walletAddress
-              }
-            }
-          }
-        })
-        return new Response(JSON.stringify(newUser));
+          data,
+          include: {
+            walletAddresses: true,
+          },
+        });
+
+        const accessToken = signJwtAccessToken(newUser);
+        return NextResponse.json({ ...newUser, accessToken });
       }
-      return new Response(JSON.stringify(user));
+
+      const accessToken = signJwtAccessToken(user);
+      return NextResponse.json({ ...user, accessToken });
     } catch (error) {
       console.log("[/api/signin] [POST] ERROR:", error);
-      return new Response(JSON.stringify(null));
+      return NextResponse.json(null);
     }
   } else {
-    return new Response(JSON.stringify(null));
+    return NextResponse.json(null);
   }
 }

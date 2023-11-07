@@ -1,5 +1,5 @@
 import { useAccount, useConnect, useDisconnect } from "wagmi";
-import { web3AuthInstance } from "../../app/_utils/web3auth";
+import { web3AuthInstance } from "../utils/web3auth";
 import { signIn, signOut, useSession } from "next-auth/react";
 
 export function useAuth() {

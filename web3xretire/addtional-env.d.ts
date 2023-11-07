@@ -9,6 +9,7 @@ declare global {
       NEXT_PUBLIC_WEB3AUTH_CLIENT_ID: string;
       DATABASE_URL: string;
       URL: string;
+      ACCESS_JWT_SECRET_KEY: string;
       // SIWE_DOMAIN: string;
     }
   }

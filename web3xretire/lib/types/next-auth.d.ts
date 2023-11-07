@@ -4,8 +4,9 @@ declare module 'next-auth'{
   interface Session{
     user: {
       id: number;
-      walletAddress: string;
-      idToken: string;
+      email: string;
+      photo?: string;
+      walletAddresses: string[];
       accessToken: string;
     }
   }

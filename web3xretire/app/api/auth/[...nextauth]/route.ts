@@ -14,12 +14,7 @@ export const authOptions: AuthOptions = {
       },
       async authorize(credentials, req) {
         try {
-          console.log("THIS", `${process.env.URL}/api/login`, JSON.stringify({
-            idToken: credentials?.w3aIdToken,
-            email: credentials?.email,
-            walletAddress: credentials?.walletAddress,
-          }))
-          const res = await fetch(`${process.env.URL}/api/login`, {
+          const res = await fetch(`${process.env.URL}/api/signin`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -30,7 +25,6 @@ export const authOptions: AuthOptions = {
               walletAddress: credentials?.walletAddress,
             }),
           });
-          console.log("THIS 2")
           const user = await res.json();
           if (user) {
             return user;
@@ -44,16 +38,19 @@ export const authOptions: AuthOptions = {
       },
     }),
   ],
-  session: { strategy: "jwt" },
 
   debug: process.env.NODE_ENV === "development",
 
   secret: process.env.NEXTAUTH_SECRET,
 
   callbacks: {
-    async session({ session, token }: { session: any; token: any }) {
-      session.user.address = token.sub;
-      session.user.token = token;
+    async jwt({ token, user }) {
+
+      return {...token, ...user};
+    },
+    async session({ session, token }) {
+      session.user = token as any;
+
       return session;
     },
   },
