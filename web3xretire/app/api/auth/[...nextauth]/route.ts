@@ -58,8 +58,8 @@ export const authOptions: AuthOptions = {
     signIn: "/",
     signOut: "/",
     error: "/",
-    verifyRequest: "/e",
-    newUser: "/r",
+    verifyRequest: "/",
+    newUser: "/",
   },
 };
 

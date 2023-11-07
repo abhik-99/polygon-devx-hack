@@ -1,8 +1,9 @@
 :root {
-  --orange: #F5791F;
-  --violet: #6D42B3;
-  --green: #42B36D;
-  --default-bg: #1E1E1E;
+  --orange: #f5791f;
+  --violet: #6d42b3;
+  --green: #42b36d;
+  --default-bg: #1e1e1e;
+  --sidebar-width: 250px;
 }
 
 body {
@@ -10,6 +11,8 @@ body {
   min-width: 100%;
   background-color: var(--default-bg);
   color: #d9d9d9;
+  margin: 0px;
+  padding: 0px;
 }
 
 .text-orange {

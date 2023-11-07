@@ -13,16 +13,14 @@ export function useAuth() {
     const userInfo = await connectAsync({ connector: web3AuthConnector });
     const profile = await web3AuthInstance.getUserInfo();
     const authInfo = await web3AuthInstance.authenticateUser();
-    console.log("SENDING:", {      w3aIdToken: authInfo.idToken,
-      email: profile.email,
-      walletAddress: userInfo.account})
-    const response = await signIn("w3a-signin", {
+
+    await signIn("w3a-signin", {
       w3aIdToken: authInfo.idToken,
       email: profile.email,
       walletAddress: userInfo.account,
-      redirect: false
+      redirect: true,
+      callbackUrl: "/dashboard"
     });
-    console.log("RESPONSE", response);
   };
   const handleSignOut = () => {
     if (isConnected) disconnect();
