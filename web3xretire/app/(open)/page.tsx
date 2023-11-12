@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 import { web3AuthInstance } from "../../lib/utils/web3auth";
 import { publicKeyToAddress } from "../../lib/utils/publicKeyToAddress";
 import HeroSection from "../sections/landing/HeroSection/HeroSection";
-import AboutSection from "../sections/landing/AboutSection";
+import AboutSection from "../sections/landing/AboutSection/AboutSection";
 import TeamSection from "../sections/landing/TeamSection";
 import TechStackSection from "../sections/landing/TechStackSection";
 
