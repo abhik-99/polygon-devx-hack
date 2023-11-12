@@ -1,0 +1,314 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "nonce",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "initCode",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "callData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint256",
+              "name": "callGasLimit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "verificationGasLimit",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "preVerificationGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxFeePerGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "maxPriorityFeePerGas",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "paymasterAndData",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "signature",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct UserOperation",
+          "name": "userOp",
+          "type": "tuple"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "userOpHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "missingAccountFunds",
+          "type": "uint256"
+        }
+      ],
+      "name": "validateUserOp",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "validationData",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "validateUserOp((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes),bytes32,uint256)": "3a871cdd"
+  },
+  "ast": {
+    "absolutePath": "lib/account-abstraction/contracts/interfaces/IAccount.sol",
+    "id": 581,
+    "exportedSymbols": {
+      "IAccount": [
+        580
+      ],
+      "UserOperation": [
+        898
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "36:2556:3",
+    "nodes": [
+      {
+        "id": 565,
+        "nodeType": "PragmaDirective",
+        "src": "36:24:3",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".12"
+        ]
+      },
+      {
+        "id": 566,
+        "nodeType": "ImportDirective",
+        "src": "62:29:3",
+        "absolutePath": "lib/account-abstraction/contracts/interfaces/UserOperation.sol",
+        "file": "./UserOperation.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 581,
+        "sourceUnit": 899,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 580,
+        "nodeType": "ContractDefinition",
+        "src": "93:2498:3",
+        "nodes": [
+          {
+            "id": 579,
+            "nodeType": "FunctionDefinition",
+            "src": "2413:176:3",
+            "documentation": {
+              "id": 567,
+              "nodeType": "StructuredDocumentation",
+              "src": "118:2290:3",
+              "text": " Validate user's signature and nonce\n the entryPoint will make the call to the recipient only if this validation call returns successfully.\n signature failure should be reported by returning SIG_VALIDATION_FAILED (1).\n This allows making a \"simulation call\" without a valid signature\n Other failures (e.g. nonce mismatch, or invalid signature format) should still revert to signal failure.\n @dev Must validate caller is the entryPoint.\n      Must validate the signature and nonce\n @param userOp              - The operation that is about to be executed.\n @param userOpHash          - Hash of the user's request data. can be used as the basis for signature.\n @param missingAccountFunds - Missing funds on the account's deposit in the entrypoint.\n                              This is the minimum amount to transfer to the sender(entryPoint) to be\n                              able to make the call. The excess is left as a deposit in the entrypoint\n                              for future calls. Can be withdrawn anytime using \"entryPoint.withdrawTo()\".\n                              In case there is a paymaster in the request (or the current deposit is high\n                              enough), this value will be zero.\n @return validationData       - Packaged ValidationData structure. use `_packValidationData` and\n                              `_unpackValidationData` to encode and decode.\n                              <20-byte> sigAuthorizer - 0 for valid signature, 1 to mark signature failure,\n                                 otherwise, an address of an \"authorizer\" contract.\n                              <6-byte> validUntil - Last timestamp this operation is valid. 0 for \"indefinite\"\n                              <6-byte> validAfter - First timestamp this operation is valid\n                                                    If an account doesn't use time-range, it is enough to\n                                                    return SIG_VALIDATION_FAILED value (1) for signature failure.\n                              Note that the validation code cannot use block.timestamp (or block.number) directly."
+            },
+            "functionSelector": "3a871cdd",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "validateUserOp",
+            "nameLocation": "2422:14:3",
+            "parameters": {
+              "id": 575,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 570,
+                  "mutability": "mutable",
+                  "name": "userOp",
+                  "nameLocation": "2469:6:3",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 579,
+                  "src": "2446:29:3",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_UserOperation_$898_calldata_ptr",
+                    "typeString": "struct UserOperation"
+                  },
+                  "typeName": {
+                    "id": 569,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 568,
+                      "name": "UserOperation",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 898,
+                      "src": "2446:13:3"
+                    },
+                    "referencedDeclaration": 898,
+                    "src": "2446:13:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_UserOperation_$898_storage_ptr",
+                      "typeString": "struct UserOperation"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 572,
+                  "mutability": "mutable",
+                  "name": "userOpHash",
+                  "nameLocation": "2493:10:3",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 579,
+                  "src": "2485:18:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 571,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2485:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 574,
+                  "mutability": "mutable",
+                  "name": "missingAccountFunds",
+                  "nameLocation": "2521:19:3",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 579,
+                  "src": "2513:27:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 573,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2513:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2436:110:3"
+            },
+            "returnParameters": {
+              "id": 578,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 577,
+                  "mutability": "mutable",
+                  "name": "validationData",
+                  "nameLocation": "2573:14:3",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 579,
+                  "src": "2565:22:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 576,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2565:7:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2564:24:3"
+            },
+            "scope": 580,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IAccount",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          580
+        ],
+        "name": "IAccount",
+        "nameLocation": "103:8:3",
+        "scope": 581,
+        "usedErrors": []
+      }
+    ],
+    "license": "GPL-3.0"
+  },
+  "id": 3
+}

@@ -1,0 +1,144 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "implementation",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "implementation()": "5c60da1b"
+  },
+  "ast": {
+    "absolutePath": "lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+    "id": 44881,
+    "exportedSymbols": {
+      "IBeacon": [
+        44880
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "33:357:32",
+    "nodes": [
+      {
+        "id": 44872,
+        "nodeType": "PragmaDirective",
+        "src": "33:23:32",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 44880,
+        "nodeType": "ContractDefinition",
+        "src": "138:251:32",
+        "nodes": [
+          {
+            "id": 44879,
+            "nodeType": "FunctionDefinition",
+            "src": "329:58:32",
+            "documentation": {
+              "id": 44874,
+              "nodeType": "StructuredDocumentation",
+              "src": "162:162:32",
+              "text": " @dev Must return an address that can be used as a delegate call target.\n {BeaconProxy} will check that this address is a contract."
+            },
+            "functionSelector": "5c60da1b",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "implementation",
+            "nameLocation": "338:14:32",
+            "parameters": {
+              "id": 44875,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "352:2:32"
+            },
+            "returnParameters": {
+              "id": 44878,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44877,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44879,
+                  "src": "378:7:32",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 44876,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "378:7:32",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "377:9:32"
+            },
+            "scope": 44880,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IBeacon",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 44873,
+          "nodeType": "StructuredDocumentation",
+          "src": "58:79:32",
+          "text": " @dev This is the interface that {BeaconProxy} expects of its beacon."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          44880
+        ],
+        "name": "IBeacon",
+        "nameLocation": "148:7:32",
+        "scope": 44881,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 32
+}
