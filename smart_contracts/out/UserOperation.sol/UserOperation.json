@@ -1,5 +1,5 @@
 {
-  "abi": null,
+  "abi": [],
   "bytecode": {
     "object": "0x",
     "linkReferences": {}
@@ -10,19 +10,20 @@
   },
   "ast": {
     "absolutePath": "lib/account-abstraction/contracts/interfaces/UserOperation.sol",
-    "id": 899,
+    "id": 919,
     "exportedSymbols": {
       "UserOperation": [
-        898
+        918
       ]
     },
     "nodeType": "SourceUnit",
     "src": "36:1510:8",
     "nodes": [
       {
-        "id": 875,
+        "id": 894,
         "nodeType": "PragmaDirective",
         "src": "36:24:8",
+        "nodes": [],
         "literals": [
           "solidity",
           "^",
@@ -31,19 +32,26 @@
         ]
       },
       {
-        "id": 898,
+        "id": 918,
         "nodeType": "StructDefinition",
         "src": "1241:304:8",
+        "nodes": [],
         "canonicalName": "UserOperation",
+        "documentation": {
+          "id": 895,
+          "nodeType": "StructuredDocumentation",
+          "src": "62:1178:8",
+          "text": " User Operation struct\n @param sender                - The sender account of this request.\n @param nonce                 - Unique value the sender uses to verify it is not a replay.\n @param initCode              - If set, the account contract will be created by this constructor/\n @param callData              - The method call to execute on this account.\n @param callGasLimit          - The gas limit passed to the callData method call.\n @param verificationGasLimit  - Gas used for validateUserOp and validatePaymasterUserOp.\n @param preVerificationGas    - Gas not calculated by the handleOps method, but added to the gas paid.\n                                Covers batch overhead.\n @param maxFeePerGas          - Same as EIP-1559 gas parameter.\n @param maxPriorityFeePerGas  - Same as EIP-1559 gas parameter.\n @param paymasterAndData      - If set, this field holds the paymaster address and paymaster-specific data.\n                                The paymaster will pay for the transaction instead of the sender.\n @param signature             - Sender-verified signature over the entire request, the EntryPoint address and the chain ID."
+        },
         "members": [
           {
             "constant": false,
-            "id": 877,
+            "id": 897,
             "mutability": "mutable",
             "name": "sender",
             "nameLocation": "1276:6:8",
             "nodeType": "VariableDeclaration",
-            "scope": 898,
+            "scope": 918,
             "src": "1268:14:8",
             "stateVariable": false,
             "storageLocation": "default",
@@ -52,7 +60,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 876,
+              "id": 896,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "1268:7:8",
@@ -66,12 +74,12 @@
           },
           {
             "constant": false,
-            "id": 879,
+            "id": 899,
             "mutability": "mutable",
             "name": "nonce",
             "nameLocation": "1296:5:8",
             "nodeType": "VariableDeclaration",
-            "scope": 898,
+            "scope": 918,
             "src": "1288:13:8",
             "stateVariable": false,
             "storageLocation": "default",
@@ -80,7 +88,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 878,
+              "id": 898,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1288:7:8",
@@ -93,12 +101,12 @@
           },
           {
             "constant": false,
-            "id": 881,
+            "id": 901,
             "mutability": "mutable",
             "name": "initCode",
             "nameLocation": "1313:8:8",
             "nodeType": "VariableDeclaration",
-            "scope": 898,
+            "scope": 918,
             "src": "1307:14:8",
             "stateVariable": false,
             "storageLocation": "default",
@@ -107,7 +115,7 @@
               "typeString": "bytes"
             },
             "typeName": {
-              "id": 880,
+              "id": 900,
               "name": "bytes",
               "nodeType": "ElementaryTypeName",
               "src": "1307:5:8",
@@ -120,12 +128,12 @@
           },
           {
             "constant": false,
-            "id": 883,
+            "id": 903,
             "mutability": "mutable",
             "name": "callData",
             "nameLocation": "1333:8:8",
             "nodeType": "VariableDeclaration",
-            "scope": 898,
+            "scope": 918,
             "src": "1327:14:8",
             "stateVariable": false,
             "storageLocation": "default",
@@ -134,7 +142,7 @@
               "typeString": "bytes"
             },
             "typeName": {
-              "id": 882,
+              "id": 902,
               "name": "bytes",
               "nodeType": "ElementaryTypeName",
               "src": "1327:5:8",
@@ -147,12 +155,12 @@
           },
           {
             "constant": false,
-            "id": 885,
+            "id": 905,
             "mutability": "mutable",
             "name": "callGasLimit",
             "nameLocation": "1355:12:8",
             "nodeType": "VariableDeclaration",
-            "scope": 898,
+            "scope": 918,
             "src": "1347:20:8",
             "stateVariable": false,
             "storageLocation": "default",
@@ -161,7 +169,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 884,
+              "id": 904,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1347:7:8",
@@ -174,12 +182,12 @@
           },
           {
             "constant": false,
-            "id": 887,
+            "id": 907,
             "mutability": "mutable",
             "name": "verificationGasLimit",
             "nameLocation": "1381:20:8",
             "nodeType": "VariableDeclaration",
-            "scope": 898,
+            "scope": 918,
             "src": "1373:28:8",
             "stateVariable": false,
             "storageLocation": "default",
@@ -188,7 +196,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 886,
+              "id": 906,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1373:7:8",
@@ -201,12 +209,12 @@
           },
           {
             "constant": false,
-            "id": 889,
+            "id": 909,
             "mutability": "mutable",
             "name": "preVerificationGas",
             "nameLocation": "1415:18:8",
             "nodeType": "VariableDeclaration",
-            "scope": 898,
+            "scope": 918,
             "src": "1407:26:8",
             "stateVariable": false,
             "storageLocation": "default",
@@ -215,7 +223,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 888,
+              "id": 908,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1407:7:8",
@@ -228,12 +236,12 @@
           },
           {
             "constant": false,
-            "id": 891,
+            "id": 911,
             "mutability": "mutable",
             "name": "maxFeePerGas",
             "nameLocation": "1447:12:8",
             "nodeType": "VariableDeclaration",
-            "scope": 898,
+            "scope": 918,
             "src": "1439:20:8",
             "stateVariable": false,
             "storageLocation": "default",
@@ -242,7 +250,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 890,
+              "id": 910,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1439:7:8",
@@ -255,12 +263,12 @@
           },
           {
             "constant": false,
-            "id": 893,
+            "id": 913,
             "mutability": "mutable",
             "name": "maxPriorityFeePerGas",
             "nameLocation": "1473:20:8",
             "nodeType": "VariableDeclaration",
-            "scope": 898,
+            "scope": 918,
             "src": "1465:28:8",
             "stateVariable": false,
             "storageLocation": "default",
@@ -269,7 +277,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 892,
+              "id": 912,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "1465:7:8",
@@ -282,12 +290,12 @@
           },
           {
             "constant": false,
-            "id": 895,
+            "id": 915,
             "mutability": "mutable",
             "name": "paymasterAndData",
             "nameLocation": "1505:16:8",
             "nodeType": "VariableDeclaration",
-            "scope": 898,
+            "scope": 918,
             "src": "1499:22:8",
             "stateVariable": false,
             "storageLocation": "default",
@@ -296,7 +304,7 @@
               "typeString": "bytes"
             },
             "typeName": {
-              "id": 894,
+              "id": 914,
               "name": "bytes",
               "nodeType": "ElementaryTypeName",
               "src": "1499:5:8",
@@ -309,12 +317,12 @@
           },
           {
             "constant": false,
-            "id": 897,
+            "id": 917,
             "mutability": "mutable",
             "name": "signature",
             "nameLocation": "1533:9:8",
             "nodeType": "VariableDeclaration",
-            "scope": 898,
+            "scope": 918,
             "src": "1527:15:8",
             "stateVariable": false,
             "storageLocation": "default",
@@ -323,7 +331,7 @@
               "typeString": "bytes"
             },
             "typeName": {
-              "id": 896,
+              "id": 916,
               "name": "bytes",
               "nodeType": "ElementaryTypeName",
               "src": "1527:5:8",
@@ -337,7 +345,7 @@
         ],
         "name": "UserOperation",
         "nameLocation": "1248:13:8",
-        "scope": 899,
+        "scope": 919,
         "visibility": "public"
       }
     ],

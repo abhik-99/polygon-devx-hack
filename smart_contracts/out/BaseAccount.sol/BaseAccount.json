@@ -128,6 +128,258 @@
     "getNonce()": "d087d288",
     "validateUserOp((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes),bytes32,uint256)": "3a871cdd"
   },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.23+commit.f704f362\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"entryPoint\",\"outputs\":[{\"internalType\":\"contract IEntryPoint\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getNonce\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"nonce\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"initCode\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"callData\",\"type\":\"bytes\"},{\"internalType\":\"uint256\",\"name\":\"callGasLimit\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"verificationGasLimit\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"preVerificationGas\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxFeePerGas\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maxPriorityFeePerGas\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"paymasterAndData\",\"type\":\"bytes\"},{\"internalType\":\"bytes\",\"name\":\"signature\",\"type\":\"bytes\"}],\"internalType\":\"struct UserOperation\",\"name\":\"userOp\",\"type\":\"tuple\"},{\"internalType\":\"bytes32\",\"name\":\"userOpHash\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"missingAccountFunds\",\"type\":\"uint256\"}],\"name\":\"validateUserOp\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"validationData\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"validateUserOp((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes),bytes32,uint256)\":{\"params\":{\"missingAccountFunds\":\"- The amount of funds missing from the account                              to pay for the user operation.\",\"userOp\":\"- The user operation to validate.\",\"userOpHash\":\"- The hash of the user operation.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"entryPoint()\":{\"notice\":\"Return the entryPoint used by this account. Subclass should return the current entryPoint used by this account.\"},\"getNonce()\":{\"notice\":\"Return the account nonce. This method returns the next sequential nonce. For a nonce of a specific key, use `entrypoint.getNonce(account, key)`\"},\"validateUserOp((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes),bytes32,uint256)\":{\"notice\":\"Validate user's signature and nonce. Subclass doesn't need to override this method. Instead, it should override the specific internal validation methods.\"}},\"notice\":\"Basic account implementation. This contract provides the basic logic for implementing the IAccount interface - validateUserOp Specific account implementation should inherit it and provide the account-specific logic.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/account-abstraction/contracts/core/BaseAccount.sol\":\"BaseAccount\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":account-abstraction/=lib/account-abstraction/contracts/\",\":chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/contracts/src/v0.6/vendor/@arbitrum/nitro-contracts/src/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":iden3/=lib/contracts/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":solidity-bytes-utils/=lib/solidity-bytes-utils/\"]},\"sources\":{\"lib/account-abstraction/contracts/core/BaseAccount.sol\":{\"keccak256\":\"0xe7946dabc50aca99677c47fb74b00906684af62b17b721cb8a24c21006f76102\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://4e5af9f24431a568c55083600875d7aeafd0addea64f72273b679a1470feb0e6\",\"dweb:/ipfs/Qmd4EQESCKX9nhYtEtX93WNVHGMfcXCCfsavUdBKoQMS7T\"]},\"lib/account-abstraction/contracts/core/Helpers.sol\":{\"keccak256\":\"0x81b70ea6183fd28e6c00dc3cf357c8453abdd4cc46ec628e7589e4b6a188d626\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://f4a99aced25a842721a2495760af84b874c1f730c94f8b3e76c71c8b757c90f5\",\"dweb:/ipfs/QmacEJqVFbwQxE4HTzqvWWAFT7uSbH2Yd7EMqdCx1DxzBz\"]},\"lib/account-abstraction/contracts/core/UserOperationLib.sol\":{\"keccak256\":\"0x1e28b1f8dac93be686129400777b000c960b0bcc2896a2e0535806f2f0dd7cca\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://76911056faaf865efff923267e5c5b556f6b019787a2ec55ffa856bace497108\",\"dweb:/ipfs/QmSFQj5DraQNMJCrn7GWSrN6iXRJ9Q9RpcmCGZ1bZg9emR\"]},\"lib/account-abstraction/contracts/interfaces/IAccount.sol\":{\"keccak256\":\"0x1a11613e6921d1a55ba72169156842ba7d30e966d40a23b34b29c88d1f82345e\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://2bdd695221a8d884d4603d46b5389cc2cdda5cba70f49b57a98e9fba1b9fd2c5\",\"dweb:/ipfs/QmZyHFwzpRgfa4YgzY4MUbNdj8WSGCjMHw2AxW4LVnMLWE\"]},\"lib/account-abstraction/contracts/interfaces/IAggregator.sol\":{\"keccak256\":\"0xfc37d01c654f967c0f33b0edcb074231d30841f6fe1b23a070564f13c497b111\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://490630958f3a1861ad16db742e891b8c9f6f229a11f942d25ff58e9bab983c37\",\"dweb:/ipfs/QmYcvJxvXrXWvDUp6XZZirzjMqk5BaWdmsWWsEtamiuDu9\"]},\"lib/account-abstraction/contracts/interfaces/IEntryPoint.sol\":{\"keccak256\":\"0xdb03119b36b6238c68195a78203226b9884bdcc5877c9b3974bbdb1e5d2a94c8\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://e82541c1fe98f675e641d01185db80ade3b032110bac16eb470eec08b9edecb7\",\"dweb:/ipfs/QmadQV2D7Apuv52Q85ToNCn52rwNzfKpfpshTJcWQ7zaPv\"]},\"lib/account-abstraction/contracts/interfaces/INonceManager.sol\":{\"keccak256\":\"0x509871e6c63663cdcc3eba19920fe84e991f38b289b1377ac3c3a6d9f22d7e12\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://00fe21b4349b24c50df60e1a705179293982bd9e7a32b78d4bac9620f89e7fe2\",\"dweb:/ipfs/QmSFFYGfUwQbVa6hASjU7YxTvgi2HkfrPr4X5oPHscHg8b\"]},\"lib/account-abstraction/contracts/interfaces/IStakeManager.sol\":{\"keccak256\":\"0x10cdaa14cd2b08279e02c2d4863cea18cfb7e11d7a33cf740755f9a025e7bda1\",\"license\":\"GPL-3.0-only\",\"urls\":[\"bzz-raw://3d214ceee25812bb2a8176dd245a399d84d222cf7f9cf0bc3937afad372f0b7a\",\"dweb:/ipfs/QmZxqSic8cGeis7R7ufUjf95CgTpyAFY9nCHuiLPbESbYr\"]},\"lib/account-abstraction/contracts/interfaces/UserOperation.sol\":{\"keccak256\":\"0x093777cb7097dccaffd631d07dfdbd0f731371efe3770fbe22a0c992af4eb4f6\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://6da218e65b43a3f99247b2c66c5946eaa48f2719a0f58469d3a80b4d24b28f00\",\"dweb:/ipfs/QmQ3np8AwPkWw9Ey4DMMQNJgPSVw3fdrX8wnLaVgYyiaQn\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.23+commit.f704f362"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "entryPoint",
+          "outputs": [
+            {
+              "internalType": "contract IEntryPoint",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getNonce",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct UserOperation",
+              "name": "userOp",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "sender",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "nonce",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "initCode",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "callData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "callGasLimit",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "verificationGasLimit",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "preVerificationGas",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "maxFeePerGas",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "maxPriorityFeePerGas",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "paymasterAndData",
+                  "type": "bytes"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "signature",
+                  "type": "bytes"
+                }
+              ]
+            },
+            {
+              "internalType": "bytes32",
+              "name": "userOpHash",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "missingAccountFunds",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "validateUserOp",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "validationData",
+              "type": "uint256"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "validateUserOp((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes),bytes32,uint256)": {
+            "params": {
+              "missingAccountFunds": "- The amount of funds missing from the account                              to pay for the user operation.",
+              "userOp": "- The user operation to validate.",
+              "userOpHash": "- The hash of the user operation."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "entryPoint()": {
+            "notice": "Return the entryPoint used by this account. Subclass should return the current entryPoint used by this account."
+          },
+          "getNonce()": {
+            "notice": "Return the account nonce. This method returns the next sequential nonce. For a nonce of a specific key, use `entrypoint.getNonce(account, key)`"
+          },
+          "validateUserOp((address,uint256,bytes,bytes,uint256,uint256,uint256,uint256,uint256,bytes,bytes),bytes32,uint256)": {
+            "notice": "Validate user's signature and nonce. Subclass doesn't need to override this method. Instead, it should override the specific internal validation methods."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "account-abstraction/=lib/account-abstraction/contracts/",
+        "chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/contracts/src/v0.6/vendor/@arbitrum/nitro-contracts/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "iden3/=lib/contracts/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "solidity-bytes-utils/=lib/solidity-bytes-utils/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/account-abstraction/contracts/core/BaseAccount.sol": "BaseAccount"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/account-abstraction/contracts/core/BaseAccount.sol": {
+        "keccak256": "0xe7946dabc50aca99677c47fb74b00906684af62b17b721cb8a24c21006f76102",
+        "urls": [
+          "bzz-raw://4e5af9f24431a568c55083600875d7aeafd0addea64f72273b679a1470feb0e6",
+          "dweb:/ipfs/Qmd4EQESCKX9nhYtEtX93WNVHGMfcXCCfsavUdBKoQMS7T"
+        ],
+        "license": "GPL-3.0"
+      },
+      "lib/account-abstraction/contracts/core/Helpers.sol": {
+        "keccak256": "0x81b70ea6183fd28e6c00dc3cf357c8453abdd4cc46ec628e7589e4b6a188d626",
+        "urls": [
+          "bzz-raw://f4a99aced25a842721a2495760af84b874c1f730c94f8b3e76c71c8b757c90f5",
+          "dweb:/ipfs/QmacEJqVFbwQxE4HTzqvWWAFT7uSbH2Yd7EMqdCx1DxzBz"
+        ],
+        "license": "GPL-3.0"
+      },
+      "lib/account-abstraction/contracts/core/UserOperationLib.sol": {
+        "keccak256": "0x1e28b1f8dac93be686129400777b000c960b0bcc2896a2e0535806f2f0dd7cca",
+        "urls": [
+          "bzz-raw://76911056faaf865efff923267e5c5b556f6b019787a2ec55ffa856bace497108",
+          "dweb:/ipfs/QmSFQj5DraQNMJCrn7GWSrN6iXRJ9Q9RpcmCGZ1bZg9emR"
+        ],
+        "license": "GPL-3.0"
+      },
+      "lib/account-abstraction/contracts/interfaces/IAccount.sol": {
+        "keccak256": "0x1a11613e6921d1a55ba72169156842ba7d30e966d40a23b34b29c88d1f82345e",
+        "urls": [
+          "bzz-raw://2bdd695221a8d884d4603d46b5389cc2cdda5cba70f49b57a98e9fba1b9fd2c5",
+          "dweb:/ipfs/QmZyHFwzpRgfa4YgzY4MUbNdj8WSGCjMHw2AxW4LVnMLWE"
+        ],
+        "license": "GPL-3.0"
+      },
+      "lib/account-abstraction/contracts/interfaces/IAggregator.sol": {
+        "keccak256": "0xfc37d01c654f967c0f33b0edcb074231d30841f6fe1b23a070564f13c497b111",
+        "urls": [
+          "bzz-raw://490630958f3a1861ad16db742e891b8c9f6f229a11f942d25ff58e9bab983c37",
+          "dweb:/ipfs/QmYcvJxvXrXWvDUp6XZZirzjMqk5BaWdmsWWsEtamiuDu9"
+        ],
+        "license": "GPL-3.0"
+      },
+      "lib/account-abstraction/contracts/interfaces/IEntryPoint.sol": {
+        "keccak256": "0xdb03119b36b6238c68195a78203226b9884bdcc5877c9b3974bbdb1e5d2a94c8",
+        "urls": [
+          "bzz-raw://e82541c1fe98f675e641d01185db80ade3b032110bac16eb470eec08b9edecb7",
+          "dweb:/ipfs/QmadQV2D7Apuv52Q85ToNCn52rwNzfKpfpshTJcWQ7zaPv"
+        ],
+        "license": "GPL-3.0"
+      },
+      "lib/account-abstraction/contracts/interfaces/INonceManager.sol": {
+        "keccak256": "0x509871e6c63663cdcc3eba19920fe84e991f38b289b1377ac3c3a6d9f22d7e12",
+        "urls": [
+          "bzz-raw://00fe21b4349b24c50df60e1a705179293982bd9e7a32b78d4bac9620f89e7fe2",
+          "dweb:/ipfs/QmSFFYGfUwQbVa6hASjU7YxTvgi2HkfrPr4X5oPHscHg8b"
+        ],
+        "license": "GPL-3.0"
+      },
+      "lib/account-abstraction/contracts/interfaces/IStakeManager.sol": {
+        "keccak256": "0x10cdaa14cd2b08279e02c2d4863cea18cfb7e11d7a33cf740755f9a025e7bda1",
+        "urls": [
+          "bzz-raw://3d214ceee25812bb2a8176dd245a399d84d222cf7f9cf0bc3937afad372f0b7a",
+          "dweb:/ipfs/QmZxqSic8cGeis7R7ufUjf95CgTpyAFY9nCHuiLPbESbYr"
+        ],
+        "license": "GPL-3.0-only"
+      },
+      "lib/account-abstraction/contracts/interfaces/UserOperation.sol": {
+        "keccak256": "0x093777cb7097dccaffd631d07dfdbd0f731371efe3770fbe22a0c992af4eb4f6",
+        "urls": [
+          "bzz-raw://6da218e65b43a3f99247b2c66c5946eaa48f2719a0f58469d3a80b4d24b28f00",
+          "dweb:/ipfs/QmQ3np8AwPkWw9Ey4DMMQNJgPSVw3fdrX8wnLaVgYyiaQn"
+        ],
+        "license": "GPL-3.0"
+      }
+    },
+    "version": 1
+  },
   "ast": {
     "absolutePath": "lib/account-abstraction/contracts/core/BaseAccount.sol",
     "id": 144,
@@ -136,41 +388,41 @@
         143
       ],
       "IAccount": [
-        580
+        581
       ],
       "IAggregator": [
-        614
+        615
       ],
       "IEntryPoint": [
-        751
+        769
       ],
       "INonceManager": [
-        770
+        788
       ],
       "IStakeManager": [
-        873
+        892
       ],
       "UserOperation": [
-        898
+        918
       ],
       "UserOperationLib": [
-        563
+        564
       ],
       "ValidationData": [
-        152
+        153
       ],
       "_intersectTimeRange": [
-        298
+        299
       ],
       "_packValidationData": [
-        335,
-        373
+        336,
+        374
       ],
       "_parseValidationData": [
-        212
+        213
       ],
       "calldataKeccak": [
-        383
+        384
       ]
     },
     "nodeType": "SourceUnit",
@@ -180,6 +432,7 @@
         "id": 1,
         "nodeType": "PragmaDirective",
         "src": "36:24:0",
+        "nodes": [],
         "literals": [
           "solidity",
           "^",
@@ -191,11 +444,12 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "src": "145:36:0",
+        "nodes": [],
         "absolutePath": "lib/account-abstraction/contracts/interfaces/IAccount.sol",
         "file": "../interfaces/IAccount.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 144,
-        "sourceUnit": 581,
+        "sourceUnit": 582,
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -203,11 +457,12 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "src": "182:39:0",
+        "nodes": [],
         "absolutePath": "lib/account-abstraction/contracts/interfaces/IEntryPoint.sol",
         "file": "../interfaces/IEntryPoint.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 144,
-        "sourceUnit": 752,
+        "sourceUnit": 770,
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -215,11 +470,12 @@
         "id": 4,
         "nodeType": "ImportDirective",
         "src": "222:23:0",
+        "nodes": [],
         "absolutePath": "lib/account-abstraction/contracts/core/Helpers.sol",
         "file": "./Helpers.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 144,
-        "sourceUnit": 384,
+        "sourceUnit": 385,
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -227,11 +483,12 @@
         "id": 5,
         "nodeType": "ImportDirective",
         "src": "246:32:0",
+        "nodes": [],
         "absolutePath": "lib/account-abstraction/contracts/core/UserOperationLib.sol",
         "file": "./UserOperationLib.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 144,
-        "sourceUnit": 564,
+        "sourceUnit": 565,
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -244,12 +501,16 @@
             "id": 12,
             "nodeType": "UsingForDirective",
             "src": "561:41:0",
+            "nodes": [],
             "global": false,
             "libraryName": {
               "id": 9,
               "name": "UserOperationLib",
+              "nameLocations": [
+                "567:16:0"
+              ],
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 563,
+              "referencedDeclaration": 564,
               "src": "567:16:0"
             },
             "typeName": {
@@ -258,14 +519,17 @@
               "pathNode": {
                 "id": 10,
                 "name": "UserOperation",
+                "nameLocations": [
+                  "588:13:0"
+                ],
                 "nodeType": "IdentifierPath",
-                "referencedDeclaration": 898,
+                "referencedDeclaration": 918,
                 "src": "588:13:0"
               },
-              "referencedDeclaration": 898,
+              "referencedDeclaration": 918,
               "src": "588:13:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_struct$_UserOperation_$898_storage_ptr",
+                "typeIdentifier": "t_struct$_UserOperation_$918_storage_ptr",
                 "typeString": "struct UserOperation"
               }
             }
@@ -274,6 +538,7 @@
             "id": 16,
             "nodeType": "VariableDeclaration",
             "src": "746:51:0",
+            "nodes": [],
             "constant": true,
             "documentation": {
               "id": 13,
@@ -323,10 +588,12 @@
             "id": 33,
             "nodeType": "FunctionDefinition",
             "src": "985:121:0",
+            "nodes": [],
             "body": {
               "id": 32,
               "nodeType": "Block",
               "src": "1043:63:0",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -378,6 +645,7 @@
                         "isPure": false,
                         "kind": "typeConversion",
                         "lValueRequested": false,
+                        "nameLocations": [],
                         "names": [],
                         "nodeType": "FunctionCall",
                         "src": "1082:13:0",
@@ -426,7 +694,7 @@
                           "referencedDeclaration": 40,
                           "src": "1060:10:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IEntryPoint_$751_$",
+                            "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IEntryPoint_$769_$",
                             "typeString": "function () view returns (contract IEntryPoint)"
                           }
                         },
@@ -436,12 +704,13 @@
                         "isPure": false,
                         "kind": "functionCall",
                         "lValueRequested": false,
+                        "nameLocations": [],
                         "names": [],
                         "nodeType": "FunctionCall",
                         "src": "1060:12:0",
                         "tryCall": false,
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_IEntryPoint_$751",
+                          "typeIdentifier": "t_contract$_IEntryPoint_$769",
                           "typeString": "contract IEntryPoint"
                         }
                       },
@@ -450,9 +719,10 @@
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
+                      "memberLocation": "1073:8:0",
                       "memberName": "getNonce",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 763,
+                      "referencedDeclaration": 781,
                       "src": "1060:21:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_address_$_t_uint192_$returns$_t_uint256_$",
@@ -465,6 +735,7 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
+                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "1060:39:0",
@@ -542,6 +813,7 @@
             "id": 40,
             "nodeType": "FunctionDefinition",
             "src": "1254:64:0",
+            "nodes": [],
             "documentation": {
               "id": 34,
               "nodeType": "StructuredDocumentation",
@@ -576,7 +848,7 @@
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IEntryPoint_$751",
+                    "typeIdentifier": "t_contract$_IEntryPoint_$769",
                     "typeString": "contract IEntryPoint"
                   },
                   "typeName": {
@@ -585,14 +857,17 @@
                     "pathNode": {
                       "id": 36,
                       "name": "IEntryPoint",
+                      "nameLocations": [
+                        "1305:11:0"
+                      ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 751,
+                      "referencedDeclaration": 769,
                       "src": "1305:11:0"
                     },
-                    "referencedDeclaration": 751,
+                    "referencedDeclaration": 769,
                     "src": "1305:11:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IEntryPoint_$751",
+                      "typeIdentifier": "t_contract$_IEntryPoint_$769",
                       "typeString": "contract IEntryPoint"
                     }
                   },
@@ -610,10 +885,12 @@
             "id": 74,
             "nodeType": "FunctionDefinition",
             "src": "1799:379:0",
+            "nodes": [],
             "body": {
               "id": 73,
               "nodeType": "Block",
               "src": "1992:186:0",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -637,6 +914,7 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
+                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "2002:24:0",
@@ -681,7 +959,7 @@
                           "referencedDeclaration": 44,
                           "src": "2072:6:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_UserOperation_$898_calldata_ptr",
+                            "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
                             "typeString": "struct UserOperation calldata"
                           }
                         },
@@ -701,7 +979,7 @@
                       "expression": {
                         "argumentTypes": [
                           {
-                            "typeIdentifier": "t_struct$_UserOperation_$898_calldata_ptr",
+                            "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
                             "typeString": "struct UserOperation calldata"
                           },
                           {
@@ -716,7 +994,7 @@
                         "referencedDeclaration": 102,
                         "src": "2053:18:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_UserOperation_$898_calldata_ptr_$_t_bytes32_$returns$_t_uint256_$",
+                          "typeIdentifier": "t_function_internal_nonpayable$_t_struct$_UserOperation_$918_calldata_ptr_$_t_bytes32_$returns$_t_uint256_$",
                           "typeString": "function (struct UserOperation calldata,bytes32) returns (uint256)"
                         }
                       },
@@ -726,6 +1004,7 @@
                       "isPure": false,
                       "kind": "functionCall",
                       "lValueRequested": false,
+                      "nameLocations": [],
                       "names": [],
                       "nodeType": "FunctionCall",
                       "src": "2053:38:0",
@@ -757,7 +1036,7 @@
                           "referencedDeclaration": 44,
                           "src": "2116:6:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_UserOperation_$898_calldata_ptr",
+                            "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
                             "typeString": "struct UserOperation calldata"
                           }
                         },
@@ -766,9 +1045,10 @@
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
+                        "memberLocation": "2123:5:0",
                         "memberName": "nonce",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 879,
+                        "referencedDeclaration": 899,
                         "src": "2116:12:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -800,6 +1080,7 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
+                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "2101:28:0",
@@ -853,6 +1134,7 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
+                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "2139:32:0",
@@ -869,7 +1151,7 @@
               ]
             },
             "baseFunctions": [
-              579
+              580
             ],
             "documentation": {
               "id": 41,
@@ -905,7 +1187,7 @@
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_UserOperation_$898_calldata_ptr",
+                    "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
                     "typeString": "struct UserOperation"
                   },
                   "typeName": {
@@ -914,14 +1196,17 @@
                     "pathNode": {
                       "id": 42,
                       "name": "UserOperation",
+                      "nameLocations": [
+                        "1832:13:0"
+                      ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 898,
+                      "referencedDeclaration": 918,
                       "src": "1832:13:0"
                     },
-                    "referencedDeclaration": 898,
+                    "referencedDeclaration": 918,
                     "src": "1832:13:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_UserOperation_$898_storage_ptr",
+                      "typeIdentifier": "t_struct$_UserOperation_$918_storage_ptr",
                       "typeString": "struct UserOperation"
                     }
                   },
@@ -1027,10 +1312,12 @@
             "id": 91,
             "nodeType": "FunctionDefinition",
             "src": "2259:183:0",
+            "nodes": [],
             "body": {
               "id": 90,
               "nodeType": "Block",
               "src": "2315:127:0",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
@@ -1063,6 +1350,7 @@
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
+                          "memberLocation": "2350:6:0",
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "src": "2346:10:0",
@@ -1086,7 +1374,7 @@
                                 "referencedDeclaration": 40,
                                 "src": "2368:10:0",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IEntryPoint_$751_$",
+                                  "typeIdentifier": "t_function_internal_view$__$returns$_t_contract$_IEntryPoint_$769_$",
                                   "typeString": "function () view returns (contract IEntryPoint)"
                                 }
                               },
@@ -1096,12 +1384,13 @@
                               "isPure": false,
                               "kind": "functionCall",
                               "lValueRequested": false,
+                              "nameLocations": [],
                               "names": [],
                               "nodeType": "FunctionCall",
                               "src": "2368:12:0",
                               "tryCall": false,
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IEntryPoint_$751",
+                                "typeIdentifier": "t_contract$_IEntryPoint_$769",
                                 "typeString": "contract IEntryPoint"
                               }
                             }
@@ -1109,7 +1398,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IEntryPoint_$751",
+                                "typeIdentifier": "t_contract$_IEntryPoint_$769",
                                 "typeString": "contract IEntryPoint"
                               }
                             ],
@@ -1138,6 +1427,7 @@
                           "isPure": false,
                           "kind": "typeConversion",
                           "lValueRequested": false,
+                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "2360:21:0",
@@ -1201,6 +1491,7 @@
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
+                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
                     "src": "2325:110:0",
@@ -1248,6 +1539,7 @@
             "id": 102,
             "nodeType": "FunctionDefinition",
             "src": "3549:151:0",
+            "nodes": [],
             "documentation": {
               "id": 92,
               "nodeType": "StructuredDocumentation",
@@ -1275,7 +1567,7 @@
                   "stateVariable": false,
                   "storageLocation": "calldata",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_UserOperation_$898_calldata_ptr",
+                    "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
                     "typeString": "struct UserOperation"
                   },
                   "typeName": {
@@ -1284,14 +1576,17 @@
                     "pathNode": {
                       "id": 93,
                       "name": "UserOperation",
+                      "nameLocations": [
+                        "3586:13:0"
+                      ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 898,
+                      "referencedDeclaration": 918,
                       "src": "3586:13:0"
                     },
-                    "referencedDeclaration": 898,
+                    "referencedDeclaration": 918,
                     "src": "3586:13:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_UserOperation_$898_storage_ptr",
+                      "typeIdentifier": "t_struct$_UserOperation_$918_storage_ptr",
                       "typeString": "struct UserOperation"
                     }
                   },
@@ -1370,10 +1665,12 @@
             "id": 109,
             "nodeType": "FunctionDefinition",
             "src": "4351:68:0",
+            "nodes": [],
             "body": {
               "id": 108,
               "nodeType": "Block",
               "src": "4412:7:0",
+              "nodes": [],
               "statements": []
             },
             "documentation": {
@@ -1436,10 +1733,12 @@
             "id": 142,
             "nodeType": "FunctionDefinition",
             "src": "4994:382:0",
+            "nodes": [],
             "body": {
               "id": 141,
               "nodeType": "Block",
               "src": "5061:315:0",
+              "nodes": [],
               "statements": [
                 {
                   "condition": {
@@ -1585,6 +1884,7 @@
                                     "isLValue": false,
                                     "isPure": false,
                                     "lValueRequested": false,
+                                    "memberLocation": "5146:6:0",
                                     "memberName": "sender",
                                     "nodeType": "MemberAccess",
                                     "src": "5142:10:0",
@@ -1627,6 +1927,7 @@
                                 "isPure": false,
                                 "kind": "typeConversion",
                                 "lValueRequested": false,
+                                "nameLocations": [],
                                 "names": [],
                                 "nodeType": "FunctionCall",
                                 "src": "5134:19:0",
@@ -1641,6 +1942,7 @@
                               "isLValue": false,
                               "isPure": false,
                               "lValueRequested": false,
+                              "memberLocation": "5154:4:0",
                               "memberName": "call",
                               "nodeType": "MemberAccess",
                               "src": "5134:24:0",
@@ -1720,6 +2022,7 @@
                                   "isPure": true,
                                   "kind": "functionCall",
                                   "lValueRequested": false,
+                                  "nameLocations": [],
                                   "names": [],
                                   "nodeType": "FunctionCall",
                                   "src": "5225:13:0",
@@ -1734,6 +2037,7 @@
                                 "isLValue": false,
                                 "isPure": true,
                                 "lValueRequested": false,
+                                "memberLocation": "5239:3:0",
                                 "memberName": "max",
                                 "nodeType": "MemberAccess",
                                 "src": "5225:17:0",
@@ -1755,6 +2059,7 @@
                           "isPure": false,
                           "kind": "functionCall",
                           "lValueRequested": false,
+                          "nameLocations": [],
                           "names": [],
                           "nodeType": "FunctionCall",
                           "src": "5134:126:0",
@@ -1868,8 +2173,11 @@
             "baseName": {
               "id": 7,
               "name": "IAccount",
+              "nameLocations": [
+                "546:8:0"
+              ],
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 580,
+              "referencedDeclaration": 581,
               "src": "546:8:0"
             },
             "id": 8,
@@ -1889,12 +2197,13 @@
         "fullyImplemented": false,
         "linearizedBaseContracts": [
           143,
-          580
+          581
         ],
         "name": "BaseAccount",
         "nameLocation": "531:11:0",
         "scope": 144,
-        "usedErrors": []
+        "usedErrors": [],
+        "usedEvents": []
       }
     ],
     "license": "GPL-3.0"

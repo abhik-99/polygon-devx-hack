@@ -2,8 +2,10 @@
   "_format": "ethers-rs-sol-cache-3",
   "paths": {
     "artifacts": "out",
+    "build_infos": "out/build-info",
     "sources": "src",
     "tests": "test",
+    "scripts": "script",
     "libraries": [
       "lib"
     ]
@@ -20,7 +22,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -31,11 +35,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -52,7 +57,7 @@
       "versionRequirement": "^0.8.12",
       "artifacts": {
         "BaseAccount": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "BaseAccount.sol/BaseAccount.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "BaseAccount.sol/BaseAccount.json"
         }
       }
     },
@@ -67,7 +72,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -78,11 +85,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -90,7 +98,7 @@
       "versionRequirement": "^0.8.12",
       "artifacts": {
         "Helpers": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "Helpers.sol/Helpers.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "Helpers.sol/Helpers.json"
         }
       }
     },
@@ -105,7 +113,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -116,11 +126,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -131,7 +142,7 @@
       "versionRequirement": "^0.8.12",
       "artifacts": {
         "UserOperationLib": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "UserOperationLib.sol/UserOperationLib.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "UserOperationLib.sol/UserOperationLib.json"
         }
       }
     },
@@ -146,7 +157,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -157,11 +170,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -171,7 +185,7 @@
       "versionRequirement": "^0.8.12",
       "artifacts": {
         "IAccount": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "IAccount.sol/IAccount.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "IAccount.sol/IAccount.json"
         }
       }
     },
@@ -186,7 +200,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -197,11 +213,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -211,13 +228,13 @@
       "versionRequirement": "^0.8.12",
       "artifacts": {
         "IAggregator": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "IAggregator.sol/IAggregator.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "IAggregator.sol/IAggregator.json"
         }
       }
     },
     "lib/account-abstraction/contracts/interfaces/IEntryPoint.sol": {
-      "lastModificationDate": 1699769665382,
-      "contentHash": "235d2a83f46d27b83bae47303e42d8c7",
+      "lastModificationDate": 1699969454042,
+      "contentHash": "48904444602d6e4ed9e60060832a707b",
       "sourceName": "lib/account-abstraction/contracts/interfaces/IEntryPoint.sol",
       "solcConfig": {
         "settings": {
@@ -226,7 +243,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -237,11 +256,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -254,7 +274,7 @@
       "versionRequirement": "^0.8.12",
       "artifacts": {
         "IEntryPoint": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "IEntryPoint.sol/IEntryPoint.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "IEntryPoint.sol/IEntryPoint.json"
         }
       }
     },
@@ -269,7 +289,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -280,11 +302,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -292,7 +315,7 @@
       "versionRequirement": "^0.8.12",
       "artifacts": {
         "INonceManager": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "INonceManager.sol/INonceManager.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "INonceManager.sol/INonceManager.json"
         }
       }
     },
@@ -307,7 +330,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -318,11 +343,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -330,7 +356,7 @@
       "versionRequirement": "^0.8.12",
       "artifacts": {
         "IStakeManager": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "IStakeManager.sol/IStakeManager.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "IStakeManager.sol/IStakeManager.json"
         }
       }
     },
@@ -345,7 +371,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -356,11 +384,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -368,7 +397,7 @@
       "versionRequirement": "^0.8.12",
       "artifacts": {
         "UserOperation": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "UserOperation.sol/UserOperation.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "UserOperation.sol/UserOperation.json"
         }
       }
     },
@@ -383,7 +412,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -394,11 +425,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -411,7 +443,471 @@
       "versionRequirement": "^0.8.12",
       "artifacts": {
         "TokenCallbackHandler": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "TokenCallbackHandler.sol/TokenCallbackHandler.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "TokenCallbackHandler.sol/TokenCallbackHandler.json"
+        }
+      }
+    },
+    "lib/contracts/contracts/interfaces/IOnchainCredentialStatusResolver.sol": {
+      "lastModificationDate": 1699970452557,
+      "contentHash": "4baef3e07a2cb25680e498ff8bd0e18f",
+      "sourceName": "lib/contracts/contracts/interfaces/IOnchainCredentialStatusResolver.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.16",
+      "artifacts": {
+        "IOnchainCredentialStatusResolver": {
+          "0.8.23+commit.f704f362.Linux.gcc": "IOnchainCredentialStatusResolver.sol/IOnchainCredentialStatusResolver.json"
+        }
+      }
+    },
+    "lib/contracts/contracts/interfaces/IState.sol": {
+      "lastModificationDate": 1699970452556,
+      "contentHash": "b71ef3e52f2287820a81268bafc344d7",
+      "sourceName": "lib/contracts/contracts/interfaces/IState.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.16",
+      "artifacts": {
+        "IState": {
+          "0.8.23+commit.f704f362.Linux.gcc": "IState.sol/IState.json"
+        }
+      }
+    },
+    "lib/contracts/contracts/lib/ArrayUtils.sol": {
+      "lastModificationDate": 1699970452547,
+      "contentHash": "963bbc320c3f4c4a2866dd1af4b1a77d",
+      "sourceName": "lib/contracts/contracts/lib/ArrayUtils.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.16",
+      "artifacts": {
+        "ArrayUtils": {
+          "0.8.23+commit.f704f362.Linux.gcc": "ArrayUtils.sol/ArrayUtils.json"
+        }
+      }
+    },
+    "lib/contracts/contracts/lib/ClaimBuilder.sol": {
+      "lastModificationDate": 1699970452540,
+      "contentHash": "3764b0bc2812f7c375a4fa3e65695087",
+      "sourceName": "lib/contracts/contracts/lib/ClaimBuilder.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/contracts/contracts/lib/GenesisUtils.sol",
+        "lib/contracts/contracts/lib/PrimitiveTypeUtils.sol",
+        "lib/solidity-bytes-utils/contracts/BytesLib.sol"
+      ],
+      "versionRequirement": "^0.8.16",
+      "artifacts": {
+        "ClaimBuilder": {
+          "0.8.23+commit.f704f362.Linux.gcc": "ClaimBuilder.sol/ClaimBuilder.json"
+        }
+      }
+    },
+    "lib/contracts/contracts/lib/GenesisUtils.sol": {
+      "lastModificationDate": 1699970452545,
+      "contentHash": "100aabefe793e9ab85bd28ee8698c4b8",
+      "sourceName": "lib/contracts/contracts/lib/GenesisUtils.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/contracts/contracts/lib/PrimitiveTypeUtils.sol",
+        "lib/solidity-bytes-utils/contracts/BytesLib.sol"
+      ],
+      "versionRequirement": "^0.8.16",
+      "artifacts": {
+        "GenesisUtils": {
+          "0.8.23+commit.f704f362.Linux.gcc": "GenesisUtils.sol/GenesisUtils.json"
+        }
+      }
+    },
+    "lib/contracts/contracts/lib/IdentityBase.sol": {
+      "lastModificationDate": 1699970452545,
+      "contentHash": "a3645033bf41d730a3e38890350551fb",
+      "sourceName": "lib/contracts/contracts/lib/IdentityBase.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/contracts/contracts/interfaces/IOnchainCredentialStatusResolver.sol",
+        "lib/contracts/contracts/interfaces/IState.sol",
+        "lib/contracts/contracts/lib/ArrayUtils.sol",
+        "lib/contracts/contracts/lib/GenesisUtils.sol",
+        "lib/contracts/contracts/lib/IdentityLib.sol",
+        "lib/contracts/contracts/lib/Poseidon.sol",
+        "lib/contracts/contracts/lib/PrimitiveTypeUtils.sol",
+        "lib/contracts/contracts/lib/SmtLib.sol",
+        "lib/solidity-bytes-utils/contracts/BytesLib.sol"
+      ],
+      "versionRequirement": "^0.8.16",
+      "artifacts": {
+        "IdentityBase": {
+          "0.8.23+commit.f704f362.Linux.gcc": "IdentityBase.sol/IdentityBase.json"
+        }
+      }
+    },
+    "lib/contracts/contracts/lib/IdentityLib.sol": {
+      "lastModificationDate": 1699970452542,
+      "contentHash": "fa9472269d1508091c5bc04382480241",
+      "sourceName": "lib/contracts/contracts/lib/IdentityLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/contracts/contracts/interfaces/IState.sol",
+        "lib/contracts/contracts/lib/ArrayUtils.sol",
+        "lib/contracts/contracts/lib/GenesisUtils.sol",
+        "lib/contracts/contracts/lib/Poseidon.sol",
+        "lib/contracts/contracts/lib/PrimitiveTypeUtils.sol",
+        "lib/contracts/contracts/lib/SmtLib.sol",
+        "lib/solidity-bytes-utils/contracts/BytesLib.sol"
+      ],
+      "versionRequirement": "^0.8.16",
+      "artifacts": {
+        "IdentityLib": {
+          "0.8.23+commit.f704f362.Linux.gcc": "IdentityLib.sol/IdentityLib.json"
+        }
+      }
+    },
+    "lib/contracts/contracts/lib/Poseidon.sol": {
+      "lastModificationDate": 1699970452542,
+      "contentHash": "a84d92f5769f28da78cbdd61b0500481",
+      "sourceName": "lib/contracts/contracts/lib/Poseidon.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.16",
+      "artifacts": {
+        "PoseidonFacade": {
+          "0.8.23+commit.f704f362.Linux.gcc": "Poseidon.sol/PoseidonFacade.json"
+        },
+        "PoseidonUnit1L": {
+          "0.8.23+commit.f704f362.Linux.gcc": "Poseidon.sol/PoseidonUnit1L.json"
+        },
+        "PoseidonUnit2L": {
+          "0.8.23+commit.f704f362.Linux.gcc": "Poseidon.sol/PoseidonUnit2L.json"
+        },
+        "PoseidonUnit3L": {
+          "0.8.23+commit.f704f362.Linux.gcc": "Poseidon.sol/PoseidonUnit3L.json"
+        },
+        "PoseidonUnit4L": {
+          "0.8.23+commit.f704f362.Linux.gcc": "Poseidon.sol/PoseidonUnit4L.json"
+        },
+        "PoseidonUnit5L": {
+          "0.8.23+commit.f704f362.Linux.gcc": "Poseidon.sol/PoseidonUnit5L.json"
+        },
+        "PoseidonUnit6L": {
+          "0.8.23+commit.f704f362.Linux.gcc": "Poseidon.sol/PoseidonUnit6L.json"
+        },
+        "SpongePoseidon": {
+          "0.8.23+commit.f704f362.Linux.gcc": "Poseidon.sol/SpongePoseidon.json"
+        }
+      }
+    },
+    "lib/contracts/contracts/lib/PrimitiveTypeUtils.sol": {
+      "lastModificationDate": 1699970452539,
+      "contentHash": "40727c1a447cb7d78b0590400938000c",
+      "sourceName": "lib/contracts/contracts/lib/PrimitiveTypeUtils.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/solidity-bytes-utils/contracts/BytesLib.sol"
+      ],
+      "versionRequirement": "^0.8.16",
+      "artifacts": {
+        "PrimitiveTypeUtils": {
+          "0.8.23+commit.f704f362.Linux.gcc": "PrimitiveTypeUtils.sol/PrimitiveTypeUtils.json"
+        }
+      }
+    },
+    "lib/contracts/contracts/lib/SmtLib.sol": {
+      "lastModificationDate": 1699970452544,
+      "contentHash": "d3b42e3655754d029f35bba76ace404e",
+      "sourceName": "lib/contracts/contracts/lib/SmtLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/contracts/contracts/lib/ArrayUtils.sol",
+        "lib/contracts/contracts/lib/Poseidon.sol"
+      ],
+      "versionRequirement": "^0.8.16",
+      "artifacts": {
+        "BinarySearchSmtRoots": {
+          "0.8.23+commit.f704f362.Linux.gcc": "SmtLib.sol/BinarySearchSmtRoots.json"
+        },
+        "SmtLib": {
+          "0.8.23+commit.f704f362.Linux.gcc": "SmtLib.sol/SmtLib.json"
         }
       }
     },
@@ -426,7 +922,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -437,11 +935,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -449,7 +948,7 @@
       "versionRequirement": ">=0.5.0",
       "artifacts": {
         "DSTest": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "test.sol/DSTest.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "test.sol/DSTest.json"
         }
       }
     },
@@ -464,7 +963,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -475,11 +976,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -490,13 +992,13 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "CommonBase": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "Base.sol/CommonBase.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "Base.sol/CommonBase.json"
         },
         "ScriptBase": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "Base.sol/ScriptBase.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "Base.sol/ScriptBase.json"
         },
         "TestBase": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "Base.sol/TestBase.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "Base.sol/TestBase.json"
         }
       }
     },
@@ -511,7 +1013,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -522,11 +1026,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -537,7 +1042,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "StdAssertions": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "StdAssertions.sol/StdAssertions.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "StdAssertions.sol/StdAssertions.json"
         }
       }
     },
@@ -552,7 +1057,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -563,11 +1070,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -577,7 +1085,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "StdChains": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "StdChains.sol/StdChains.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "StdChains.sol/StdChains.json"
         }
       }
     },
@@ -592,7 +1100,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -603,11 +1113,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -619,10 +1130,10 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "StdCheats": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "StdCheats.sol/StdCheats.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "StdCheats.sol/StdCheats.json"
         },
         "StdCheatsSafe": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "StdCheats.sol/StdCheatsSafe.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "StdCheats.sol/StdCheatsSafe.json"
         }
       }
     },
@@ -637,7 +1148,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -648,11 +1161,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -660,7 +1174,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "stdError": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "StdError.sol/stdError.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "StdError.sol/stdError.json"
         }
       }
     },
@@ -675,7 +1189,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -686,11 +1202,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -698,7 +1215,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "StdInvariant": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "StdInvariant.sol/StdInvariant.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "StdInvariant.sol/StdInvariant.json"
         }
       }
     },
@@ -713,7 +1230,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -724,11 +1243,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -738,7 +1258,7 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "stdJson": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "StdJson.sol/stdJson.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "StdJson.sol/stdJson.json"
         }
       }
     },
@@ -753,7 +1273,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -764,11 +1286,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -776,7 +1299,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "stdMath": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "StdMath.sol/stdMath.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "StdMath.sol/stdMath.json"
         }
       }
     },
@@ -791,7 +1314,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -802,11 +1327,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -816,10 +1342,10 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "stdStorage": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "StdStorage.sol/stdStorage.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "StdStorage.sol/stdStorage.json"
         },
         "stdStorageSafe": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "StdStorage.sol/stdStorageSafe.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "StdStorage.sol/stdStorageSafe.json"
         }
       }
     },
@@ -834,7 +1360,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -845,11 +1373,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -859,7 +1388,7 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "StdStyle": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "StdStyle.sol/StdStyle.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "StdStyle.sol/StdStyle.json"
         }
       }
     },
@@ -874,7 +1403,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -885,11 +1416,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -900,7 +1432,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "StdUtils": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "StdUtils.sol/StdUtils.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "StdUtils.sol/StdUtils.json"
         }
       }
     },
@@ -915,7 +1447,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -926,11 +1460,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -956,7 +1491,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "Test": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "Test.sol/Test.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "Test.sol/Test.json"
         }
       }
     },
@@ -971,7 +1506,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -982,11 +1519,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -994,10 +1532,10 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "Vm": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "Vm.sol/Vm.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "Vm.sol/Vm.json"
         },
         "VmSafe": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "Vm.sol/VmSafe.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "Vm.sol/VmSafe.json"
         }
       }
     },
@@ -1012,7 +1550,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1023,11 +1563,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1035,7 +1576,7 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "console.sol/console.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "console.sol/console.json"
         }
       }
     },
@@ -1050,7 +1591,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1061,11 +1604,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1073,7 +1617,7 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console2": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "console2.sol/console2.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "console2.sol/console2.json"
         }
       }
     },
@@ -1088,7 +1632,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1099,11 +1645,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1111,7 +1658,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "IMulticall3": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "IMulticall3.sol/IMulticall3.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "IMulticall3.sol/IMulticall3.json"
         }
       }
     },
@@ -1126,7 +1673,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1137,11 +1686,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1149,7 +1699,7 @@
       "versionRequirement": ">=0.6.2, <0.9.0",
       "artifacts": {
         "safeconsole": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "safeconsole.sol/safeconsole.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "safeconsole.sol/safeconsole.json"
         }
       }
     },
@@ -1164,7 +1714,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1175,11 +1727,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1187,7 +1740,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC1271": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "IERC1271.sol/IERC1271.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "IERC1271.sol/IERC1271.json"
         }
       }
     },
@@ -1202,7 +1755,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1213,11 +1768,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1231,7 +1787,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "ERC1967Proxy": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "ERC1967Proxy.sol/ERC1967Proxy.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "ERC1967Proxy.sol/ERC1967Proxy.json"
         }
       }
     },
@@ -1246,7 +1802,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1257,11 +1815,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1273,7 +1832,7 @@
       "versionRequirement": "^0.8.2",
       "artifacts": {
         "ERC1967Upgrade": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "ERC1967Upgrade.sol/ERC1967Upgrade.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "ERC1967Upgrade.sol/ERC1967Upgrade.json"
         }
       }
     },
@@ -1288,7 +1847,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1299,11 +1860,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1311,7 +1873,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "Proxy": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "Proxy.sol/Proxy.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "Proxy.sol/Proxy.json"
         }
       }
     },
@@ -1326,7 +1888,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1337,11 +1901,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1349,7 +1914,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IBeacon": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "IBeacon.sol/IBeacon.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "IBeacon.sol/IBeacon.json"
         }
       }
     },
@@ -1364,7 +1929,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1375,11 +1942,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1392,7 +1960,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "UUPSUpgradeable": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "UUPSUpgradeable.sol/UUPSUpgradeable.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "UUPSUpgradeable.sol/UUPSUpgradeable.json"
         }
       }
     },
@@ -1407,7 +1975,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1418,11 +1988,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1432,7 +2003,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC1155Receiver": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "IERC1155Receiver.sol/IERC1155Receiver.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "IERC1155Receiver.sol/IERC1155Receiver.json"
         }
       }
     },
@@ -1447,7 +2018,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1458,11 +2031,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1470,7 +2044,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC721Receiver": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "IERC721Receiver.sol/IERC721Receiver.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "IERC721Receiver.sol/IERC721Receiver.json"
         }
       }
     },
@@ -1485,7 +2059,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1496,11 +2072,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1508,7 +2085,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC777Recipient": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "IERC777Recipient.sol/IERC777Recipient.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "IERC777Recipient.sol/IERC777Recipient.json"
         }
       }
     },
@@ -1523,7 +2100,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1534,11 +2113,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1546,7 +2126,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "Address": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "Address.sol/Address.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "Address.sol/Address.json"
         }
       }
     },
@@ -1561,7 +2141,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1572,11 +2154,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1584,7 +2167,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "Create2": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "Create2.sol/Create2.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "Create2.sol/Create2.json"
         }
       }
     },
@@ -1599,7 +2182,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1610,11 +2195,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1622,7 +2208,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "StorageSlot": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "StorageSlot.sol/StorageSlot.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "StorageSlot.sol/StorageSlot.json"
         }
       }
     },
@@ -1637,7 +2223,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1648,11 +2236,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1660,7 +2249,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "ECDSA": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "ECDSA.sol/ECDSA.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "ECDSA.sol/ECDSA.json"
         }
       }
     },
@@ -1675,7 +2264,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1686,11 +2277,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1701,7 +2293,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "SignatureChecker": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "SignatureChecker.sol/SignatureChecker.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "SignatureChecker.sol/SignatureChecker.json"
         }
       }
     },
@@ -1716,7 +2308,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1727,11 +2321,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1739,14 +2334,14 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IERC165": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "IERC165.sol/IERC165.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "IERC165.sol/IERC165.json"
         }
       }
     },
-    "src/Contract.sol": {
-      "lastModificationDate": 1699763057186,
-      "contentHash": "0a4db02f64172ef6ba21d89f49444a92",
-      "sourceName": "src/Contract.sol",
+    "lib/openzeppelin-contracts-upgradeable/contracts/access/OwnableUpgradeable.sol": {
+      "lastModificationDate": 1699967935204,
+      "contentHash": "77d30f3cd93f46b80b6f8f1ebc574ee4",
+      "sourceName": "lib/openzeppelin-contracts-upgradeable/contracts/access/OwnableUpgradeable.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -1754,7 +2349,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1765,26 +2362,71 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol",
+        "lib/openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol"
+      ],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "OwnableUpgradeable": {
+          "0.8.23+commit.f704f362.Linux.gcc": "OwnableUpgradeable.sol/OwnableUpgradeable.json"
+        }
+      }
+    },
+    "lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol": {
+      "lastModificationDate": 1699967935760,
+      "contentHash": "f0cedd674b4863ee90d1521a92ab82df",
+      "sourceName": "lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
       "imports": [],
-      "versionRequirement": "^0.8.13",
+      "versionRequirement": "^0.8.20",
       "artifacts": {
-        "Contract": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "Contract.sol/Contract.json"
+        "Initializable": {
+          "0.8.23+commit.f704f362.Linux.gcc": "Initializable.sol/Initializable.json"
         }
       }
     },
-    "src/CustomSlotInitializable.sol": {
-      "lastModificationDate": 1699795777953,
-      "contentHash": "45786b45ef1c128c42634bfbe9d49cce",
-      "sourceName": "src/CustomSlotInitializable.sol",
+    "lib/openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol": {
+      "lastModificationDate": 1699967936010,
+      "contentHash": "0c3c7a637fd6a91b3f5eb94fb6e9fc1f",
+      "sourceName": "lib/openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -1792,7 +2434,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1803,26 +2447,70 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol"
+      ],
+      "versionRequirement": "^0.8.20",
+      "artifacts": {
+        "ContextUpgradeable": {
+          "0.8.23+commit.f704f362.Linux.gcc": "ContextUpgradeable.sol/ContextUpgradeable.json"
+        }
+      }
+    },
+    "lib/solidity-bytes-utils/contracts/BytesLib.sol": {
+      "lastModificationDate": 1699968635539,
+      "contentHash": "9c6b01be648f655631038d79648a7c05",
+      "sourceName": "lib/solidity-bytes-utils/contracts/BytesLib.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
       "imports": [],
-      "versionRequirement": "^0.8.12",
+      "versionRequirement": ">=0.8.0, <0.9.0",
       "artifacts": {
-        "CustomSlotInitializable": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "CustomSlotInitializable.sol/CustomSlotInitializable.json"
+        "BytesLib": {
+          "0.8.23+commit.f704f362.Linux.gcc": "BytesLib.sol/BytesLib.json"
         }
       }
     },
-    "src/LightAccount.sol": {
-      "lastModificationDate": 1699795783318,
-      "contentHash": "838160c6308671244818009b2acacf73",
-      "sourceName": "src/LightAccount.sol",
+    "src/BlockSipAccount.sol": {
+      "lastModificationDate": 1699970359275,
+      "contentHash": "2836992025f1cd5b7025471fee900da3",
+      "sourceName": "src/BlockSipAccount.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -1830,7 +2518,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1841,11 +2531,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1874,17 +2565,17 @@
         "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
         "src/CustomSlotInitializable.sol"
       ],
-      "versionRequirement": "^0.8.12",
+      "versionRequirement": "^0.8.23",
       "artifacts": {
-        "LightAccount": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "LightAccount.sol/LightAccount.json"
+        "BlockSipAccount": {
+          "0.8.23+commit.f704f362.Linux.gcc": "BlockSipAccount.sol/BlockSipAccount.json"
         }
       }
     },
-    "src/LightAccountFactory.sol": {
-      "lastModificationDate": 1699795787908,
-      "contentHash": "e5a256918a88aa7fd0788c14a200c2c8",
-      "sourceName": "src/LightAccountFactory.sol",
+    "src/CustomSlotInitializable.sol": {
+      "lastModificationDate": 1699970362723,
+      "contentHash": "56b021963b483342f63edeba90a7c954",
+      "sourceName": "src/CustomSlotInitializable.sol",
       "solcConfig": {
         "settings": {
           "optimizer": {
@@ -1892,7 +2583,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1903,11 +2596,174 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.23",
+      "artifacts": {
+        "CustomSlotInitializable": {
+          "0.8.23+commit.f704f362.Linux.gcc": "CustomSlotInitializable.sol/CustomSlotInitializable.json"
+        }
+      }
+    },
+    "src/IdentityExample.sol": {
+      "lastModificationDate": 1699970626730,
+      "contentHash": "29fc6a0389b0206c1d0e1e7607f4fa63",
+      "sourceName": "src/IdentityExample.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/contracts/contracts/interfaces/IOnchainCredentialStatusResolver.sol",
+        "lib/contracts/contracts/interfaces/IState.sol",
+        "lib/contracts/contracts/lib/ArrayUtils.sol",
+        "lib/contracts/contracts/lib/ClaimBuilder.sol",
+        "lib/contracts/contracts/lib/GenesisUtils.sol",
+        "lib/contracts/contracts/lib/IdentityBase.sol",
+        "lib/contracts/contracts/lib/IdentityLib.sol",
+        "lib/contracts/contracts/lib/Poseidon.sol",
+        "lib/contracts/contracts/lib/PrimitiveTypeUtils.sol",
+        "lib/contracts/contracts/lib/SmtLib.sol",
+        "lib/openzeppelin-contracts-upgradeable/contracts/access/OwnableUpgradeable.sol",
+        "lib/openzeppelin-contracts-upgradeable/contracts/proxy/utils/Initializable.sol",
+        "lib/openzeppelin-contracts-upgradeable/contracts/utils/ContextUpgradeable.sol",
+        "lib/solidity-bytes-utils/contracts/BytesLib.sol"
+      ],
+      "versionRequirement": "^0.8.23",
+      "artifacts": {
+        "IdentityExample": {
+          "0.8.23+commit.f704f362.Linux.gcc": "IdentityExample.sol/IdentityExample.json"
+        }
+      }
+    },
+    "src/LightAccount.sol": {
+      "lastModificationDate": 1699970370778,
+      "contentHash": "1a8432262e8eb2ea4d15708bc09fb4c3",
+      "sourceName": "src/LightAccount.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/account-abstraction/contracts/core/BaseAccount.sol",
+        "lib/account-abstraction/contracts/core/Helpers.sol",
+        "lib/account-abstraction/contracts/core/UserOperationLib.sol",
+        "lib/account-abstraction/contracts/interfaces/IAccount.sol",
+        "lib/account-abstraction/contracts/interfaces/IAggregator.sol",
+        "lib/account-abstraction/contracts/interfaces/IEntryPoint.sol",
+        "lib/account-abstraction/contracts/interfaces/INonceManager.sol",
+        "lib/account-abstraction/contracts/interfaces/IStakeManager.sol",
+        "lib/account-abstraction/contracts/interfaces/UserOperation.sol",
+        "lib/account-abstraction/contracts/samples/callback/TokenCallbackHandler.sol",
+        "lib/openzeppelin-contracts/contracts/interfaces/IERC1271.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/ERC1967/ERC1967Upgrade.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/beacon/IBeacon.sol",
+        "lib/openzeppelin-contracts/contracts/proxy/utils/UUPSUpgradeable.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC1155/IERC1155Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC721/IERC721Receiver.sol",
+        "lib/openzeppelin-contracts/contracts/token/ERC777/IERC777Recipient.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Address.sol",
+        "lib/openzeppelin-contracts/contracts/utils/StorageSlot.sol",
+        "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+        "lib/openzeppelin-contracts/contracts/utils/cryptography/SignatureChecker.sol",
+        "lib/openzeppelin-contracts/contracts/utils/introspection/IERC165.sol",
+        "src/CustomSlotInitializable.sol"
+      ],
+      "versionRequirement": "^0.8.23",
+      "artifacts": {
+        "LightAccount": {
+          "0.8.23+commit.f704f362.Linux.gcc": "LightAccount.sol/LightAccount.json"
+        }
+      }
+    },
+    "src/LightAccountFactory.sol": {
+      "lastModificationDate": 1699970374259,
+      "contentHash": "949388c6b894ad5787ccf705b401daae",
+      "sourceName": "src/LightAccountFactory.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1940,16 +2796,16 @@
         "src/CustomSlotInitializable.sol",
         "src/LightAccount.sol"
       ],
-      "versionRequirement": "^0.8.12",
+      "versionRequirement": "^0.8.23",
       "artifacts": {
         "LightAccountFactory": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "LightAccountFactory.sol/LightAccountFactory.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "LightAccountFactory.sol/LightAccountFactory.json"
         }
       }
     },
     "test/Contract.t.sol": {
-      "lastModificationDate": 1699763057194,
-      "contentHash": "848ba83feec29a2e4d286c118102ae20",
+      "lastModificationDate": 1699969422321,
+      "contentHash": "43ae4022f54e3952c4c9e251ff8f6c2a",
       "sourceName": "test/Contract.t.sol",
       "solcConfig": {
         "settings": {
@@ -1958,7 +2814,9 @@
             "runs": 200
           },
           "metadata": {
-            "bytecodeHash": "ipfs"
+            "useLiteralContent": false,
+            "bytecodeHash": "ipfs",
+            "appendCBOR": true
           },
           "outputSelection": {
             "*": {
@@ -1969,11 +2827,12 @@
                 "abi",
                 "evm.bytecode",
                 "evm.deployedBytecode",
-                "evm.methodIdentifiers"
+                "evm.methodIdentifiers",
+                "metadata"
               ]
             }
           },
-          "evmVersion": "london",
+          "evmVersion": "paris",
           "libraries": {}
         }
       },
@@ -1997,10 +2856,10 @@
         "lib/forge-std/src/interfaces/IMulticall3.sol",
         "lib/forge-std/src/safeconsole.sol"
       ],
-      "versionRequirement": "^0.8.13",
+      "versionRequirement": "^0.8.20",
       "artifacts": {
         "ContractTest": {
-          "0.8.14+commit.80d49f37.Linux.gcc": "Contract.t.sol/ContractTest.json"
+          "0.8.23+commit.f704f362.Linux.gcc": "Contract.t.sol/ContractTest.json"
         }
       }
     }

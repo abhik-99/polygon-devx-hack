@@ -175,21 +175,233 @@
     "targetSelectors()": "916a17c6",
     "targetSenders()": "3e5e3c23"
   },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.23+commit.f704f362\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"excludeArtifacts\",\"outputs\":[{\"internalType\":\"string[]\",\"name\":\"excludedArtifacts_\",\"type\":\"string[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"excludeContracts\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"excludedContracts_\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"excludeSenders\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"excludedSenders_\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"targetArtifactSelectors\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"internalType\":\"bytes4[]\",\"name\":\"selectors\",\"type\":\"bytes4[]\"}],\"internalType\":\"struct StdInvariant.FuzzSelector[]\",\"name\":\"targetedArtifactSelectors_\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"targetArtifacts\",\"outputs\":[{\"internalType\":\"string[]\",\"name\":\"targetedArtifacts_\",\"type\":\"string[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"targetContracts\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"targetedContracts_\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"targetInterfaces\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"internalType\":\"string[]\",\"name\":\"artifacts\",\"type\":\"string[]\"}],\"internalType\":\"struct StdInvariant.FuzzInterface[]\",\"name\":\"targetedInterfaces_\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"targetSelectors\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"internalType\":\"bytes4[]\",\"name\":\"selectors\",\"type\":\"bytes4[]\"}],\"internalType\":\"struct StdInvariant.FuzzSelector[]\",\"name\":\"targetedSelectors_\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"targetSenders\",\"outputs\":[{\"internalType\":\"address[]\",\"name\":\"targetedSenders_\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/forge-std/src/StdInvariant.sol\":\"StdInvariant\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":account-abstraction/=lib/account-abstraction/contracts/\",\":chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/contracts/src/v0.6/vendor/@arbitrum/nitro-contracts/src/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":iden3/=lib/contracts/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":solidity-bytes-utils/=lib/solidity-bytes-utils/\"]},\"sources\":{\"lib/forge-std/src/StdInvariant.sol\":{\"keccak256\":\"0x67299bfacd77fddfa2a67b8e2b901e0e333618a4975fb94850b07475e51f6de6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1b61121d310f4053ce344b345b4a9ccf43b059daf9097ec2647f594beaca896d\",\"dweb:/ipfs/QmZUCoTtXBM9zfAZVbj2dFPPnKaV1CSZzXE7zictyg3Gfz\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.23+commit.f704f362"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "excludeArtifacts",
+          "outputs": [
+            {
+              "internalType": "string[]",
+              "name": "excludedArtifacts_",
+              "type": "string[]"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "excludeContracts",
+          "outputs": [
+            {
+              "internalType": "address[]",
+              "name": "excludedContracts_",
+              "type": "address[]"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "excludeSenders",
+          "outputs": [
+            {
+              "internalType": "address[]",
+              "name": "excludedSenders_",
+              "type": "address[]"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "targetArtifactSelectors",
+          "outputs": [
+            {
+              "internalType": "struct StdInvariant.FuzzSelector[]",
+              "name": "targetedArtifactSelectors_",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "addr",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes4[]",
+                  "name": "selectors",
+                  "type": "bytes4[]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "targetArtifacts",
+          "outputs": [
+            {
+              "internalType": "string[]",
+              "name": "targetedArtifacts_",
+              "type": "string[]"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "targetContracts",
+          "outputs": [
+            {
+              "internalType": "address[]",
+              "name": "targetedContracts_",
+              "type": "address[]"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "targetInterfaces",
+          "outputs": [
+            {
+              "internalType": "struct StdInvariant.FuzzInterface[]",
+              "name": "targetedInterfaces_",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "addr",
+                  "type": "address"
+                },
+                {
+                  "internalType": "string[]",
+                  "name": "artifacts",
+                  "type": "string[]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "targetSelectors",
+          "outputs": [
+            {
+              "internalType": "struct StdInvariant.FuzzSelector[]",
+              "name": "targetedSelectors_",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "addr",
+                  "type": "address"
+                },
+                {
+                  "internalType": "bytes4[]",
+                  "name": "selectors",
+                  "type": "bytes4[]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "targetSenders",
+          "outputs": [
+            {
+              "internalType": "address[]",
+              "name": "targetedSenders_",
+              "type": "address[]"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "account-abstraction/=lib/account-abstraction/contracts/",
+        "chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/contracts/src/v0.6/vendor/@arbitrum/nitro-contracts/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "iden3/=lib/contracts/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "solidity-bytes-utils/=lib/solidity-bytes-utils/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/forge-std/src/StdInvariant.sol": "StdInvariant"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/forge-std/src/StdInvariant.sol": {
+        "keccak256": "0x67299bfacd77fddfa2a67b8e2b901e0e333618a4975fb94850b07475e51f6de6",
+        "urls": [
+          "bzz-raw://1b61121d310f4053ce344b345b4a9ccf43b059daf9097ec2647f594beaca896d",
+          "dweb:/ipfs/QmZUCoTtXBM9zfAZVbj2dFPPnKaV1CSZzXE7zictyg3Gfz"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
   "ast": {
     "absolutePath": "lib/forge-std/src/StdInvariant.sol",
-    "id": 8750,
+    "id": 13131,
     "exportedSymbols": {
       "StdInvariant": [
-        8749
+        13130
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:3482:16",
+    "src": "32:3482:26",
     "nodes": [
       {
-        "id": 8492,
+        "id": 12873,
         "nodeType": "PragmaDirective",
-        "src": "32:31:16",
+        "src": "32:31:26",
+        "nodes": [],
         "literals": [
           "solidity",
           ">=",
@@ -201,34 +413,36 @@
         ]
       },
       {
-        "id": 8493,
+        "id": 12874,
         "nodeType": "PragmaDirective",
-        "src": "65:33:16",
+        "src": "65:33:26",
+        "nodes": [],
         "literals": [
           "experimental",
           "ABIEncoderV2"
         ]
       },
       {
-        "id": 8749,
+        "id": 13130,
         "nodeType": "ContractDefinition",
-        "src": "100:3413:16",
+        "src": "100:3413:26",
         "nodes": [
           {
-            "id": 8499,
+            "id": 12880,
             "nodeType": "StructDefinition",
-            "src": "137:77:16",
+            "src": "137:77:26",
+            "nodes": [],
             "canonicalName": "StdInvariant.FuzzSelector",
             "members": [
               {
                 "constant": false,
-                "id": 8495,
+                "id": 12876,
                 "mutability": "mutable",
                 "name": "addr",
-                "nameLocation": "175:4:16",
+                "nameLocation": "175:4:26",
                 "nodeType": "VariableDeclaration",
-                "scope": 8499,
-                "src": "167:12:16",
+                "scope": 12880,
+                "src": "167:12:26",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -236,10 +450,10 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 8494,
+                  "id": 12875,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "167:7:16",
+                  "src": "167:7:26",
                   "stateMutability": "nonpayable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address",
@@ -250,13 +464,13 @@
               },
               {
                 "constant": false,
-                "id": 8498,
+                "id": 12879,
                 "mutability": "mutable",
                 "name": "selectors",
-                "nameLocation": "198:9:16",
+                "nameLocation": "198:9:26",
                 "nodeType": "VariableDeclaration",
-                "scope": 8499,
-                "src": "189:18:16",
+                "scope": 12880,
+                "src": "189:18:26",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -265,18 +479,18 @@
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 8496,
+                    "id": 12877,
                     "name": "bytes4",
                     "nodeType": "ElementaryTypeName",
-                    "src": "189:6:16",
+                    "src": "189:6:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes4",
                       "typeString": "bytes4"
                     }
                   },
-                  "id": 8497,
+                  "id": 12878,
                   "nodeType": "ArrayTypeName",
-                  "src": "189:8:16",
+                  "src": "189:8:26",
                   "typeDescriptions": {
                     "typeIdentifier": "t_array$_t_bytes4_$dyn_storage_ptr",
                     "typeString": "bytes4[]"
@@ -286,25 +500,26 @@
               }
             ],
             "name": "FuzzSelector",
-            "nameLocation": "144:12:16",
-            "scope": 8749,
+            "nameLocation": "144:12:26",
+            "scope": 13130,
             "visibility": "public"
           },
           {
-            "id": 8505,
+            "id": 12886,
             "nodeType": "StructDefinition",
-            "src": "220:78:16",
+            "src": "220:78:26",
+            "nodes": [],
             "canonicalName": "StdInvariant.FuzzInterface",
             "members": [
               {
                 "constant": false,
-                "id": 8501,
+                "id": 12882,
                 "mutability": "mutable",
                 "name": "addr",
-                "nameLocation": "259:4:16",
+                "nameLocation": "259:4:26",
                 "nodeType": "VariableDeclaration",
-                "scope": 8505,
-                "src": "251:12:16",
+                "scope": 12886,
+                "src": "251:12:26",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -312,10 +527,10 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 8500,
+                  "id": 12881,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "251:7:16",
+                  "src": "251:7:26",
                   "stateMutability": "nonpayable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address",
@@ -326,13 +541,13 @@
               },
               {
                 "constant": false,
-                "id": 8504,
+                "id": 12885,
                 "mutability": "mutable",
                 "name": "artifacts",
-                "nameLocation": "282:9:16",
+                "nameLocation": "282:9:26",
                 "nodeType": "VariableDeclaration",
-                "scope": 8505,
-                "src": "273:18:16",
+                "scope": 12886,
+                "src": "273:18:26",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -341,18 +556,18 @@
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 8502,
+                    "id": 12883,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "273:6:16",
+                    "src": "273:6:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
                     }
                   },
-                  "id": 8503,
+                  "id": 12884,
                   "nodeType": "ArrayTypeName",
-                  "src": "273:8:16",
+                  "src": "273:8:26",
                   "typeDescriptions": {
                     "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
                     "typeString": "string[]"
@@ -362,19 +577,20 @@
               }
             ],
             "name": "FuzzInterface",
-            "nameLocation": "227:13:16",
-            "scope": 8749,
+            "nameLocation": "227:13:26",
+            "scope": 13130,
             "visibility": "public"
           },
           {
-            "id": 8508,
+            "id": 12889,
             "nodeType": "VariableDeclaration",
-            "src": "304:36:16",
+            "src": "304:36:26",
+            "nodes": [],
             "constant": false,
             "mutability": "mutable",
             "name": "_excludedContracts",
-            "nameLocation": "322:18:16",
-            "scope": 8749,
+            "nameLocation": "322:18:26",
+            "scope": 13130,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -383,19 +599,19 @@
             },
             "typeName": {
               "baseType": {
-                "id": 8506,
+                "id": 12887,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "304:7:16",
+                "src": "304:7:26",
                 "stateMutability": "nonpayable",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
-              "id": 8507,
+              "id": 12888,
               "nodeType": "ArrayTypeName",
-              "src": "304:9:16",
+              "src": "304:9:26",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                 "typeString": "address[]"
@@ -404,14 +620,15 @@
             "visibility": "private"
           },
           {
-            "id": 8511,
+            "id": 12892,
             "nodeType": "VariableDeclaration",
-            "src": "346:34:16",
+            "src": "346:34:26",
+            "nodes": [],
             "constant": false,
             "mutability": "mutable",
             "name": "_excludedSenders",
-            "nameLocation": "364:16:16",
-            "scope": 8749,
+            "nameLocation": "364:16:26",
+            "scope": 13130,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -420,19 +637,19 @@
             },
             "typeName": {
               "baseType": {
-                "id": 8509,
+                "id": 12890,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "346:7:16",
+                "src": "346:7:26",
                 "stateMutability": "nonpayable",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
-              "id": 8510,
+              "id": 12891,
               "nodeType": "ArrayTypeName",
-              "src": "346:9:16",
+              "src": "346:9:26",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                 "typeString": "address[]"
@@ -441,14 +658,15 @@
             "visibility": "private"
           },
           {
-            "id": 8514,
+            "id": 12895,
             "nodeType": "VariableDeclaration",
-            "src": "386:36:16",
+            "src": "386:36:26",
+            "nodes": [],
             "constant": false,
             "mutability": "mutable",
             "name": "_targetedContracts",
-            "nameLocation": "404:18:16",
-            "scope": 8749,
+            "nameLocation": "404:18:26",
+            "scope": 13130,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -457,19 +675,19 @@
             },
             "typeName": {
               "baseType": {
-                "id": 8512,
+                "id": 12893,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "386:7:16",
+                "src": "386:7:26",
                 "stateMutability": "nonpayable",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
-              "id": 8513,
+              "id": 12894,
               "nodeType": "ArrayTypeName",
-              "src": "386:9:16",
+              "src": "386:9:26",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                 "typeString": "address[]"
@@ -478,14 +696,15 @@
             "visibility": "private"
           },
           {
-            "id": 8517,
+            "id": 12898,
             "nodeType": "VariableDeclaration",
-            "src": "428:34:16",
+            "src": "428:34:26",
+            "nodes": [],
             "constant": false,
             "mutability": "mutable",
             "name": "_targetedSenders",
-            "nameLocation": "446:16:16",
-            "scope": 8749,
+            "nameLocation": "446:16:26",
+            "scope": 13130,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -494,19 +713,19 @@
             },
             "typeName": {
               "baseType": {
-                "id": 8515,
+                "id": 12896,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
-                "src": "428:7:16",
+                "src": "428:7:26",
                 "stateMutability": "nonpayable",
                 "typeDescriptions": {
                   "typeIdentifier": "t_address",
                   "typeString": "address"
                 }
               },
-              "id": 8516,
+              "id": 12897,
               "nodeType": "ArrayTypeName",
-              "src": "428:9:16",
+              "src": "428:9:26",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                 "typeString": "address[]"
@@ -515,14 +734,15 @@
             "visibility": "private"
           },
           {
-            "id": 8520,
+            "id": 12901,
             "nodeType": "VariableDeclaration",
-            "src": "469:35:16",
+            "src": "469:35:26",
+            "nodes": [],
             "constant": false,
             "mutability": "mutable",
             "name": "_excludedArtifacts",
-            "nameLocation": "486:18:16",
-            "scope": 8749,
+            "nameLocation": "486:18:26",
+            "scope": 13130,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -531,18 +751,18 @@
             },
             "typeName": {
               "baseType": {
-                "id": 8518,
+                "id": 12899,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
-                "src": "469:6:16",
+                "src": "469:6:26",
                 "typeDescriptions": {
                   "typeIdentifier": "t_string_storage_ptr",
                   "typeString": "string"
                 }
               },
-              "id": 8519,
+              "id": 12900,
               "nodeType": "ArrayTypeName",
-              "src": "469:8:16",
+              "src": "469:8:26",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
                 "typeString": "string[]"
@@ -551,14 +771,15 @@
             "visibility": "private"
           },
           {
-            "id": 8523,
+            "id": 12904,
             "nodeType": "VariableDeclaration",
-            "src": "510:35:16",
+            "src": "510:35:26",
+            "nodes": [],
             "constant": false,
             "mutability": "mutable",
             "name": "_targetedArtifacts",
-            "nameLocation": "527:18:16",
-            "scope": 8749,
+            "nameLocation": "527:18:26",
+            "scope": 13130,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -567,18 +788,18 @@
             },
             "typeName": {
               "baseType": {
-                "id": 8521,
+                "id": 12902,
                 "name": "string",
                 "nodeType": "ElementaryTypeName",
-                "src": "510:6:16",
+                "src": "510:6:26",
                 "typeDescriptions": {
                   "typeIdentifier": "t_string_storage_ptr",
                   "typeString": "string"
                 }
               },
-              "id": 8522,
+              "id": 12903,
               "nodeType": "ArrayTypeName",
-              "src": "510:8:16",
+              "src": "510:8:26",
               "typeDescriptions": {
                 "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
                 "typeString": "string[]"
@@ -587,153 +808,167 @@
             "visibility": "private"
           },
           {
-            "id": 8527,
+            "id": 12908,
             "nodeType": "VariableDeclaration",
-            "src": "552:49:16",
+            "src": "552:49:26",
+            "nodes": [],
             "constant": false,
             "mutability": "mutable",
             "name": "_targetedArtifactSelectors",
-            "nameLocation": "575:26:16",
-            "scope": 8749,
+            "nameLocation": "575:26:26",
+            "scope": 13130,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_storage_$dyn_storage",
               "typeString": "struct StdInvariant.FuzzSelector[]"
             },
             "typeName": {
               "baseType": {
-                "id": 8525,
+                "id": 12906,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 8524,
+                  "id": 12905,
                   "name": "FuzzSelector",
+                  "nameLocations": [
+                    "552:12:26"
+                  ],
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 8499,
-                  "src": "552:12:16"
+                  "referencedDeclaration": 12880,
+                  "src": "552:12:26"
                 },
-                "referencedDeclaration": 8499,
-                "src": "552:12:16",
+                "referencedDeclaration": 12880,
+                "src": "552:12:26",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_FuzzSelector_$8499_storage_ptr",
+                  "typeIdentifier": "t_struct$_FuzzSelector_$12880_storage_ptr",
                   "typeString": "struct StdInvariant.FuzzSelector"
                 }
               },
-              "id": 8526,
+              "id": 12907,
               "nodeType": "ArrayTypeName",
-              "src": "552:14:16",
+              "src": "552:14:26",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_storage_$dyn_storage_ptr",
                 "typeString": "struct StdInvariant.FuzzSelector[]"
               }
             },
             "visibility": "private"
           },
           {
-            "id": 8531,
+            "id": 12912,
             "nodeType": "VariableDeclaration",
-            "src": "607:41:16",
+            "src": "607:41:26",
+            "nodes": [],
             "constant": false,
             "mutability": "mutable",
             "name": "_targetedSelectors",
-            "nameLocation": "630:18:16",
-            "scope": 8749,
+            "nameLocation": "630:18:26",
+            "scope": 13130,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_storage_$dyn_storage",
               "typeString": "struct StdInvariant.FuzzSelector[]"
             },
             "typeName": {
               "baseType": {
-                "id": 8529,
+                "id": 12910,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 8528,
+                  "id": 12909,
                   "name": "FuzzSelector",
+                  "nameLocations": [
+                    "607:12:26"
+                  ],
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 8499,
-                  "src": "607:12:16"
+                  "referencedDeclaration": 12880,
+                  "src": "607:12:26"
                 },
-                "referencedDeclaration": 8499,
-                "src": "607:12:16",
+                "referencedDeclaration": 12880,
+                "src": "607:12:26",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_FuzzSelector_$8499_storage_ptr",
+                  "typeIdentifier": "t_struct$_FuzzSelector_$12880_storage_ptr",
                   "typeString": "struct StdInvariant.FuzzSelector"
                 }
               },
-              "id": 8530,
+              "id": 12911,
               "nodeType": "ArrayTypeName",
-              "src": "607:14:16",
+              "src": "607:14:26",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_storage_$dyn_storage_ptr",
                 "typeString": "struct StdInvariant.FuzzSelector[]"
               }
             },
             "visibility": "private"
           },
           {
-            "id": 8535,
+            "id": 12916,
             "nodeType": "VariableDeclaration",
-            "src": "655:43:16",
+            "src": "655:43:26",
+            "nodes": [],
             "constant": false,
             "mutability": "mutable",
             "name": "_targetedInterfaces",
-            "nameLocation": "679:19:16",
-            "scope": 8749,
+            "nameLocation": "679:19:26",
+            "scope": 13130,
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$8505_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$12886_storage_$dyn_storage",
               "typeString": "struct StdInvariant.FuzzInterface[]"
             },
             "typeName": {
               "baseType": {
-                "id": 8533,
+                "id": 12914,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 8532,
+                  "id": 12913,
                   "name": "FuzzInterface",
+                  "nameLocations": [
+                    "655:13:26"
+                  ],
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 8505,
-                  "src": "655:13:16"
+                  "referencedDeclaration": 12886,
+                  "src": "655:13:26"
                 },
-                "referencedDeclaration": 8505,
-                "src": "655:13:16",
+                "referencedDeclaration": 12886,
+                "src": "655:13:26",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_FuzzInterface_$8505_storage_ptr",
+                  "typeIdentifier": "t_struct$_FuzzInterface_$12886_storage_ptr",
                   "typeString": "struct StdInvariant.FuzzInterface"
                 }
               },
-              "id": 8534,
+              "id": 12915,
               "nodeType": "ArrayTypeName",
-              "src": "655:15:16",
+              "src": "655:15:26",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$8505_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$12886_storage_$dyn_storage_ptr",
                 "typeString": "struct StdInvariant.FuzzInterface[]"
               }
             },
             "visibility": "private"
           },
           {
-            "id": 8547,
+            "id": 12928,
             "nodeType": "FunctionDefinition",
-            "src": "783:126:16",
+            "src": "783:126:26",
+            "nodes": [],
             "body": {
-              "id": 8546,
+              "id": 12927,
               "nodeType": "Block",
-              "src": "847:62:16",
+              "src": "847:62:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 8543,
+                        "id": 12924,
                         "name": "newExcludedContract_",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8537,
-                        "src": "881:20:16",
+                        "referencedDeclaration": 12918,
+                        "src": "881:20:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -748,48 +983,50 @@
                         }
                       ],
                       "expression": {
-                        "id": 8540,
+                        "id": 12921,
                         "name": "_excludedContracts",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8508,
-                        "src": "857:18:16",
+                        "referencedDeclaration": 12889,
+                        "src": "857:18:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_storage",
                           "typeString": "address[] storage ref"
                         }
                       },
-                      "id": 8542,
+                      "id": 12923,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
+                      "memberLocation": "876:4:26",
                       "memberName": "push",
                       "nodeType": "MemberAccess",
-                      "src": "857:23:16",
+                      "src": "857:23:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$bound_to$_t_array$_t_address_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$attached_to$_t_array$_t_address_$dyn_storage_ptr_$",
                         "typeString": "function (address[] storage pointer,address)"
                       }
                     },
-                    "id": 8544,
+                    "id": 12925,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
+                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "857:45:16",
+                    "src": "857:45:26",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8545,
+                  "id": 12926,
                   "nodeType": "ExpressionStatement",
-                  "src": "857:45:16"
+                  "src": "857:45:26"
                 }
               ]
             },
@@ -797,20 +1034,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "excludeContract",
-            "nameLocation": "792:15:16",
+            "nameLocation": "792:15:26",
             "parameters": {
-              "id": 8538,
+              "id": 12919,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8537,
+                  "id": 12918,
                   "mutability": "mutable",
                   "name": "newExcludedContract_",
-                  "nameLocation": "816:20:16",
+                  "nameLocation": "816:20:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8547,
-                  "src": "808:28:16",
+                  "scope": 12928,
+                  "src": "808:28:26",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -818,10 +1055,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 8536,
+                    "id": 12917,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "808:7:16",
+                    "src": "808:7:26",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -831,38 +1068,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "807:30:16"
+              "src": "807:30:26"
             },
             "returnParameters": {
-              "id": 8539,
+              "id": 12920,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "847:0:16"
+              "src": "847:0:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 8559,
+            "id": 12940,
             "nodeType": "FunctionDefinition",
-            "src": "915:118:16",
+            "src": "915:118:26",
+            "nodes": [],
             "body": {
-              "id": 8558,
+              "id": 12939,
               "nodeType": "Block",
-              "src": "975:58:16",
+              "src": "975:58:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 8555,
+                        "id": 12936,
                         "name": "newExcludedSender_",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8549,
-                        "src": "1007:18:16",
+                        "referencedDeclaration": 12930,
+                        "src": "1007:18:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -877,48 +1116,50 @@
                         }
                       ],
                       "expression": {
-                        "id": 8552,
+                        "id": 12933,
                         "name": "_excludedSenders",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8511,
-                        "src": "985:16:16",
+                        "referencedDeclaration": 12892,
+                        "src": "985:16:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_storage",
                           "typeString": "address[] storage ref"
                         }
                       },
-                      "id": 8554,
+                      "id": 12935,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
+                      "memberLocation": "1002:4:26",
                       "memberName": "push",
                       "nodeType": "MemberAccess",
-                      "src": "985:21:16",
+                      "src": "985:21:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$bound_to$_t_array$_t_address_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$attached_to$_t_array$_t_address_$dyn_storage_ptr_$",
                         "typeString": "function (address[] storage pointer,address)"
                       }
                     },
-                    "id": 8556,
+                    "id": 12937,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
+                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "985:41:16",
+                    "src": "985:41:26",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8557,
+                  "id": 12938,
                   "nodeType": "ExpressionStatement",
-                  "src": "985:41:16"
+                  "src": "985:41:26"
                 }
               ]
             },
@@ -926,20 +1167,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "excludeSender",
-            "nameLocation": "924:13:16",
+            "nameLocation": "924:13:26",
             "parameters": {
-              "id": 8550,
+              "id": 12931,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8549,
+                  "id": 12930,
                   "mutability": "mutable",
                   "name": "newExcludedSender_",
-                  "nameLocation": "946:18:16",
+                  "nameLocation": "946:18:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8559,
-                  "src": "938:26:16",
+                  "scope": 12940,
+                  "src": "938:26:26",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -947,10 +1188,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 8548,
+                    "id": 12929,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "938:7:16",
+                    "src": "938:7:26",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -960,38 +1201,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "937:28:16"
+              "src": "937:28:26"
             },
             "returnParameters": {
-              "id": 8551,
+              "id": 12932,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "975:0:16"
+              "src": "975:0:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 8571,
+            "id": 12952,
             "nodeType": "FunctionDefinition",
-            "src": "1039:132:16",
+            "src": "1039:132:26",
+            "nodes": [],
             "body": {
-              "id": 8570,
+              "id": 12951,
               "nodeType": "Block",
-              "src": "1109:62:16",
+              "src": "1109:62:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 8567,
+                        "id": 12948,
                         "name": "newExcludedArtifact_",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8561,
-                        "src": "1143:20:16",
+                        "referencedDeclaration": 12942,
+                        "src": "1143:20:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
                           "typeString": "string memory"
@@ -1006,48 +1249,50 @@
                         }
                       ],
                       "expression": {
-                        "id": 8564,
+                        "id": 12945,
                         "name": "_excludedArtifacts",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8520,
-                        "src": "1119:18:16",
+                        "referencedDeclaration": 12901,
+                        "src": "1119:18:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                           "typeString": "string storage ref[] storage ref"
                         }
                       },
-                      "id": 8566,
+                      "id": 12947,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
+                      "memberLocation": "1138:4:26",
                       "memberName": "push",
                       "nodeType": "MemberAccess",
-                      "src": "1119:23:16",
+                      "src": "1119:23:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_string_storage_$dyn_storage_ptr_$_t_string_storage_$returns$__$bound_to$_t_array$_t_string_storage_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_string_storage_$dyn_storage_ptr_$_t_string_storage_$returns$__$attached_to$_t_array$_t_string_storage_$dyn_storage_ptr_$",
                         "typeString": "function (string storage ref[] storage pointer,string storage ref)"
                       }
                     },
-                    "id": 8568,
+                    "id": 12949,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
+                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1119:45:16",
+                    "src": "1119:45:26",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8569,
+                  "id": 12950,
                   "nodeType": "ExpressionStatement",
-                  "src": "1119:45:16"
+                  "src": "1119:45:26"
                 }
               ]
             },
@@ -1055,20 +1300,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "excludeArtifact",
-            "nameLocation": "1048:15:16",
+            "nameLocation": "1048:15:26",
             "parameters": {
-              "id": 8562,
+              "id": 12943,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8561,
+                  "id": 12942,
                   "mutability": "mutable",
                   "name": "newExcludedArtifact_",
-                  "nameLocation": "1078:20:16",
+                  "nameLocation": "1078:20:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8571,
-                  "src": "1064:34:16",
+                  "scope": 12952,
+                  "src": "1064:34:26",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1076,10 +1321,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 8560,
+                    "id": 12941,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1064:6:16",
+                    "src": "1064:6:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -1088,38 +1333,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1063:36:16"
+              "src": "1063:36:26"
             },
             "returnParameters": {
-              "id": 8563,
+              "id": 12944,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1109:0:16"
+              "src": "1109:0:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 8583,
+            "id": 12964,
             "nodeType": "FunctionDefinition",
-            "src": "1177:131:16",
+            "src": "1177:131:26",
+            "nodes": [],
             "body": {
-              "id": 8582,
+              "id": 12963,
               "nodeType": "Block",
-              "src": "1246:62:16",
+              "src": "1246:62:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 8579,
+                        "id": 12960,
                         "name": "newTargetedArtifact_",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8573,
-                        "src": "1280:20:16",
+                        "referencedDeclaration": 12954,
+                        "src": "1280:20:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
                           "typeString": "string memory"
@@ -1134,48 +1381,50 @@
                         }
                       ],
                       "expression": {
-                        "id": 8576,
+                        "id": 12957,
                         "name": "_targetedArtifacts",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8523,
-                        "src": "1256:18:16",
+                        "referencedDeclaration": 12904,
+                        "src": "1256:18:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                           "typeString": "string storage ref[] storage ref"
                         }
                       },
-                      "id": 8578,
+                      "id": 12959,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
+                      "memberLocation": "1275:4:26",
                       "memberName": "push",
                       "nodeType": "MemberAccess",
-                      "src": "1256:23:16",
+                      "src": "1256:23:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_string_storage_$dyn_storage_ptr_$_t_string_storage_$returns$__$bound_to$_t_array$_t_string_storage_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_string_storage_$dyn_storage_ptr_$_t_string_storage_$returns$__$attached_to$_t_array$_t_string_storage_$dyn_storage_ptr_$",
                         "typeString": "function (string storage ref[] storage pointer,string storage ref)"
                       }
                     },
-                    "id": 8580,
+                    "id": 12961,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
+                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1256:45:16",
+                    "src": "1256:45:26",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8581,
+                  "id": 12962,
                   "nodeType": "ExpressionStatement",
-                  "src": "1256:45:16"
+                  "src": "1256:45:26"
                 }
               ]
             },
@@ -1183,20 +1432,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "targetArtifact",
-            "nameLocation": "1186:14:16",
+            "nameLocation": "1186:14:26",
             "parameters": {
-              "id": 8574,
+              "id": 12955,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8573,
+                  "id": 12954,
                   "mutability": "mutable",
                   "name": "newTargetedArtifact_",
-                  "nameLocation": "1215:20:16",
+                  "nameLocation": "1215:20:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8583,
-                  "src": "1201:34:16",
+                  "scope": 12964,
+                  "src": "1201:34:26",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1204,10 +1453,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 8572,
+                    "id": 12953,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1201:6:16",
+                    "src": "1201:6:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -1216,40 +1465,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1200:36:16"
+              "src": "1200:36:26"
             },
             "returnParameters": {
-              "id": 8575,
+              "id": 12956,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1246:0:16"
+              "src": "1246:0:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 8596,
+            "id": 12977,
             "nodeType": "FunctionDefinition",
-            "src": "1314:169:16",
+            "src": "1314:169:26",
+            "nodes": [],
             "body": {
-              "id": 8595,
+              "id": 12976,
               "nodeType": "Block",
-              "src": "1405:78:16",
+              "src": "1405:78:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 8592,
+                        "id": 12973,
                         "name": "newTargetedArtifactSelector_",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8586,
-                        "src": "1447:28:16",
+                        "referencedDeclaration": 12967,
+                        "src": "1447:28:26",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_FuzzSelector_$8499_memory_ptr",
+                          "typeIdentifier": "t_struct$_FuzzSelector_$12880_memory_ptr",
                           "typeString": "struct StdInvariant.FuzzSelector memory"
                         }
                       }
@@ -1257,53 +1508,55 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_FuzzSelector_$8499_memory_ptr",
+                          "typeIdentifier": "t_struct$_FuzzSelector_$12880_memory_ptr",
                           "typeString": "struct StdInvariant.FuzzSelector memory"
                         }
                       ],
                       "expression": {
-                        "id": 8589,
+                        "id": 12970,
                         "name": "_targetedArtifactSelectors",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8527,
-                        "src": "1415:26:16",
+                        "referencedDeclaration": 12908,
+                        "src": "1415:26:26",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_storage_$dyn_storage",
                           "typeString": "struct StdInvariant.FuzzSelector storage ref[] storage ref"
                         }
                       },
-                      "id": 8591,
+                      "id": 12972,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
+                      "memberLocation": "1442:4:26",
                       "memberName": "push",
                       "nodeType": "MemberAccess",
-                      "src": "1415:31:16",
+                      "src": "1415:31:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_FuzzSelector_$8499_storage_$dyn_storage_ptr_$_t_struct$_FuzzSelector_$8499_storage_$returns$__$bound_to$_t_array$_t_struct$_FuzzSelector_$8499_storage_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_FuzzSelector_$12880_storage_$dyn_storage_ptr_$_t_struct$_FuzzSelector_$12880_storage_$returns$__$attached_to$_t_array$_t_struct$_FuzzSelector_$12880_storage_$dyn_storage_ptr_$",
                         "typeString": "function (struct StdInvariant.FuzzSelector storage ref[] storage pointer,struct StdInvariant.FuzzSelector storage ref)"
                       }
                     },
-                    "id": 8593,
+                    "id": 12974,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
+                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1415:61:16",
+                    "src": "1415:61:26",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8594,
+                  "id": 12975,
                   "nodeType": "ExpressionStatement",
-                  "src": "1415:61:16"
+                  "src": "1415:61:26"
                 }
               ]
             },
@@ -1311,78 +1564,83 @@
             "kind": "function",
             "modifiers": [],
             "name": "targetArtifactSelector",
-            "nameLocation": "1323:22:16",
+            "nameLocation": "1323:22:26",
             "parameters": {
-              "id": 8587,
+              "id": 12968,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8586,
+                  "id": 12967,
                   "mutability": "mutable",
                   "name": "newTargetedArtifactSelector_",
-                  "nameLocation": "1366:28:16",
+                  "nameLocation": "1366:28:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8596,
-                  "src": "1346:48:16",
+                  "scope": 12977,
+                  "src": "1346:48:26",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_FuzzSelector_$8499_memory_ptr",
+                    "typeIdentifier": "t_struct$_FuzzSelector_$12880_memory_ptr",
                     "typeString": "struct StdInvariant.FuzzSelector"
                   },
                   "typeName": {
-                    "id": 8585,
+                    "id": 12966,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 8584,
+                      "id": 12965,
                       "name": "FuzzSelector",
+                      "nameLocations": [
+                        "1346:12:26"
+                      ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 8499,
-                      "src": "1346:12:16"
+                      "referencedDeclaration": 12880,
+                      "src": "1346:12:26"
                     },
-                    "referencedDeclaration": 8499,
-                    "src": "1346:12:16",
+                    "referencedDeclaration": 12880,
+                    "src": "1346:12:26",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_FuzzSelector_$8499_storage_ptr",
+                      "typeIdentifier": "t_struct$_FuzzSelector_$12880_storage_ptr",
                       "typeString": "struct StdInvariant.FuzzSelector"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "1345:50:16"
+              "src": "1345:50:26"
             },
             "returnParameters": {
-              "id": 8588,
+              "id": 12969,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1405:0:16"
+              "src": "1405:0:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 8608,
+            "id": 12989,
             "nodeType": "FunctionDefinition",
-            "src": "1489:125:16",
+            "src": "1489:125:26",
+            "nodes": [],
             "body": {
-              "id": 8607,
+              "id": 12988,
               "nodeType": "Block",
-              "src": "1552:62:16",
+              "src": "1552:62:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 8604,
+                        "id": 12985,
                         "name": "newTargetedContract_",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8598,
-                        "src": "1586:20:16",
+                        "referencedDeclaration": 12979,
+                        "src": "1586:20:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1397,48 +1655,50 @@
                         }
                       ],
                       "expression": {
-                        "id": 8601,
+                        "id": 12982,
                         "name": "_targetedContracts",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8514,
-                        "src": "1562:18:16",
+                        "referencedDeclaration": 12895,
+                        "src": "1562:18:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_storage",
                           "typeString": "address[] storage ref"
                         }
                       },
-                      "id": 8603,
+                      "id": 12984,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
+                      "memberLocation": "1581:4:26",
                       "memberName": "push",
                       "nodeType": "MemberAccess",
-                      "src": "1562:23:16",
+                      "src": "1562:23:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$bound_to$_t_array$_t_address_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$attached_to$_t_array$_t_address_$dyn_storage_ptr_$",
                         "typeString": "function (address[] storage pointer,address)"
                       }
                     },
-                    "id": 8605,
+                    "id": 12986,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
+                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1562:45:16",
+                    "src": "1562:45:26",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8606,
+                  "id": 12987,
                   "nodeType": "ExpressionStatement",
-                  "src": "1562:45:16"
+                  "src": "1562:45:26"
                 }
               ]
             },
@@ -1446,20 +1706,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "targetContract",
-            "nameLocation": "1498:14:16",
+            "nameLocation": "1498:14:26",
             "parameters": {
-              "id": 8599,
+              "id": 12980,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8598,
+                  "id": 12979,
                   "mutability": "mutable",
                   "name": "newTargetedContract_",
-                  "nameLocation": "1521:20:16",
+                  "nameLocation": "1521:20:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8608,
-                  "src": "1513:28:16",
+                  "scope": 12989,
+                  "src": "1513:28:26",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1467,10 +1727,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 8597,
+                    "id": 12978,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1513:7:16",
+                    "src": "1513:7:26",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1480,40 +1740,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1512:30:16"
+              "src": "1512:30:26"
             },
             "returnParameters": {
-              "id": 8600,
+              "id": 12981,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1552:0:16"
+              "src": "1552:0:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 8621,
+            "id": 13002,
             "nodeType": "FunctionDefinition",
-            "src": "1620:137:16",
+            "src": "1620:137:26",
+            "nodes": [],
             "body": {
-              "id": 8620,
+              "id": 13001,
               "nodeType": "Block",
-              "src": "1695:62:16",
+              "src": "1695:62:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 8617,
+                        "id": 12998,
                         "name": "newTargetedSelector_",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8611,
-                        "src": "1729:20:16",
+                        "referencedDeclaration": 12992,
+                        "src": "1729:20:26",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_FuzzSelector_$8499_memory_ptr",
+                          "typeIdentifier": "t_struct$_FuzzSelector_$12880_memory_ptr",
                           "typeString": "struct StdInvariant.FuzzSelector memory"
                         }
                       }
@@ -1521,53 +1783,55 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_FuzzSelector_$8499_memory_ptr",
+                          "typeIdentifier": "t_struct$_FuzzSelector_$12880_memory_ptr",
                           "typeString": "struct StdInvariant.FuzzSelector memory"
                         }
                       ],
                       "expression": {
-                        "id": 8614,
+                        "id": 12995,
                         "name": "_targetedSelectors",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8531,
-                        "src": "1705:18:16",
+                        "referencedDeclaration": 12912,
+                        "src": "1705:18:26",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_storage_$dyn_storage",
                           "typeString": "struct StdInvariant.FuzzSelector storage ref[] storage ref"
                         }
                       },
-                      "id": 8616,
+                      "id": 12997,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
+                      "memberLocation": "1724:4:26",
                       "memberName": "push",
                       "nodeType": "MemberAccess",
-                      "src": "1705:23:16",
+                      "src": "1705:23:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_FuzzSelector_$8499_storage_$dyn_storage_ptr_$_t_struct$_FuzzSelector_$8499_storage_$returns$__$bound_to$_t_array$_t_struct$_FuzzSelector_$8499_storage_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_FuzzSelector_$12880_storage_$dyn_storage_ptr_$_t_struct$_FuzzSelector_$12880_storage_$returns$__$attached_to$_t_array$_t_struct$_FuzzSelector_$12880_storage_$dyn_storage_ptr_$",
                         "typeString": "function (struct StdInvariant.FuzzSelector storage ref[] storage pointer,struct StdInvariant.FuzzSelector storage ref)"
                       }
                     },
-                    "id": 8618,
+                    "id": 12999,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
+                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1705:45:16",
+                    "src": "1705:45:26",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8619,
+                  "id": 13000,
                   "nodeType": "ExpressionStatement",
-                  "src": "1705:45:16"
+                  "src": "1705:45:26"
                 }
               ]
             },
@@ -1575,78 +1839,83 @@
             "kind": "function",
             "modifiers": [],
             "name": "targetSelector",
-            "nameLocation": "1629:14:16",
+            "nameLocation": "1629:14:26",
             "parameters": {
-              "id": 8612,
+              "id": 12993,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8611,
+                  "id": 12992,
                   "mutability": "mutable",
                   "name": "newTargetedSelector_",
-                  "nameLocation": "1664:20:16",
+                  "nameLocation": "1664:20:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8621,
-                  "src": "1644:40:16",
+                  "scope": 13002,
+                  "src": "1644:40:26",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_FuzzSelector_$8499_memory_ptr",
+                    "typeIdentifier": "t_struct$_FuzzSelector_$12880_memory_ptr",
                     "typeString": "struct StdInvariant.FuzzSelector"
                   },
                   "typeName": {
-                    "id": 8610,
+                    "id": 12991,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 8609,
+                      "id": 12990,
                       "name": "FuzzSelector",
+                      "nameLocations": [
+                        "1644:12:26"
+                      ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 8499,
-                      "src": "1644:12:16"
+                      "referencedDeclaration": 12880,
+                      "src": "1644:12:26"
                     },
-                    "referencedDeclaration": 8499,
-                    "src": "1644:12:16",
+                    "referencedDeclaration": 12880,
+                    "src": "1644:12:26",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_FuzzSelector_$8499_storage_ptr",
+                      "typeIdentifier": "t_struct$_FuzzSelector_$12880_storage_ptr",
                       "typeString": "struct StdInvariant.FuzzSelector"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "1643:42:16"
+              "src": "1643:42:26"
             },
             "returnParameters": {
-              "id": 8613,
+              "id": 12994,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1695:0:16"
+              "src": "1695:0:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 8633,
+            "id": 13014,
             "nodeType": "FunctionDefinition",
-            "src": "1763:117:16",
+            "src": "1763:117:26",
+            "nodes": [],
             "body": {
-              "id": 8632,
+              "id": 13013,
               "nodeType": "Block",
-              "src": "1822:58:16",
+              "src": "1822:58:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 8629,
+                        "id": 13010,
                         "name": "newTargetedSender_",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8623,
-                        "src": "1854:18:16",
+                        "referencedDeclaration": 13004,
+                        "src": "1854:18:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1661,48 +1930,50 @@
                         }
                       ],
                       "expression": {
-                        "id": 8626,
+                        "id": 13007,
                         "name": "_targetedSenders",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8517,
-                        "src": "1832:16:16",
+                        "referencedDeclaration": 12898,
+                        "src": "1832:16:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_address_$dyn_storage",
                           "typeString": "address[] storage ref"
                         }
                       },
-                      "id": 8628,
+                      "id": 13009,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
+                      "memberLocation": "1849:4:26",
                       "memberName": "push",
                       "nodeType": "MemberAccess",
-                      "src": "1832:21:16",
+                      "src": "1832:21:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$bound_to$_t_array$_t_address_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_address_$dyn_storage_ptr_$_t_address_$returns$__$attached_to$_t_array$_t_address_$dyn_storage_ptr_$",
                         "typeString": "function (address[] storage pointer,address)"
                       }
                     },
-                    "id": 8630,
+                    "id": 13011,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
+                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1832:41:16",
+                    "src": "1832:41:26",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8631,
+                  "id": 13012,
                   "nodeType": "ExpressionStatement",
-                  "src": "1832:41:16"
+                  "src": "1832:41:26"
                 }
               ]
             },
@@ -1710,20 +1981,20 @@
             "kind": "function",
             "modifiers": [],
             "name": "targetSender",
-            "nameLocation": "1772:12:16",
+            "nameLocation": "1772:12:26",
             "parameters": {
-              "id": 8624,
+              "id": 13005,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8623,
+                  "id": 13004,
                   "mutability": "mutable",
                   "name": "newTargetedSender_",
-                  "nameLocation": "1793:18:16",
+                  "nameLocation": "1793:18:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8633,
-                  "src": "1785:26:16",
+                  "scope": 13014,
+                  "src": "1785:26:26",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1731,10 +2002,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 8622,
+                    "id": 13003,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1785:7:16",
+                    "src": "1785:7:26",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1744,40 +2015,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1784:28:16"
+              "src": "1784:28:26"
             },
             "returnParameters": {
-              "id": 8625,
+              "id": 13006,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1822:0:16"
+              "src": "1822:0:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 8646,
+            "id": 13027,
             "nodeType": "FunctionDefinition",
-            "src": "1886:142:16",
+            "src": "1886:142:26",
+            "nodes": [],
             "body": {
-              "id": 8645,
+              "id": 13026,
               "nodeType": "Block",
-              "src": "1964:64:16",
+              "src": "1964:64:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
                     "arguments": [
                       {
-                        "id": 8642,
+                        "id": 13023,
                         "name": "newTargetedInterface_",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8636,
-                        "src": "1999:21:16",
+                        "referencedDeclaration": 13017,
+                        "src": "1999:21:26",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_FuzzInterface_$8505_memory_ptr",
+                          "typeIdentifier": "t_struct$_FuzzInterface_$12886_memory_ptr",
                           "typeString": "struct StdInvariant.FuzzInterface memory"
                         }
                       }
@@ -1785,53 +2058,55 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_FuzzInterface_$8505_memory_ptr",
+                          "typeIdentifier": "t_struct$_FuzzInterface_$12886_memory_ptr",
                           "typeString": "struct StdInvariant.FuzzInterface memory"
                         }
                       ],
                       "expression": {
-                        "id": 8639,
+                        "id": 13020,
                         "name": "_targetedInterfaces",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8535,
-                        "src": "1974:19:16",
+                        "referencedDeclaration": 12916,
+                        "src": "1974:19:26",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$8505_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$12886_storage_$dyn_storage",
                           "typeString": "struct StdInvariant.FuzzInterface storage ref[] storage ref"
                         }
                       },
-                      "id": 8641,
+                      "id": 13022,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
+                      "memberLocation": "1994:4:26",
                       "memberName": "push",
                       "nodeType": "MemberAccess",
-                      "src": "1974:24:16",
+                      "src": "1974:24:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_FuzzInterface_$8505_storage_$dyn_storage_ptr_$_t_struct$_FuzzInterface_$8505_storage_$returns$__$bound_to$_t_array$_t_struct$_FuzzInterface_$8505_storage_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_FuzzInterface_$12886_storage_$dyn_storage_ptr_$_t_struct$_FuzzInterface_$12886_storage_$returns$__$attached_to$_t_array$_t_struct$_FuzzInterface_$12886_storage_$dyn_storage_ptr_$",
                         "typeString": "function (struct StdInvariant.FuzzInterface storage ref[] storage pointer,struct StdInvariant.FuzzInterface storage ref)"
                       }
                     },
-                    "id": 8643,
+                    "id": 13024,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "kind": "functionCall",
                     "lValueRequested": false,
+                    "nameLocations": [],
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1974:47:16",
+                    "src": "1974:47:26",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8644,
+                  "id": 13025,
                   "nodeType": "ExpressionStatement",
-                  "src": "1974:47:16"
+                  "src": "1974:47:26"
                 }
               ]
             },
@@ -1839,82 +2114,87 @@
             "kind": "function",
             "modifiers": [],
             "name": "targetInterface",
-            "nameLocation": "1895:15:16",
+            "nameLocation": "1895:15:26",
             "parameters": {
-              "id": 8637,
+              "id": 13018,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8636,
+                  "id": 13017,
                   "mutability": "mutable",
                   "name": "newTargetedInterface_",
-                  "nameLocation": "1932:21:16",
+                  "nameLocation": "1932:21:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8646,
-                  "src": "1911:42:16",
+                  "scope": 13027,
+                  "src": "1911:42:26",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_FuzzInterface_$8505_memory_ptr",
+                    "typeIdentifier": "t_struct$_FuzzInterface_$12886_memory_ptr",
                     "typeString": "struct StdInvariant.FuzzInterface"
                   },
                   "typeName": {
-                    "id": 8635,
+                    "id": 13016,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 8634,
+                      "id": 13015,
                       "name": "FuzzInterface",
+                      "nameLocations": [
+                        "1911:13:26"
+                      ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 8505,
-                      "src": "1911:13:16"
+                      "referencedDeclaration": 12886,
+                      "src": "1911:13:26"
                     },
-                    "referencedDeclaration": 8505,
-                    "src": "1911:13:16",
+                    "referencedDeclaration": 12886,
+                    "src": "1911:13:26",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_FuzzInterface_$8505_storage_ptr",
+                      "typeIdentifier": "t_struct$_FuzzInterface_$12886_storage_ptr",
                       "typeString": "struct StdInvariant.FuzzInterface"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "1910:44:16"
+              "src": "1910:44:26"
             },
             "returnParameters": {
-              "id": 8638,
+              "id": 13019,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1964:0:16"
+              "src": "1964:0:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "internal"
           },
           {
-            "id": 8657,
+            "id": 13038,
             "nodeType": "FunctionDefinition",
-            "src": "2157:141:16",
+            "src": "2157:141:26",
+            "nodes": [],
             "body": {
-              "id": 8656,
+              "id": 13037,
               "nodeType": "Block",
-              "src": "2242:56:16",
+              "src": "2242:56:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
-                    "id": 8654,
+                    "id": 13035,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 8652,
+                      "id": 13033,
                       "name": "excludedArtifacts_",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8650,
-                      "src": "2252:18:16",
+                      "referencedDeclaration": 13031,
+                      "src": "2252:18:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
                         "typeString": "string memory[] memory"
@@ -1923,26 +2203,26 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 8653,
+                      "id": 13034,
                       "name": "_excludedArtifacts",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8520,
-                      "src": "2273:18:16",
+                      "referencedDeclaration": 12901,
+                      "src": "2273:18:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                         "typeString": "string storage ref[] storage ref"
                       }
                     },
-                    "src": "2252:39:16",
+                    "src": "2252:39:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
                       "typeString": "string memory[] memory"
                     }
                   },
-                  "id": 8655,
+                  "id": 13036,
                   "nodeType": "ExpressionStatement",
-                  "src": "2252:39:16"
+                  "src": "2252:39:26"
                 }
               ]
             },
@@ -1951,26 +2231,26 @@
             "kind": "function",
             "modifiers": [],
             "name": "excludeArtifacts",
-            "nameLocation": "2166:16:16",
+            "nameLocation": "2166:16:26",
             "parameters": {
-              "id": 8647,
+              "id": 13028,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2182:2:16"
+              "src": "2182:2:26"
             },
             "returnParameters": {
-              "id": 8651,
+              "id": 13032,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8650,
+                  "id": 13031,
                   "mutability": "mutable",
                   "name": "excludedArtifacts_",
-                  "nameLocation": "2222:18:16",
+                  "nameLocation": "2222:18:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8657,
-                  "src": "2206:34:16",
+                  "scope": 13038,
+                  "src": "2206:34:26",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1979,18 +2259,18 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 8648,
+                      "id": 13029,
                       "name": "string",
                       "nodeType": "ElementaryTypeName",
-                      "src": "2206:6:16",
+                      "src": "2206:6:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage_ptr",
                         "typeString": "string"
                       }
                     },
-                    "id": 8649,
+                    "id": 13030,
                     "nodeType": "ArrayTypeName",
-                    "src": "2206:8:16",
+                    "src": "2206:8:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
                       "typeString": "string[]"
@@ -1999,36 +2279,38 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2205:36:16"
+              "src": "2205:36:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 8668,
+            "id": 13049,
             "nodeType": "FunctionDefinition",
-            "src": "2304:142:16",
+            "src": "2304:142:26",
+            "nodes": [],
             "body": {
-              "id": 8667,
+              "id": 13048,
               "nodeType": "Block",
-              "src": "2390:56:16",
+              "src": "2390:56:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
-                    "id": 8665,
+                    "id": 13046,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 8663,
+                      "id": 13044,
                       "name": "excludedContracts_",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8661,
-                      "src": "2400:18:16",
+                      "referencedDeclaration": 13042,
+                      "src": "2400:18:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                         "typeString": "address[] memory"
@@ -2037,26 +2319,26 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 8664,
+                      "id": 13045,
                       "name": "_excludedContracts",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8508,
-                      "src": "2421:18:16",
+                      "referencedDeclaration": 12889,
+                      "src": "2421:18:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_address_$dyn_storage",
                         "typeString": "address[] storage ref"
                       }
                     },
-                    "src": "2400:39:16",
+                    "src": "2400:39:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                       "typeString": "address[] memory"
                     }
                   },
-                  "id": 8666,
+                  "id": 13047,
                   "nodeType": "ExpressionStatement",
-                  "src": "2400:39:16"
+                  "src": "2400:39:26"
                 }
               ]
             },
@@ -2065,26 +2347,26 @@
             "kind": "function",
             "modifiers": [],
             "name": "excludeContracts",
-            "nameLocation": "2313:16:16",
+            "nameLocation": "2313:16:26",
             "parameters": {
-              "id": 8658,
+              "id": 13039,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2329:2:16"
+              "src": "2329:2:26"
             },
             "returnParameters": {
-              "id": 8662,
+              "id": 13043,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8661,
+                  "id": 13042,
                   "mutability": "mutable",
                   "name": "excludedContracts_",
-                  "nameLocation": "2370:18:16",
+                  "nameLocation": "2370:18:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8668,
-                  "src": "2353:35:16",
+                  "scope": 13049,
+                  "src": "2353:35:26",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2093,19 +2375,19 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 8659,
+                      "id": 13040,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
-                      "src": "2353:7:16",
+                      "src": "2353:7:26",
                       "stateMutability": "nonpayable",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "id": 8660,
+                    "id": 13041,
                     "nodeType": "ArrayTypeName",
-                    "src": "2353:9:16",
+                    "src": "2353:9:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                       "typeString": "address[]"
@@ -2114,36 +2396,38 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2352:37:16"
+              "src": "2352:37:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 8679,
+            "id": 13060,
             "nodeType": "FunctionDefinition",
-            "src": "2452:134:16",
+            "src": "2452:134:26",
+            "nodes": [],
             "body": {
-              "id": 8678,
+              "id": 13059,
               "nodeType": "Block",
-              "src": "2534:52:16",
+              "src": "2534:52:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
-                    "id": 8676,
+                    "id": 13057,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 8674,
+                      "id": 13055,
                       "name": "excludedSenders_",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8672,
-                      "src": "2544:16:16",
+                      "referencedDeclaration": 13053,
+                      "src": "2544:16:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                         "typeString": "address[] memory"
@@ -2152,26 +2436,26 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 8675,
+                      "id": 13056,
                       "name": "_excludedSenders",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8511,
-                      "src": "2563:16:16",
+                      "referencedDeclaration": 12892,
+                      "src": "2563:16:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_address_$dyn_storage",
                         "typeString": "address[] storage ref"
                       }
                     },
-                    "src": "2544:35:16",
+                    "src": "2544:35:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                       "typeString": "address[] memory"
                     }
                   },
-                  "id": 8677,
+                  "id": 13058,
                   "nodeType": "ExpressionStatement",
-                  "src": "2544:35:16"
+                  "src": "2544:35:26"
                 }
               ]
             },
@@ -2180,26 +2464,26 @@
             "kind": "function",
             "modifiers": [],
             "name": "excludeSenders",
-            "nameLocation": "2461:14:16",
+            "nameLocation": "2461:14:26",
             "parameters": {
-              "id": 8669,
+              "id": 13050,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2475:2:16"
+              "src": "2475:2:26"
             },
             "returnParameters": {
-              "id": 8673,
+              "id": 13054,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8672,
+                  "id": 13053,
                   "mutability": "mutable",
                   "name": "excludedSenders_",
-                  "nameLocation": "2516:16:16",
+                  "nameLocation": "2516:16:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8679,
-                  "src": "2499:33:16",
+                  "scope": 13060,
+                  "src": "2499:33:26",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2208,19 +2492,19 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 8670,
+                      "id": 13051,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
-                      "src": "2499:7:16",
+                      "src": "2499:7:26",
                       "stateMutability": "nonpayable",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "id": 8671,
+                    "id": 13052,
                     "nodeType": "ArrayTypeName",
-                    "src": "2499:9:16",
+                    "src": "2499:9:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                       "typeString": "address[]"
@@ -2229,36 +2513,38 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2498:35:16"
+              "src": "2498:35:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 8690,
+            "id": 13071,
             "nodeType": "FunctionDefinition",
-            "src": "2592:140:16",
+            "src": "2592:140:26",
+            "nodes": [],
             "body": {
-              "id": 8689,
+              "id": 13070,
               "nodeType": "Block",
-              "src": "2676:56:16",
+              "src": "2676:56:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
-                    "id": 8687,
+                    "id": 13068,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 8685,
+                      "id": 13066,
                       "name": "targetedArtifacts_",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8683,
-                      "src": "2686:18:16",
+                      "referencedDeclaration": 13064,
+                      "src": "2686:18:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
                         "typeString": "string memory[] memory"
@@ -2267,26 +2553,26 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 8686,
+                      "id": 13067,
                       "name": "_targetedArtifacts",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8523,
-                      "src": "2707:18:16",
+                      "referencedDeclaration": 12904,
+                      "src": "2707:18:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_string_storage_$dyn_storage",
                         "typeString": "string storage ref[] storage ref"
                       }
                     },
-                    "src": "2686:39:16",
+                    "src": "2686:39:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
                       "typeString": "string memory[] memory"
                     }
                   },
-                  "id": 8688,
+                  "id": 13069,
                   "nodeType": "ExpressionStatement",
-                  "src": "2686:39:16"
+                  "src": "2686:39:26"
                 }
               ]
             },
@@ -2295,26 +2581,26 @@
             "kind": "function",
             "modifiers": [],
             "name": "targetArtifacts",
-            "nameLocation": "2601:15:16",
+            "nameLocation": "2601:15:26",
             "parameters": {
-              "id": 8680,
+              "id": 13061,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2616:2:16"
+              "src": "2616:2:26"
             },
             "returnParameters": {
-              "id": 8684,
+              "id": 13065,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8683,
+                  "id": 13064,
                   "mutability": "mutable",
                   "name": "targetedArtifacts_",
-                  "nameLocation": "2656:18:16",
+                  "nameLocation": "2656:18:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8690,
-                  "src": "2640:34:16",
+                  "scope": 13071,
+                  "src": "2640:34:26",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2323,18 +2609,18 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 8681,
+                      "id": 13062,
                       "name": "string",
                       "nodeType": "ElementaryTypeName",
-                      "src": "2640:6:16",
+                      "src": "2640:6:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage_ptr",
                         "typeString": "string"
                       }
                     },
-                    "id": 8682,
+                    "id": 13063,
                     "nodeType": "ArrayTypeName",
-                    "src": "2640:8:16",
+                    "src": "2640:8:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_string_storage_$dyn_storage_ptr",
                       "typeString": "string[]"
@@ -2343,64 +2629,66 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2639:36:16"
+              "src": "2639:36:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 8702,
+            "id": 13083,
             "nodeType": "FunctionDefinition",
-            "src": "2738:178:16",
+            "src": "2738:178:26",
+            "nodes": [],
             "body": {
-              "id": 8701,
+              "id": 13082,
               "nodeType": "Block",
-              "src": "2844:72:16",
+              "src": "2844:72:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
-                    "id": 8699,
+                    "id": 13080,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 8697,
+                      "id": 13078,
                       "name": "targetedArtifactSelectors_",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8695,
-                      "src": "2854:26:16",
+                      "referencedDeclaration": 13076,
+                      "src": "2854:26:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_memory_ptr_$dyn_memory_ptr",
+                        "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_memory_ptr_$dyn_memory_ptr",
                         "typeString": "struct StdInvariant.FuzzSelector memory[] memory"
                       }
                     },
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 8698,
+                      "id": 13079,
                       "name": "_targetedArtifactSelectors",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8527,
-                      "src": "2883:26:16",
+                      "referencedDeclaration": 12908,
+                      "src": "2883:26:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_storage_$dyn_storage",
                         "typeString": "struct StdInvariant.FuzzSelector storage ref[] storage ref"
                       }
                     },
-                    "src": "2854:55:16",
+                    "src": "2854:55:26",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_memory_ptr_$dyn_memory_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_memory_ptr_$dyn_memory_ptr",
                       "typeString": "struct StdInvariant.FuzzSelector memory[] memory"
                     }
                   },
-                  "id": 8700,
+                  "id": 13081,
                   "nodeType": "ExpressionStatement",
-                  "src": "2854:55:16"
+                  "src": "2854:55:26"
                 }
               ]
             },
@@ -2409,91 +2697,96 @@
             "kind": "function",
             "modifiers": [],
             "name": "targetArtifactSelectors",
-            "nameLocation": "2747:23:16",
+            "nameLocation": "2747:23:26",
             "parameters": {
-              "id": 8691,
+              "id": 13072,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2770:2:16"
+              "src": "2770:2:26"
             },
             "returnParameters": {
-              "id": 8696,
+              "id": 13077,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8695,
+                  "id": 13076,
                   "mutability": "mutable",
                   "name": "targetedArtifactSelectors_",
-                  "nameLocation": "2816:26:16",
+                  "nameLocation": "2816:26:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8702,
-                  "src": "2794:48:16",
+                  "scope": 13083,
+                  "src": "2794:48:26",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct StdInvariant.FuzzSelector[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 8693,
+                      "id": 13074,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 8692,
+                        "id": 13073,
                         "name": "FuzzSelector",
+                        "nameLocations": [
+                          "2794:12:26"
+                        ],
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 8499,
-                        "src": "2794:12:16"
+                        "referencedDeclaration": 12880,
+                        "src": "2794:12:26"
                       },
-                      "referencedDeclaration": 8499,
-                      "src": "2794:12:16",
+                      "referencedDeclaration": 12880,
+                      "src": "2794:12:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_FuzzSelector_$8499_storage_ptr",
+                        "typeIdentifier": "t_struct$_FuzzSelector_$12880_storage_ptr",
                         "typeString": "struct StdInvariant.FuzzSelector"
                       }
                     },
-                    "id": 8694,
+                    "id": 13075,
                     "nodeType": "ArrayTypeName",
-                    "src": "2794:14:16",
+                    "src": "2794:14:26",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_storage_$dyn_storage_ptr",
                       "typeString": "struct StdInvariant.FuzzSelector[]"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "2793:50:16"
+              "src": "2793:50:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 8713,
+            "id": 13094,
             "nodeType": "FunctionDefinition",
-            "src": "2922:141:16",
+            "src": "2922:141:26",
+            "nodes": [],
             "body": {
-              "id": 8712,
+              "id": 13093,
               "nodeType": "Block",
-              "src": "3007:56:16",
+              "src": "3007:56:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
-                    "id": 8710,
+                    "id": 13091,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 8708,
+                      "id": 13089,
                       "name": "targetedContracts_",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8706,
-                      "src": "3017:18:16",
+                      "referencedDeclaration": 13087,
+                      "src": "3017:18:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                         "typeString": "address[] memory"
@@ -2502,26 +2795,26 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 8709,
+                      "id": 13090,
                       "name": "_targetedContracts",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8514,
-                      "src": "3038:18:16",
+                      "referencedDeclaration": 12895,
+                      "src": "3038:18:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_address_$dyn_storage",
                         "typeString": "address[] storage ref"
                       }
                     },
-                    "src": "3017:39:16",
+                    "src": "3017:39:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                       "typeString": "address[] memory"
                     }
                   },
-                  "id": 8711,
+                  "id": 13092,
                   "nodeType": "ExpressionStatement",
-                  "src": "3017:39:16"
+                  "src": "3017:39:26"
                 }
               ]
             },
@@ -2530,26 +2823,26 @@
             "kind": "function",
             "modifiers": [],
             "name": "targetContracts",
-            "nameLocation": "2931:15:16",
+            "nameLocation": "2931:15:26",
             "parameters": {
-              "id": 8703,
+              "id": 13084,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2946:2:16"
+              "src": "2946:2:26"
             },
             "returnParameters": {
-              "id": 8707,
+              "id": 13088,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8706,
+                  "id": 13087,
                   "mutability": "mutable",
                   "name": "targetedContracts_",
-                  "nameLocation": "2987:18:16",
+                  "nameLocation": "2987:18:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8713,
-                  "src": "2970:35:16",
+                  "scope": 13094,
+                  "src": "2970:35:26",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2558,19 +2851,19 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 8704,
+                      "id": 13085,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
-                      "src": "2970:7:16",
+                      "src": "2970:7:26",
                       "stateMutability": "nonpayable",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "id": 8705,
+                    "id": 13086,
                     "nodeType": "ArrayTypeName",
-                    "src": "2970:9:16",
+                    "src": "2970:9:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                       "typeString": "address[]"
@@ -2579,64 +2872,66 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2969:37:16"
+              "src": "2969:37:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 8725,
+            "id": 13106,
             "nodeType": "FunctionDefinition",
-            "src": "3069:146:16",
+            "src": "3069:146:26",
+            "nodes": [],
             "body": {
-              "id": 8724,
+              "id": 13105,
               "nodeType": "Block",
-              "src": "3159:56:16",
+              "src": "3159:56:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
-                    "id": 8722,
+                    "id": 13103,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 8720,
+                      "id": 13101,
                       "name": "targetedSelectors_",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8718,
-                      "src": "3169:18:16",
+                      "referencedDeclaration": 13099,
+                      "src": "3169:18:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_memory_ptr_$dyn_memory_ptr",
+                        "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_memory_ptr_$dyn_memory_ptr",
                         "typeString": "struct StdInvariant.FuzzSelector memory[] memory"
                       }
                     },
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 8721,
+                      "id": 13102,
                       "name": "_targetedSelectors",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8531,
-                      "src": "3190:18:16",
+                      "referencedDeclaration": 12912,
+                      "src": "3190:18:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_storage_$dyn_storage",
                         "typeString": "struct StdInvariant.FuzzSelector storage ref[] storage ref"
                       }
                     },
-                    "src": "3169:39:16",
+                    "src": "3169:39:26",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_memory_ptr_$dyn_memory_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_memory_ptr_$dyn_memory_ptr",
                       "typeString": "struct StdInvariant.FuzzSelector memory[] memory"
                     }
                   },
-                  "id": 8723,
+                  "id": 13104,
                   "nodeType": "ExpressionStatement",
-                  "src": "3169:39:16"
+                  "src": "3169:39:26"
                 }
               ]
             },
@@ -2645,91 +2940,96 @@
             "kind": "function",
             "modifiers": [],
             "name": "targetSelectors",
-            "nameLocation": "3078:15:16",
+            "nameLocation": "3078:15:26",
             "parameters": {
-              "id": 8714,
+              "id": 13095,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "3093:2:16"
+              "src": "3093:2:26"
             },
             "returnParameters": {
-              "id": 8719,
+              "id": 13100,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8718,
+                  "id": 13099,
                   "mutability": "mutable",
                   "name": "targetedSelectors_",
-                  "nameLocation": "3139:18:16",
+                  "nameLocation": "3139:18:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8725,
-                  "src": "3117:40:16",
+                  "scope": 13106,
+                  "src": "3117:40:26",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct StdInvariant.FuzzSelector[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 8716,
+                      "id": 13097,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 8715,
+                        "id": 13096,
                         "name": "FuzzSelector",
+                        "nameLocations": [
+                          "3117:12:26"
+                        ],
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 8499,
-                        "src": "3117:12:16"
+                        "referencedDeclaration": 12880,
+                        "src": "3117:12:26"
                       },
-                      "referencedDeclaration": 8499,
-                      "src": "3117:12:16",
+                      "referencedDeclaration": 12880,
+                      "src": "3117:12:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_FuzzSelector_$8499_storage_ptr",
+                        "typeIdentifier": "t_struct$_FuzzSelector_$12880_storage_ptr",
                         "typeString": "struct StdInvariant.FuzzSelector"
                       }
                     },
-                    "id": 8717,
+                    "id": 13098,
                     "nodeType": "ArrayTypeName",
-                    "src": "3117:14:16",
+                    "src": "3117:14:26",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$8499_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_FuzzSelector_$12880_storage_$dyn_storage_ptr",
                       "typeString": "struct StdInvariant.FuzzSelector[]"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "3116:42:16"
+              "src": "3116:42:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 8736,
+            "id": 13117,
             "nodeType": "FunctionDefinition",
-            "src": "3221:133:16",
+            "src": "3221:133:26",
+            "nodes": [],
             "body": {
-              "id": 8735,
+              "id": 13116,
               "nodeType": "Block",
-              "src": "3302:52:16",
+              "src": "3302:52:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
-                    "id": 8733,
+                    "id": 13114,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 8731,
+                      "id": 13112,
                       "name": "targetedSenders_",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8729,
-                      "src": "3312:16:16",
+                      "referencedDeclaration": 13110,
+                      "src": "3312:16:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                         "typeString": "address[] memory"
@@ -2738,26 +3038,26 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 8732,
+                      "id": 13113,
                       "name": "_targetedSenders",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8517,
-                      "src": "3331:16:16",
+                      "referencedDeclaration": 12898,
+                      "src": "3331:16:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_address_$dyn_storage",
                         "typeString": "address[] storage ref"
                       }
                     },
-                    "src": "3312:35:16",
+                    "src": "3312:35:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
                       "typeString": "address[] memory"
                     }
                   },
-                  "id": 8734,
+                  "id": 13115,
                   "nodeType": "ExpressionStatement",
-                  "src": "3312:35:16"
+                  "src": "3312:35:26"
                 }
               ]
             },
@@ -2766,26 +3066,26 @@
             "kind": "function",
             "modifiers": [],
             "name": "targetSenders",
-            "nameLocation": "3230:13:16",
+            "nameLocation": "3230:13:26",
             "parameters": {
-              "id": 8726,
+              "id": 13107,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "3243:2:16"
+              "src": "3243:2:26"
             },
             "returnParameters": {
-              "id": 8730,
+              "id": 13111,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8729,
+                  "id": 13110,
                   "mutability": "mutable",
                   "name": "targetedSenders_",
-                  "nameLocation": "3284:16:16",
+                  "nameLocation": "3284:16:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8736,
-                  "src": "3267:33:16",
+                  "scope": 13117,
+                  "src": "3267:33:26",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2794,19 +3094,19 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 8727,
+                      "id": 13108,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
-                      "src": "3267:7:16",
+                      "src": "3267:7:26",
                       "stateMutability": "nonpayable",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
                         "typeString": "address"
                       }
                     },
-                    "id": 8728,
+                    "id": 13109,
                     "nodeType": "ArrayTypeName",
-                    "src": "3267:9:16",
+                    "src": "3267:9:26",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
                       "typeString": "address[]"
@@ -2815,64 +3115,66 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "3266:35:16"
+              "src": "3266:35:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 8748,
+            "id": 13129,
             "nodeType": "FunctionDefinition",
-            "src": "3360:151:16",
+            "src": "3360:151:26",
+            "nodes": [],
             "body": {
-              "id": 8747,
+              "id": 13128,
               "nodeType": "Block",
-              "src": "3453:58:16",
+              "src": "3453:58:26",
+              "nodes": [],
               "statements": [
                 {
                   "expression": {
-                    "id": 8745,
+                    "id": 13126,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 8743,
+                      "id": 13124,
                       "name": "targetedInterfaces_",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8741,
-                      "src": "3463:19:16",
+                      "referencedDeclaration": 13122,
+                      "src": "3463:19:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$8505_memory_ptr_$dyn_memory_ptr",
+                        "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$12886_memory_ptr_$dyn_memory_ptr",
                         "typeString": "struct StdInvariant.FuzzInterface memory[] memory"
                       }
                     },
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 8744,
+                      "id": 13125,
                       "name": "_targetedInterfaces",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8535,
-                      "src": "3485:19:16",
+                      "referencedDeclaration": 12916,
+                      "src": "3485:19:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$8505_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$12886_storage_$dyn_storage",
                         "typeString": "struct StdInvariant.FuzzInterface storage ref[] storage ref"
                       }
                     },
-                    "src": "3463:41:16",
+                    "src": "3463:41:26",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$8505_memory_ptr_$dyn_memory_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$12886_memory_ptr_$dyn_memory_ptr",
                       "typeString": "struct StdInvariant.FuzzInterface memory[] memory"
                     }
                   },
-                  "id": 8746,
+                  "id": 13127,
                   "nodeType": "ExpressionStatement",
-                  "src": "3463:41:16"
+                  "src": "3463:41:26"
                 }
               ]
             },
@@ -2881,64 +3183,67 @@
             "kind": "function",
             "modifiers": [],
             "name": "targetInterfaces",
-            "nameLocation": "3369:16:16",
+            "nameLocation": "3369:16:26",
             "parameters": {
-              "id": 8737,
+              "id": 13118,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "3385:2:16"
+              "src": "3385:2:26"
             },
             "returnParameters": {
-              "id": 8742,
+              "id": 13123,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8741,
+                  "id": 13122,
                   "mutability": "mutable",
                   "name": "targetedInterfaces_",
-                  "nameLocation": "3432:19:16",
+                  "nameLocation": "3432:19:26",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8748,
-                  "src": "3409:42:16",
+                  "scope": 13129,
+                  "src": "3409:42:26",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$8505_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$12886_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct StdInvariant.FuzzInterface[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 8739,
+                      "id": 13120,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 8738,
+                        "id": 13119,
                         "name": "FuzzInterface",
+                        "nameLocations": [
+                          "3409:13:26"
+                        ],
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 8505,
-                        "src": "3409:13:16"
+                        "referencedDeclaration": 12886,
+                        "src": "3409:13:26"
                       },
-                      "referencedDeclaration": 8505,
-                      "src": "3409:13:16",
+                      "referencedDeclaration": 12886,
+                      "src": "3409:13:26",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_FuzzInterface_$8505_storage_ptr",
+                        "typeIdentifier": "t_struct$_FuzzInterface_$12886_storage_ptr",
                         "typeString": "struct StdInvariant.FuzzInterface"
                       }
                     },
-                    "id": 8740,
+                    "id": 13121,
                     "nodeType": "ArrayTypeName",
-                    "src": "3409:15:16",
+                    "src": "3409:15:26",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$8505_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_FuzzInterface_$12886_storage_$dyn_storage_ptr",
                       "typeString": "struct StdInvariant.FuzzInterface[]"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "3408:44:16"
+              "src": "3408:44:26"
             },
-            "scope": 8749,
+            "scope": 13130,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
@@ -2951,15 +3256,16 @@
         "contractKind": "contract",
         "fullyImplemented": true,
         "linearizedBaseContracts": [
-          8749
+          13130
         ],
         "name": "StdInvariant",
-        "nameLocation": "118:12:16",
-        "scope": 8750,
-        "usedErrors": []
+        "nameLocation": "118:12:26",
+        "scope": 13131,
+        "usedErrors": [],
+        "usedEvents": []
       }
     ],
     "license": "MIT"
   },
-  "id": 16
+  "id": 26
 }
