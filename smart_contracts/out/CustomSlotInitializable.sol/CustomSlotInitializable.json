@@ -1,0 +1,3114 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "InvalidInitialization",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "NotInitializing",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint64",
+          "name": "version",
+          "type": "uint64"
+        }
+      ],
+      "name": "Initialized",
+      "type": "event"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.23+commit.f704f362\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"InvalidInitialization\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"NotInitializing\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint64\",\"name\":\"version\",\"type\":\"uint64\"}],\"name\":\"Initialized\",\"type\":\"event\"}],\"devdoc\":{\"custom:oz-upgrades-unsafe-allow\":\"constructor constructor() {     _disableInitializers(); } ``` ====\",\"details\":\"Identical to OpenZeppelin's `Initializable`, except that its state variables are kept at a custom storage slot instead of at the start of storage. This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed behind a proxy. Since proxied contracts do not make use of a constructor, it's common to move constructor logic to an external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer function so it can only be called once. The {initializer} modifier provided by this contract will have this effect. The initialization functions use a version number. Once a version number is used, it is consumed and cannot be reused. This mechanism prevents re-execution of each \\\"step\\\" but allows the creation of new initialization steps in case an upgrade adds a module that needs to be initialized. For example: [.hljs-theme-light.nopadding] ```solidity contract MyToken is ERC20Upgradeable {     function initialize() initializer public {         __ERC20_init(\\\"MyToken\\\", \\\"MTK\\\");     } } contract MyTokenV2 is MyToken, ERC20PermitUpgradeable {     function initializeV2() reinitializer(2) public {         __ERC20Permit_init(\\\"MyToken\\\");     } } ``` TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as possible by providing the encoded function call as the `_data` argument to {ERC1967Proxy-constructor}. CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure that all initializers are idempotent. This is not verified automatically as constructors are by Solidity. [CAUTION] ==== Avoid leaving a contract uninitialized. An uninitialized contract can be taken over by an attacker. This applies to both a proxy and its implementation contract, which may impact the proxy. To prevent the implementation contract from being used, you should invoke the {_disableInitializers} function in the constructor to automatically lock it when it is deployed: [.hljs-theme-light.nopadding] ```\",\"errors\":{\"InvalidInitialization()\":[{\"details\":\"The contract is already initialized.\"}],\"NotInitializing()\":[{\"details\":\"The contract is not initializing.\"}]},\"events\":{\"Initialized(uint64)\":{\"details\":\"Triggered when the contract has been initialized or reinitialized.\"}},\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/CustomSlotInitializable.sol\":\"CustomSlotInitializable\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":account-abstraction/=lib/account-abstraction/contracts/\",\":chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/contracts/src/v0.6/vendor/@arbitrum/nitro-contracts/src/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":iden3/=lib/contracts/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":solidity-bytes-utils/=lib/solidity-bytes-utils/\"]},\"sources\":{\"src/CustomSlotInitializable.sol\":{\"keccak256\":\"0x270213ad7110080f825872da1cea987b2e742e315b7da26938a998e8266ec9ee\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8b52e375a9fd51e0e9c83170b15485d92c5dfd295c7798621d303989728f89cf\",\"dweb:/ipfs/Qma1LvXZzP1GJV4Krk8WYxjiFgqAdGdVNCqwcwsiPpY2TD\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.23+commit.f704f362"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidInitialization"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "NotInitializing"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint64",
+              "name": "version",
+              "type": "uint64",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Initialized",
+          "anonymous": false
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "account-abstraction/=lib/account-abstraction/contracts/",
+        "chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/contracts/src/v0.6/vendor/@arbitrum/nitro-contracts/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "iden3/=lib/contracts/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "solidity-bytes-utils/=lib/solidity-bytes-utils/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/CustomSlotInitializable.sol": "CustomSlotInitializable"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/CustomSlotInitializable.sol": {
+        "keccak256": "0x270213ad7110080f825872da1cea987b2e742e315b7da26938a998e8266ec9ee",
+        "urls": [
+          "bzz-raw://8b52e375a9fd51e0e9c83170b15485d92c5dfd295c7798621d303989728f89cf",
+          "dweb:/ipfs/Qma1LvXZzP1GJV4Krk8WYxjiFgqAdGdVNCqwcwsiPpY2TD"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/CustomSlotInitializable.sol",
+    "id": 52109,
+    "exportedSymbols": {
+      "CustomSlotInitializable": [
+        52108
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "116:8390:58",
+    "nodes": [
+      {
+        "id": 51853,
+        "nodeType": "PragmaDirective",
+        "src": "116:24:58",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".23"
+        ]
+      },
+      {
+        "id": 52108,
+        "nodeType": "ContractDefinition",
+        "src": "2563:5943:58",
+        "nodes": [
+          {
+            "id": 51856,
+            "nodeType": "VariableDeclaration",
+            "src": "2612:43:58",
+            "nodes": [],
+            "constant": false,
+            "mutability": "immutable",
+            "name": "_storagePosition",
+            "nameLocation": "2639:16:58",
+            "scope": 52108,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 51855,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "2612:7:58",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 51863,
+            "nodeType": "StructDefinition",
+            "src": "2664:348:58",
+            "nodes": [],
+            "canonicalName": "CustomSlotInitializable.CustomSlotInitializableStorage",
+            "members": [
+              {
+                "constant": false,
+                "id": 51859,
+                "mutability": "mutable",
+                "name": "initialized",
+                "nameLocation": "2854:11:58",
+                "nodeType": "VariableDeclaration",
+                "scope": 51863,
+                "src": "2847:18:58",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint64",
+                  "typeString": "uint64"
+                },
+                "typeName": {
+                  "id": 51858,
+                  "name": "uint64",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2847:6:58",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 51862,
+                "mutability": "mutable",
+                "name": "initializing",
+                "nameLocation": "2992:12:58",
+                "nodeType": "VariableDeclaration",
+                "scope": 51863,
+                "src": "2987:17:58",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 51861,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "2987:4:58",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "CustomSlotInitializableStorage",
+            "nameLocation": "2671:30:58",
+            "scope": 52108,
+            "visibility": "public"
+          },
+          {
+            "id": 51866,
+            "nodeType": "ErrorDefinition",
+            "src": "3088:30:58",
+            "nodes": [],
+            "documentation": {
+              "id": 51864,
+              "nodeType": "StructuredDocumentation",
+              "src": "3020:62:58",
+              "text": " @dev The contract is already initialized."
+            },
+            "errorSelector": "f92ee8a9",
+            "name": "InvalidInitialization",
+            "nameLocation": "3094:21:58",
+            "parameters": {
+              "id": 51865,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3115:2:58"
+            }
+          },
+          {
+            "id": 51869,
+            "nodeType": "ErrorDefinition",
+            "src": "3191:24:58",
+            "nodes": [],
+            "documentation": {
+              "id": 51867,
+              "nodeType": "StructuredDocumentation",
+              "src": "3126:59:58",
+              "text": " @dev The contract is not initializing."
+            },
+            "errorSelector": "d7e6bcf8",
+            "name": "NotInitializing",
+            "nameLocation": "3197:15:58",
+            "parameters": {
+              "id": 51868,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3212:2:58"
+            }
+          },
+          {
+            "id": 51874,
+            "nodeType": "EventDefinition",
+            "src": "3321:34:58",
+            "nodes": [],
+            "anonymous": false,
+            "documentation": {
+              "id": 51870,
+              "nodeType": "StructuredDocumentation",
+              "src": "3223:92:58",
+              "text": " @dev Triggered when the contract has been initialized or reinitialized."
+            },
+            "eventSelector": "c7f505b2f371ae2175ee4913f4499e1f2633a7b5936321eed1cdaeb6115181d2",
+            "name": "Initialized",
+            "nameLocation": "3327:11:58",
+            "parameters": {
+              "id": 51873,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51872,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "version",
+                  "nameLocation": "3346:7:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51874,
+                  "src": "3339:14:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 51871,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3339:6:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3338:16:58"
+            }
+          },
+          {
+            "id": 51884,
+            "nodeType": "FunctionDefinition",
+            "src": "3363:90:58",
+            "nodes": [],
+            "body": {
+              "id": 51883,
+              "nodeType": "Block",
+              "src": "3400:53:58",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 51881,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 51879,
+                      "name": "_storagePosition",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 51856,
+                      "src": "3411:16:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 51880,
+                      "name": "storagePosition",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 51876,
+                      "src": "3430:15:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      }
+                    },
+                    "src": "3411:34:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "id": 51882,
+                  "nodeType": "ExpressionStatement",
+                  "src": "3411:34:58"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 51877,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51876,
+                  "mutability": "mutable",
+                  "name": "storagePosition",
+                  "nameLocation": "3383:15:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 51884,
+                  "src": "3375:23:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 51875,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3375:7:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3374:25:58"
+            },
+            "returnParameters": {
+              "id": 51878,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3400:0:58"
+            },
+            "scope": 52108,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 51967,
+            "nodeType": "ModifierDefinition",
+            "src": "3874:1122:58",
+            "nodes": [],
+            "body": {
+              "id": 51966,
+              "nodeType": "Block",
+              "src": "3897:1099:58",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    51889
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 51889,
+                      "mutability": "mutable",
+                      "name": "_storage",
+                      "nameLocation": "3947:8:58",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 51966,
+                      "src": "3908:47:58",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                        "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage"
+                      },
+                      "typeName": {
+                        "id": 51888,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 51887,
+                          "name": "CustomSlotInitializableStorage",
+                          "nameLocations": [
+                            "3908:30:58"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 51863,
+                          "src": "3908:30:58"
+                        },
+                        "referencedDeclaration": 51863,
+                        "src": "3908:30:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                          "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 51892,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 51890,
+                      "name": "_getInitializableStorage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 52107,
+                      "src": "3958:24:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr_$",
+                        "typeString": "function () view returns (struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer)"
+                      }
+                    },
+                    "id": 51891,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "3958:26:58",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                      "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "3908:76:58"
+                },
+                {
+                  "assignments": [
+                    51894
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 51894,
+                      "mutability": "mutable",
+                      "name": "isTopLevelCall",
+                      "nameLocation": "4054:14:58",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 51966,
+                      "src": "4049:19:58",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "typeName": {
+                        "id": 51893,
+                        "name": "bool",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "4049:4:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 51898,
+                  "initialValue": {
+                    "id": 51897,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "!",
+                    "prefix": true,
+                    "src": "4071:22:58",
+                    "subExpression": {
+                      "expression": {
+                        "id": 51895,
+                        "name": "_storage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51889,
+                        "src": "4072:8:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                          "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                        }
+                      },
+                      "id": 51896,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "4081:12:58",
+                      "memberName": "initializing",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 51862,
+                      "src": "4072:21:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "4049:44:58"
+                },
+                {
+                  "assignments": [
+                    51900
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 51900,
+                      "mutability": "mutable",
+                      "name": "initialized",
+                      "nameLocation": "4111:11:58",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 51966,
+                      "src": "4104:18:58",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint64",
+                        "typeString": "uint64"
+                      },
+                      "typeName": {
+                        "id": 51899,
+                        "name": "uint64",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "4104:6:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 51903,
+                  "initialValue": {
+                    "expression": {
+                      "id": 51901,
+                      "name": "_storage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 51889,
+                      "src": "4125:8:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                        "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                      }
+                    },
+                    "id": 51902,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberLocation": "4134:11:58",
+                    "memberName": "initialized",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 51859,
+                    "src": "4125:20:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "4104:41:58"
+                },
+                {
+                  "assignments": [
+                    51905
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 51905,
+                      "mutability": "mutable",
+                      "name": "initialSetup",
+                      "nameLocation": "4501:12:58",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 51966,
+                      "src": "4496:17:58",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "typeName": {
+                        "id": 51904,
+                        "name": "bool",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "4496:4:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 51911,
+                  "initialValue": {
+                    "commonType": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "id": 51910,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "commonType": {
+                        "typeIdentifier": "t_uint64",
+                        "typeString": "uint64"
+                      },
+                      "id": 51908,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "id": 51906,
+                        "name": "initialized",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51900,
+                        "src": "4516:11:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "==",
+                      "rightExpression": {
+                        "hexValue": "30",
+                        "id": 51907,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "4531:1:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      },
+                      "src": "4516:16:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "&&",
+                    "rightExpression": {
+                      "id": 51909,
+                      "name": "isTopLevelCall",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 51894,
+                      "src": "4536:14:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "4516:34:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "4496:54:58"
+                },
+                {
+                  "assignments": [
+                    51913
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 51913,
+                      "mutability": "mutable",
+                      "name": "construction",
+                      "nameLocation": "4566:12:58",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 51966,
+                      "src": "4561:17:58",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "typeName": {
+                        "id": 51912,
+                        "name": "bool",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "4561:4:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 51926,
+                  "initialValue": {
+                    "commonType": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "id": 51925,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "commonType": {
+                        "typeIdentifier": "t_uint64",
+                        "typeString": "uint64"
+                      },
+                      "id": 51916,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "id": 51914,
+                        "name": "initialized",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51900,
+                        "src": "4581:11:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "==",
+                      "rightExpression": {
+                        "hexValue": "31",
+                        "id": 51915,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "4596:1:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      },
+                      "src": "4581:16:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "&&",
+                    "rightExpression": {
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 51924,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "expression": {
+                          "expression": {
+                            "arguments": [
+                              {
+                                "id": 51919,
+                                "name": "this",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -28,
+                                "src": "4609:4:58",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_contract$_CustomSlotInitializable_$52108",
+                                  "typeString": "contract CustomSlotInitializable"
+                                }
+                              }
+                            ],
+                            "expression": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_contract$_CustomSlotInitializable_$52108",
+                                  "typeString": "contract CustomSlotInitializable"
+                                }
+                              ],
+                              "id": 51918,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "nodeType": "ElementaryTypeNameExpression",
+                              "src": "4601:7:58",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_address_$",
+                                "typeString": "type(address)"
+                              },
+                              "typeName": {
+                                "id": 51917,
+                                "name": "address",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "4601:7:58",
+                                "typeDescriptions": {}
+                              }
+                            },
+                            "id": 51920,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "kind": "typeConversion",
+                            "lValueRequested": false,
+                            "nameLocations": [],
+                            "names": [],
+                            "nodeType": "FunctionCall",
+                            "src": "4601:13:58",
+                            "tryCall": false,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "id": 51921,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberLocation": "4615:4:58",
+                          "memberName": "code",
+                          "nodeType": "MemberAccess",
+                          "src": "4601:18:58",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes_memory_ptr",
+                            "typeString": "bytes memory"
+                          }
+                        },
+                        "id": 51922,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "4620:6:58",
+                        "memberName": "length",
+                        "nodeType": "MemberAccess",
+                        "src": "4601:25:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "==",
+                      "rightExpression": {
+                        "hexValue": "30",
+                        "id": 51923,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "4630:1:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      },
+                      "src": "4601:30:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "4581:50:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "4561:70:58"
+                },
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "id": 51931,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "id": 51928,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "UnaryOperation",
+                      "operator": "!",
+                      "prefix": true,
+                      "src": "4648:13:58",
+                      "subExpression": {
+                        "id": 51927,
+                        "name": "initialSetup",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51905,
+                        "src": "4649:12:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "&&",
+                    "rightExpression": {
+                      "id": 51930,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "UnaryOperation",
+                      "operator": "!",
+                      "prefix": true,
+                      "src": "4665:13:58",
+                      "subExpression": {
+                        "id": 51929,
+                        "name": "construction",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51913,
+                        "src": "4666:12:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "4648:30:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 51936,
+                  "nodeType": "IfStatement",
+                  "src": "4644:93:58",
+                  "trueBody": {
+                    "id": 51935,
+                    "nodeType": "Block",
+                    "src": "4680:57:58",
+                    "statements": [
+                      {
+                        "errorCall": {
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "id": 51932,
+                            "name": "InvalidInitialization",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 51866,
+                            "src": "4702:21:58",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_error_pure$__$returns$__$",
+                              "typeString": "function () pure"
+                            }
+                          },
+                          "id": 51933,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "4702:23:58",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 51934,
+                        "nodeType": "RevertStatement",
+                        "src": "4695:30:58"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "id": 51941,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 51937,
+                        "name": "_storage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51889,
+                        "src": "4747:8:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                          "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                        }
+                      },
+                      "id": 51939,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "4756:11:58",
+                      "memberName": "initialized",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 51859,
+                      "src": "4747:20:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint64",
+                        "typeString": "uint64"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "31",
+                      "id": 51940,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "4770:1:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_1_by_1",
+                        "typeString": "int_const 1"
+                      },
+                      "value": "1"
+                    },
+                    "src": "4747:24:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "id": 51942,
+                  "nodeType": "ExpressionStatement",
+                  "src": "4747:24:58"
+                },
+                {
+                  "condition": {
+                    "id": 51943,
+                    "name": "isTopLevelCall",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 51894,
+                    "src": "4786:14:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 51951,
+                  "nodeType": "IfStatement",
+                  "src": "4782:75:58",
+                  "trueBody": {
+                    "id": 51950,
+                    "nodeType": "Block",
+                    "src": "4802:55:58",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 51948,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "expression": {
+                              "id": 51944,
+                              "name": "_storage",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 51889,
+                              "src": "4817:8:58",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                                "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                              }
+                            },
+                            "id": 51946,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "memberLocation": "4826:12:58",
+                            "memberName": "initializing",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 51862,
+                            "src": "4817:21:58",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "hexValue": "74727565",
+                            "id": 51947,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "4841:4:58",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "true"
+                          },
+                          "src": "4817:28:58",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 51949,
+                        "nodeType": "ExpressionStatement",
+                        "src": "4817:28:58"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 51952,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "4867:1:58"
+                },
+                {
+                  "condition": {
+                    "id": 51953,
+                    "name": "isTopLevelCall",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 51894,
+                    "src": "4883:14:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 51965,
+                  "nodeType": "IfStatement",
+                  "src": "4879:110:58",
+                  "trueBody": {
+                    "id": 51964,
+                    "nodeType": "Block",
+                    "src": "4899:90:58",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 51958,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "expression": {
+                              "id": 51954,
+                              "name": "_storage",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 51889,
+                              "src": "4914:8:58",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                                "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                              }
+                            },
+                            "id": 51956,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "memberLocation": "4923:12:58",
+                            "memberName": "initializing",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 51862,
+                            "src": "4914:21:58",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "hexValue": "66616c7365",
+                            "id": 51957,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "4938:5:58",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "false"
+                          },
+                          "src": "4914:29:58",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 51959,
+                        "nodeType": "ExpressionStatement",
+                        "src": "4914:29:58"
+                      },
+                      {
+                        "eventCall": {
+                          "arguments": [
+                            {
+                              "hexValue": "31",
+                              "id": 51961,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "number",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "4975:1:58",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_rational_1_by_1",
+                                "typeString": "int_const 1"
+                              },
+                              "value": "1"
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_rational_1_by_1",
+                                "typeString": "int_const 1"
+                              }
+                            ],
+                            "id": 51960,
+                            "name": "Initialized",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 51874,
+                            "src": "4963:11:58",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_event_nonpayable$_t_uint64_$returns$__$",
+                              "typeString": "function (uint64)"
+                            }
+                          },
+                          "id": 51962,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "4963:14:58",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 51963,
+                        "nodeType": "EmitStatement",
+                        "src": "4958:19:58"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": {
+              "id": 51885,
+              "nodeType": "StructuredDocumentation",
+              "src": "3461:407:58",
+              "text": " @dev A modifier that defines a protected initializer function that can be invoked at most once. In its scope,\n `onlyInitializing` functions can be used to initialize parent contracts.\n Similar to `reinitializer(1)`, except that functions marked with `initializer` can be nested in the context of a\n constructor.\n Emits an {Initialized} event."
+            },
+            "name": "initializer",
+            "nameLocation": "3883:11:58",
+            "parameters": {
+              "id": 51886,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3894:2:58"
+            },
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 52014,
+            "nodeType": "ModifierDefinition",
+            "src": "6089:433:58",
+            "nodes": [],
+            "body": {
+              "id": 52013,
+              "nodeType": "Block",
+              "src": "6128:394:58",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    51974
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 51974,
+                      "mutability": "mutable",
+                      "name": "_storage",
+                      "nameLocation": "6178:8:58",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 52013,
+                      "src": "6139:47:58",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                        "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage"
+                      },
+                      "typeName": {
+                        "id": 51973,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 51972,
+                          "name": "CustomSlotInitializableStorage",
+                          "nameLocations": [
+                            "6139:30:58"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 51863,
+                          "src": "6139:30:58"
+                        },
+                        "referencedDeclaration": 51863,
+                        "src": "6139:30:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                          "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 51977,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 51975,
+                      "name": "_getInitializableStorage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 52107,
+                      "src": "6189:24:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr_$",
+                        "typeString": "function () view returns (struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer)"
+                      }
+                    },
+                    "id": 51976,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "6189:26:58",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                      "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "6139:76:58"
+                },
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "id": 51984,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "id": 51978,
+                        "name": "_storage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51974,
+                        "src": "6232:8:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                          "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                        }
+                      },
+                      "id": 51979,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "6241:12:58",
+                      "memberName": "initializing",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 51862,
+                      "src": "6232:21:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "||",
+                    "rightExpression": {
+                      "commonType": {
+                        "typeIdentifier": "t_uint64",
+                        "typeString": "uint64"
+                      },
+                      "id": 51983,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "expression": {
+                          "id": 51980,
+                          "name": "_storage",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 51974,
+                          "src": "6257:8:58",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                            "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                          }
+                        },
+                        "id": 51981,
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "6266:11:58",
+                        "memberName": "initialized",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 51859,
+                        "src": "6257:20:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": ">=",
+                      "rightExpression": {
+                        "id": 51982,
+                        "name": "version",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51970,
+                        "src": "6281:7:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        }
+                      },
+                      "src": "6257:31:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "6232:56:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 51989,
+                  "nodeType": "IfStatement",
+                  "src": "6228:119:58",
+                  "trueBody": {
+                    "id": 51988,
+                    "nodeType": "Block",
+                    "src": "6290:57:58",
+                    "statements": [
+                      {
+                        "errorCall": {
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "id": 51985,
+                            "name": "InvalidInitialization",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 51866,
+                            "src": "6312:21:58",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_error_pure$__$returns$__$",
+                              "typeString": "function () pure"
+                            }
+                          },
+                          "id": 51986,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "6312:23:58",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 51987,
+                        "nodeType": "RevertStatement",
+                        "src": "6305:30:58"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "id": 51994,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 51990,
+                        "name": "_storage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51974,
+                        "src": "6357:8:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                          "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                        }
+                      },
+                      "id": 51992,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "6366:11:58",
+                      "memberName": "initialized",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 51859,
+                      "src": "6357:20:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint64",
+                        "typeString": "uint64"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 51993,
+                      "name": "version",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 51970,
+                      "src": "6380:7:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint64",
+                        "typeString": "uint64"
+                      }
+                    },
+                    "src": "6357:30:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "id": 51995,
+                  "nodeType": "ExpressionStatement",
+                  "src": "6357:30:58"
+                },
+                {
+                  "expression": {
+                    "id": 52000,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 51996,
+                        "name": "_storage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51974,
+                        "src": "6398:8:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                          "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                        }
+                      },
+                      "id": 51998,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "6407:12:58",
+                      "memberName": "initializing",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 51862,
+                      "src": "6398:21:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "74727565",
+                      "id": 51999,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "6422:4:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "true"
+                    },
+                    "src": "6398:28:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 52001,
+                  "nodeType": "ExpressionStatement",
+                  "src": "6398:28:58"
+                },
+                {
+                  "id": 52002,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "6437:1:58"
+                },
+                {
+                  "expression": {
+                    "id": 52007,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "expression": {
+                        "id": 52003,
+                        "name": "_storage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51974,
+                        "src": "6449:8:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                          "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                        }
+                      },
+                      "id": 52005,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberLocation": "6458:12:58",
+                      "memberName": "initializing",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 51862,
+                      "src": "6449:21:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "66616c7365",
+                      "id": 52006,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "bool",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "6473:5:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "value": "false"
+                    },
+                    "src": "6449:29:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 52008,
+                  "nodeType": "ExpressionStatement",
+                  "src": "6449:29:58"
+                },
+                {
+                  "eventCall": {
+                    "arguments": [
+                      {
+                        "id": 52010,
+                        "name": "version",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 51970,
+                        "src": "6506:7:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint64",
+                          "typeString": "uint64"
+                        }
+                      ],
+                      "id": 52009,
+                      "name": "Initialized",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 51874,
+                      "src": "6494:11:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_event_nonpayable$_t_uint64_$returns$__$",
+                        "typeString": "function (uint64)"
+                      }
+                    },
+                    "id": 52011,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "6494:20:58",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 52012,
+                  "nodeType": "EmitStatement",
+                  "src": "6489:25:58"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 51968,
+              "nodeType": "StructuredDocumentation",
+              "src": "5004:1079:58",
+              "text": " @dev A modifier that defines a protected reinitializer function that can be invoked at most once, and only if the\n contract hasn't been initialized to a greater version before. In its scope, `onlyInitializing` functions can be\n used to initialize parent contracts.\n A reinitializer may be used after the original initialization step. This is essential to configure modules that\n are added through upgrades and that require initialization.\n When `version` is 1, this modifier is similar to `initializer`, except that functions marked with `reinitializer`\n cannot be nested. If one is invoked in the context of another, execution will revert.\n Note that versions can jump in increments greater than 1; this implies that if multiple reinitializers coexist in\n a contract, executing them in the right order is up to the developer or operator.\n WARNING: setting the version to 255 will prevent any future reinitialization.\n Emits an {Initialized} event."
+            },
+            "name": "reinitializer",
+            "nameLocation": "6098:13:58",
+            "parameters": {
+              "id": 51971,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51970,
+                  "mutability": "mutable",
+                  "name": "version",
+                  "nameLocation": "6119:7:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52014,
+                  "src": "6112:14:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 51969,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "6112:6:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "6111:16:58"
+            },
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 52027,
+            "nodeType": "ModifierDefinition",
+            "src": "6738:133:58",
+            "nodes": [],
+            "body": {
+              "id": 52026,
+              "nodeType": "Block",
+              "src": "6766:105:58",
+              "nodes": [],
+              "statements": [
+                {
+                  "condition": {
+                    "id": 52019,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "!",
+                    "prefix": true,
+                    "src": "6781:18:58",
+                    "subExpression": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 52017,
+                        "name": "_isInitializing",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 52095,
+                        "src": "6782:15:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_view$__$returns$_t_bool_$",
+                          "typeString": "function () view returns (bool)"
+                        }
+                      },
+                      "id": 52018,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "6782:17:58",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 52024,
+                  "nodeType": "IfStatement",
+                  "src": "6777:75:58",
+                  "trueBody": {
+                    "id": 52023,
+                    "nodeType": "Block",
+                    "src": "6801:51:58",
+                    "statements": [
+                      {
+                        "errorCall": {
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "id": 52020,
+                            "name": "NotInitializing",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 51869,
+                            "src": "6823:15:58",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_error_pure$__$returns$__$",
+                              "typeString": "function () pure"
+                            }
+                          },
+                          "id": 52021,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "6823:17:58",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 52022,
+                        "nodeType": "RevertStatement",
+                        "src": "6816:24:58"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": 52025,
+                  "nodeType": "PlaceholderStatement",
+                  "src": "6862:1:58"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 52015,
+              "nodeType": "StructuredDocumentation",
+              "src": "6530:202:58",
+              "text": " @dev Modifier to protect an initialization function so that it can only be invoked by functions with the\n {initializer} and {reinitializer} modifiers, directly or indirectly."
+            },
+            "name": "onlyInitializing",
+            "nameLocation": "6747:16:58",
+            "parameters": {
+              "id": 52016,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "6763:2:58"
+            },
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 52073,
+            "nodeType": "FunctionDefinition",
+            "src": "7367:411:58",
+            "nodes": [],
+            "body": {
+              "id": 52072,
+              "nodeType": "Block",
+              "src": "7416:362:58",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    52033
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 52033,
+                      "mutability": "mutable",
+                      "name": "_storage",
+                      "nameLocation": "7466:8:58",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 52072,
+                      "src": "7427:47:58",
+                      "stateVariable": false,
+                      "storageLocation": "storage",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                        "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage"
+                      },
+                      "typeName": {
+                        "id": 52032,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 52031,
+                          "name": "CustomSlotInitializableStorage",
+                          "nameLocations": [
+                            "7427:30:58"
+                          ],
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 51863,
+                          "src": "7427:30:58"
+                        },
+                        "referencedDeclaration": 51863,
+                        "src": "7427:30:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                          "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 52036,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 52034,
+                      "name": "_getInitializableStorage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 52107,
+                      "src": "7477:24:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr_$",
+                        "typeString": "function () view returns (struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer)"
+                      }
+                    },
+                    "id": 52035,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "7477:26:58",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                      "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "7427:76:58"
+                },
+                {
+                  "condition": {
+                    "expression": {
+                      "id": 52037,
+                      "name": "_storage",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 52033,
+                      "src": "7520:8:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                        "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                      }
+                    },
+                    "id": 52038,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberLocation": "7529:12:58",
+                    "memberName": "initializing",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 51862,
+                    "src": "7520:21:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 52043,
+                  "nodeType": "IfStatement",
+                  "src": "7516:84:58",
+                  "trueBody": {
+                    "id": 52042,
+                    "nodeType": "Block",
+                    "src": "7543:57:58",
+                    "statements": [
+                      {
+                        "errorCall": {
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "id": 52039,
+                            "name": "InvalidInitialization",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 51866,
+                            "src": "7565:21:58",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_error_pure$__$returns$__$",
+                              "typeString": "function () pure"
+                            }
+                          },
+                          "id": 52040,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "7565:23:58",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 52041,
+                        "nodeType": "RevertStatement",
+                        "src": "7558:30:58"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    },
+                    "id": 52051,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "expression": {
+                        "id": 52044,
+                        "name": "_storage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 52033,
+                        "src": "7614:8:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                          "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                        }
+                      },
+                      "id": 52045,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberLocation": "7623:11:58",
+                      "memberName": "initialized",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 51859,
+                      "src": "7614:20:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint64",
+                        "typeString": "uint64"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "!=",
+                    "rightExpression": {
+                      "expression": {
+                        "arguments": [
+                          {
+                            "id": 52048,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "7643:6:58",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_uint64_$",
+                              "typeString": "type(uint64)"
+                            },
+                            "typeName": {
+                              "id": 52047,
+                              "name": "uint64",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "7643:6:58",
+                              "typeDescriptions": {}
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_type$_t_uint64_$",
+                              "typeString": "type(uint64)"
+                            }
+                          ],
+                          "id": 52046,
+                          "name": "type",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": -27,
+                          "src": "7638:4:58",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_metatype_pure$__$returns$__$",
+                            "typeString": "function () pure"
+                          }
+                        },
+                        "id": 52049,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "7638:12:58",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_meta_type_t_uint64",
+                          "typeString": "type(uint64)"
+                        }
+                      },
+                      "id": 52050,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberLocation": "7651:3:58",
+                      "memberName": "max",
+                      "nodeType": "MemberAccess",
+                      "src": "7638:16:58",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint64",
+                        "typeString": "uint64"
+                      }
+                    },
+                    "src": "7614:40:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 52071,
+                  "nodeType": "IfStatement",
+                  "src": "7610:161:58",
+                  "trueBody": {
+                    "id": 52070,
+                    "nodeType": "Block",
+                    "src": "7656:115:58",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 52060,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "expression": {
+                              "id": 52052,
+                              "name": "_storage",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 52033,
+                              "src": "7671:8:58",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                                "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                              }
+                            },
+                            "id": 52054,
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "memberLocation": "7680:11:58",
+                            "memberName": "initialized",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 51859,
+                            "src": "7671:20:58",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint64",
+                              "typeString": "uint64"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "expression": {
+                              "arguments": [
+                                {
+                                  "id": 52057,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "lValueRequested": false,
+                                  "nodeType": "ElementaryTypeNameExpression",
+                                  "src": "7699:6:58",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_type$_t_uint64_$",
+                                    "typeString": "type(uint64)"
+                                  },
+                                  "typeName": {
+                                    "id": 52056,
+                                    "name": "uint64",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "7699:6:58",
+                                    "typeDescriptions": {}
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_type$_t_uint64_$",
+                                    "typeString": "type(uint64)"
+                                  }
+                                ],
+                                "id": 52055,
+                                "name": "type",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -27,
+                                "src": "7694:4:58",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_metatype_pure$__$returns$__$",
+                                  "typeString": "function () pure"
+                                }
+                              },
+                              "id": 52058,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "nameLocations": [],
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "7694:12:58",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_meta_type_t_uint64",
+                                "typeString": "type(uint64)"
+                              }
+                            },
+                            "id": 52059,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "memberLocation": "7707:3:58",
+                            "memberName": "max",
+                            "nodeType": "MemberAccess",
+                            "src": "7694:16:58",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint64",
+                              "typeString": "uint64"
+                            }
+                          },
+                          "src": "7671:39:58",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint64",
+                            "typeString": "uint64"
+                          }
+                        },
+                        "id": 52061,
+                        "nodeType": "ExpressionStatement",
+                        "src": "7671:39:58"
+                      },
+                      {
+                        "eventCall": {
+                          "arguments": [
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "id": 52065,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "lValueRequested": false,
+                                    "nodeType": "ElementaryTypeNameExpression",
+                                    "src": "7747:6:58",
+                                    "typeDescriptions": {
+                                      "typeIdentifier": "t_type$_t_uint64_$",
+                                      "typeString": "type(uint64)"
+                                    },
+                                    "typeName": {
+                                      "id": 52064,
+                                      "name": "uint64",
+                                      "nodeType": "ElementaryTypeName",
+                                      "src": "7747:6:58",
+                                      "typeDescriptions": {}
+                                    }
+                                  }
+                                ],
+                                "expression": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_type$_t_uint64_$",
+                                      "typeString": "type(uint64)"
+                                    }
+                                  ],
+                                  "id": 52063,
+                                  "name": "type",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": -27,
+                                  "src": "7742:4:58",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_function_metatype_pure$__$returns$__$",
+                                    "typeString": "function () pure"
+                                  }
+                                },
+                                "id": 52066,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "kind": "functionCall",
+                                "lValueRequested": false,
+                                "nameLocations": [],
+                                "names": [],
+                                "nodeType": "FunctionCall",
+                                "src": "7742:12:58",
+                                "tryCall": false,
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_magic_meta_type_t_uint64",
+                                  "typeString": "type(uint64)"
+                                }
+                              },
+                              "id": 52067,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "memberLocation": "7755:3:58",
+                              "memberName": "max",
+                              "nodeType": "MemberAccess",
+                              "src": "7742:16:58",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint64",
+                                "typeString": "uint64"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_uint64",
+                                "typeString": "uint64"
+                              }
+                            ],
+                            "id": 52062,
+                            "name": "Initialized",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 51874,
+                            "src": "7730:11:58",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_event_nonpayable$_t_uint64_$returns$__$",
+                              "typeString": "function (uint64)"
+                            }
+                          },
+                          "id": 52068,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "nameLocations": [],
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "7730:29:58",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 52069,
+                        "nodeType": "EmitStatement",
+                        "src": "7725:34:58"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": {
+              "id": 52028,
+              "nodeType": "StructuredDocumentation",
+              "src": "6879:482:58",
+              "text": " @dev Locks the contract, preventing any future reinitialization. This cannot be part of an initializer call.\n Calling this in the constructor of a contract will prevent that contract from being initialized or reinitialized\n to any version. It is recommended to use this to lock implementation contracts that are designed to be called\n through proxies.\n Emits an {Initialized} event the first time it is successfully executed."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_disableInitializers",
+            "nameLocation": "7376:20:58",
+            "parameters": {
+              "id": 52029,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "7396:2:58"
+            },
+            "returnParameters": {
+              "id": 52030,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "7416:0:58"
+            },
+            "scope": 52108,
+            "stateMutability": "nonpayable",
+            "virtual": true,
+            "visibility": "internal"
+          },
+          {
+            "id": 52084,
+            "nodeType": "FunctionDefinition",
+            "src": "7893:129:58",
+            "nodes": [],
+            "body": {
+              "id": 52083,
+              "nodeType": "Block",
+              "src": "7958:64:58",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "expression": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 52079,
+                        "name": "_getInitializableStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 52107,
+                        "src": "7976:24:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_view$__$returns$_t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr_$",
+                          "typeString": "function () view returns (struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer)"
+                        }
+                      },
+                      "id": 52080,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "7976:26:58",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                        "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                      }
+                    },
+                    "id": 52081,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberLocation": "8003:11:58",
+                    "memberName": "initialized",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 51859,
+                    "src": "7976:38:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "functionReturnParameters": 52078,
+                  "id": 52082,
+                  "nodeType": "Return",
+                  "src": "7969:45:58"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 52074,
+              "nodeType": "StructuredDocumentation",
+              "src": "7786:101:58",
+              "text": " @dev Returns the highest version that has been initialized. See {reinitializer}."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_getInitializedVersion",
+            "nameLocation": "7902:22:58",
+            "parameters": {
+              "id": 52075,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "7924:2:58"
+            },
+            "returnParameters": {
+              "id": 52078,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52077,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52084,
+                  "src": "7950:6:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 52076,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "7950:6:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "7949:8:58"
+            },
+            "scope": 52108,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 52095,
+            "nodeType": "FunctionDefinition",
+            "src": "8143:121:58",
+            "nodes": [],
+            "body": {
+              "id": 52094,
+              "nodeType": "Block",
+              "src": "8199:65:58",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "expression": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 52090,
+                        "name": "_getInitializableStorage",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 52107,
+                        "src": "8217:24:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_view$__$returns$_t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr_$",
+                          "typeString": "function () view returns (struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer)"
+                        }
+                      },
+                      "id": 52091,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "8217:26:58",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                        "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage storage pointer"
+                      }
+                    },
+                    "id": 52092,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberLocation": "8244:12:58",
+                    "memberName": "initializing",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 51862,
+                    "src": "8217:39:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 52089,
+                  "id": 52093,
+                  "nodeType": "Return",
+                  "src": "8210:46:58"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 52085,
+              "nodeType": "StructuredDocumentation",
+              "src": "8030:107:58",
+              "text": " @dev Returns `true` if the contract is currently initializing. See {onlyInitializing}."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_isInitializing",
+            "nameLocation": "8152:15:58",
+            "parameters": {
+              "id": 52086,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8167:2:58"
+            },
+            "returnParameters": {
+              "id": 52089,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52088,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52095,
+                  "src": "8193:4:58",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 52087,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "8193:4:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "8192:6:58"
+            },
+            "scope": 52108,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 52107,
+            "nodeType": "FunctionDefinition",
+            "src": "8272:231:58",
+            "nodes": [],
+            "body": {
+              "id": 52106,
+              "nodeType": "Block",
+              "src": "8379:124:58",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    52102
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 52102,
+                      "mutability": "mutable",
+                      "name": "position",
+                      "nameLocation": "8398:8:58",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 52106,
+                      "src": "8390:16:58",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 52101,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "8390:7:58",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 52104,
+                  "initialValue": {
+                    "id": 52103,
+                    "name": "_storagePosition",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 51856,
+                    "src": "8409:16:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "8390:35:58"
+                },
+                {
+                  "AST": {
+                    "nativeSrc": "8445:51:58",
+                    "nodeType": "YulBlock",
+                    "src": "8445:51:58",
+                    "statements": [
+                      {
+                        "nativeSrc": "8460:25:58",
+                        "nodeType": "YulAssignment",
+                        "src": "8460:25:58",
+                        "value": {
+                          "name": "position",
+                          "nativeSrc": "8477:8:58",
+                          "nodeType": "YulIdentifier",
+                          "src": "8477:8:58"
+                        },
+                        "variableNames": [
+                          {
+                            "name": "_storage.slot",
+                            "nativeSrc": "8460:13:58",
+                            "nodeType": "YulIdentifier",
+                            "src": "8460:13:58"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "evmVersion": "paris",
+                  "externalReferences": [
+                    {
+                      "declaration": 52099,
+                      "isOffset": false,
+                      "isSlot": true,
+                      "src": "8460:13:58",
+                      "suffix": "slot",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 52102,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "8477:8:58",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 52105,
+                  "nodeType": "InlineAssembly",
+                  "src": "8436:60:58"
+                }
+              ]
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "_getInitializableStorage",
+            "nameLocation": "8281:24:58",
+            "parameters": {
+              "id": 52096,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8305:2:58"
+            },
+            "returnParameters": {
+              "id": 52100,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 52099,
+                  "mutability": "mutable",
+                  "name": "_storage",
+                  "nameLocation": "8369:8:58",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 52107,
+                  "src": "8330:47:58",
+                  "stateVariable": false,
+                  "storageLocation": "storage",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                    "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage"
+                  },
+                  "typeName": {
+                    "id": 52098,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 52097,
+                      "name": "CustomSlotInitializableStorage",
+                      "nameLocations": [
+                        "8330:30:58"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 51863,
+                      "src": "8330:30:58"
+                    },
+                    "referencedDeclaration": 51863,
+                    "src": "8330:30:58",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_CustomSlotInitializableStorage_$51863_storage_ptr",
+                      "typeString": "struct CustomSlotInitializable.CustomSlotInitializableStorage"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "8329:49:58"
+            },
+            "scope": 52108,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "private"
+          }
+        ],
+        "abstract": true,
+        "baseContracts": [],
+        "canonicalName": "CustomSlotInitializable",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 51854,
+          "nodeType": "StructuredDocumentation",
+          "src": "144:2417:58",
+          "text": " @dev Identical to OpenZeppelin's `Initializable`, except that its state variables are kept at a custom storage slot\n instead of at the start of storage.\n This is a base contract to aid in writing upgradeable contracts, or any kind of contract that will be deployed\n behind a proxy. Since proxied contracts do not make use of a constructor, it's common to move constructor logic to an\n external initializer function, usually called `initialize`. It then becomes necessary to protect this initializer\n function so it can only be called once. The {initializer} modifier provided by this contract will have this effect.\n The initialization functions use a version number. Once a version number is used, it is consumed and cannot be\n reused. This mechanism prevents re-execution of each \"step\" but allows the creation of new initialization steps in\n case an upgrade adds a module that needs to be initialized.\n For example:\n [.hljs-theme-light.nopadding]\n ```solidity\n contract MyToken is ERC20Upgradeable {\n     function initialize() initializer public {\n         __ERC20_init(\"MyToken\", \"MTK\");\n     }\n }\n contract MyTokenV2 is MyToken, ERC20PermitUpgradeable {\n     function initializeV2() reinitializer(2) public {\n         __ERC20Permit_init(\"MyToken\");\n     }\n }\n ```\n TIP: To avoid leaving the proxy in an uninitialized state, the initializer function should be called as early as\n possible by providing the encoded function call as the `_data` argument to {ERC1967Proxy-constructor}.\n CAUTION: When used with inheritance, manual care must be taken to not invoke a parent initializer twice, or to ensure\n that all initializers are idempotent. This is not verified automatically as constructors are by Solidity.\n [CAUTION]\n ====\n Avoid leaving a contract uninitialized.\n An uninitialized contract can be taken over by an attacker. This applies to both a proxy and its implementation\n contract, which may impact the proxy. To prevent the implementation contract from being used, you should invoke\n the {_disableInitializers} function in the constructor to automatically lock it when it is deployed:\n [.hljs-theme-light.nopadding]\n ```\n /// @custom:oz-upgrades-unsafe-allow constructor\n constructor() {\n     _disableInitializers();\n }\n ```\n ===="
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          52108
+        ],
+        "name": "CustomSlotInitializable",
+        "nameLocation": "2581:23:58",
+        "scope": 52109,
+        "usedErrors": [
+          51866,
+          51869
+        ],
+        "usedEvents": [
+          51874
+        ]
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 58
+}

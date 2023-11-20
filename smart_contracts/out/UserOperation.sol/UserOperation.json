@@ -1,0 +1,355 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "lib/account-abstraction/contracts/interfaces/UserOperation.sol",
+    "id": 919,
+    "exportedSymbols": {
+      "UserOperation": [
+        918
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "36:1510:8",
+    "nodes": [
+      {
+        "id": 894,
+        "nodeType": "PragmaDirective",
+        "src": "36:24:8",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".12"
+        ]
+      },
+      {
+        "id": 918,
+        "nodeType": "StructDefinition",
+        "src": "1241:304:8",
+        "nodes": [],
+        "canonicalName": "UserOperation",
+        "documentation": {
+          "id": 895,
+          "nodeType": "StructuredDocumentation",
+          "src": "62:1178:8",
+          "text": " User Operation struct\n @param sender                - The sender account of this request.\n @param nonce                 - Unique value the sender uses to verify it is not a replay.\n @param initCode              - If set, the account contract will be created by this constructor/\n @param callData              - The method call to execute on this account.\n @param callGasLimit          - The gas limit passed to the callData method call.\n @param verificationGasLimit  - Gas used for validateUserOp and validatePaymasterUserOp.\n @param preVerificationGas    - Gas not calculated by the handleOps method, but added to the gas paid.\n                                Covers batch overhead.\n @param maxFeePerGas          - Same as EIP-1559 gas parameter.\n @param maxPriorityFeePerGas  - Same as EIP-1559 gas parameter.\n @param paymasterAndData      - If set, this field holds the paymaster address and paymaster-specific data.\n                                The paymaster will pay for the transaction instead of the sender.\n @param signature             - Sender-verified signature over the entire request, the EntryPoint address and the chain ID."
+        },
+        "members": [
+          {
+            "constant": false,
+            "id": 897,
+            "mutability": "mutable",
+            "name": "sender",
+            "nameLocation": "1276:6:8",
+            "nodeType": "VariableDeclaration",
+            "scope": 918,
+            "src": "1268:14:8",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 896,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "1268:7:8",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 899,
+            "mutability": "mutable",
+            "name": "nonce",
+            "nameLocation": "1296:5:8",
+            "nodeType": "VariableDeclaration",
+            "scope": 918,
+            "src": "1288:13:8",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 898,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1288:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 901,
+            "mutability": "mutable",
+            "name": "initCode",
+            "nameLocation": "1313:8:8",
+            "nodeType": "VariableDeclaration",
+            "scope": 918,
+            "src": "1307:14:8",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes_storage_ptr",
+              "typeString": "bytes"
+            },
+            "typeName": {
+              "id": 900,
+              "name": "bytes",
+              "nodeType": "ElementaryTypeName",
+              "src": "1307:5:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes_storage_ptr",
+                "typeString": "bytes"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 903,
+            "mutability": "mutable",
+            "name": "callData",
+            "nameLocation": "1333:8:8",
+            "nodeType": "VariableDeclaration",
+            "scope": 918,
+            "src": "1327:14:8",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes_storage_ptr",
+              "typeString": "bytes"
+            },
+            "typeName": {
+              "id": 902,
+              "name": "bytes",
+              "nodeType": "ElementaryTypeName",
+              "src": "1327:5:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes_storage_ptr",
+                "typeString": "bytes"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 905,
+            "mutability": "mutable",
+            "name": "callGasLimit",
+            "nameLocation": "1355:12:8",
+            "nodeType": "VariableDeclaration",
+            "scope": 918,
+            "src": "1347:20:8",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 904,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1347:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 907,
+            "mutability": "mutable",
+            "name": "verificationGasLimit",
+            "nameLocation": "1381:20:8",
+            "nodeType": "VariableDeclaration",
+            "scope": 918,
+            "src": "1373:28:8",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 906,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1373:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 909,
+            "mutability": "mutable",
+            "name": "preVerificationGas",
+            "nameLocation": "1415:18:8",
+            "nodeType": "VariableDeclaration",
+            "scope": 918,
+            "src": "1407:26:8",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 908,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1407:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 911,
+            "mutability": "mutable",
+            "name": "maxFeePerGas",
+            "nameLocation": "1447:12:8",
+            "nodeType": "VariableDeclaration",
+            "scope": 918,
+            "src": "1439:20:8",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 910,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1439:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 913,
+            "mutability": "mutable",
+            "name": "maxPriorityFeePerGas",
+            "nameLocation": "1473:20:8",
+            "nodeType": "VariableDeclaration",
+            "scope": 918,
+            "src": "1465:28:8",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 912,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "1465:7:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 915,
+            "mutability": "mutable",
+            "name": "paymasterAndData",
+            "nameLocation": "1505:16:8",
+            "nodeType": "VariableDeclaration",
+            "scope": 918,
+            "src": "1499:22:8",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes_storage_ptr",
+              "typeString": "bytes"
+            },
+            "typeName": {
+              "id": 914,
+              "name": "bytes",
+              "nodeType": "ElementaryTypeName",
+              "src": "1499:5:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes_storage_ptr",
+                "typeString": "bytes"
+              }
+            },
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 917,
+            "mutability": "mutable",
+            "name": "signature",
+            "nameLocation": "1533:9:8",
+            "nodeType": "VariableDeclaration",
+            "scope": 918,
+            "src": "1527:15:8",
+            "stateVariable": false,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes_storage_ptr",
+              "typeString": "bytes"
+            },
+            "typeName": {
+              "id": 916,
+              "name": "bytes",
+              "nodeType": "ElementaryTypeName",
+              "src": "1527:5:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes_storage_ptr",
+                "typeString": "bytes"
+              }
+            },
+            "visibility": "internal"
+          }
+        ],
+        "name": "UserOperation",
+        "nameLocation": "1248:13:8",
+        "scope": 919,
+        "visibility": "public"
+      }
+    ],
+    "license": "GPL-3.0"
+  },
+  "id": 8
+}

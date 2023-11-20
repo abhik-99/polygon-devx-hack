@@ -1,0 +1,11 @@
+@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/
+@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/
+account-abstraction/=lib/account-abstraction/contracts/
+chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/contracts/src/v0.6/vendor/@arbitrum/nitro-contracts/src/
+ds-test/=lib/forge-std/lib/ds-test/src/
+erc4626-tests/=lib/erc4626-tests/
+forge-std/=lib/forge-std/src/
+openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/
+openzeppelin-contracts/=lib/openzeppelin-contracts/
+solidity-bytes-utils/=lib/solidity-bytes-utils/
+iden3/=lib/contracts/

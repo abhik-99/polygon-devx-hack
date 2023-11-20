@@ -1,0 +1,2445 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x60566037600b82828239805160001a607314602a57634e487b7160e01b600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212206752b33c94be7d47660b6038bdf4dfdeff56d9598cfdaf386f2551ef205e2ef264736f6c63430008170033",
+    "sourceMap": "271:2742:2:-:0;;;;;;;;;;;;;;;-1:-1:-1;;;271:2742:2;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212206752b33c94be7d47660b6038bdf4dfdeff56d9598cfdaf386f2551ef205e2ef264736f6c63430008170033",
+    "sourceMap": "271:2742:2:-:0;;;;;;;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {},
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.23+commit.f704f362\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"Utility functions helpful when working with UserOperation structs.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"lib/account-abstraction/contracts/core/UserOperationLib.sol\":\"UserOperationLib\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":account-abstraction/=lib/account-abstraction/contracts/\",\":chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/contracts/src/v0.6/vendor/@arbitrum/nitro-contracts/src/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc4626-tests/=lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":iden3/=lib/contracts/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/\",\":solidity-bytes-utils/=lib/solidity-bytes-utils/\"]},\"sources\":{\"lib/account-abstraction/contracts/core/Helpers.sol\":{\"keccak256\":\"0x81b70ea6183fd28e6c00dc3cf357c8453abdd4cc46ec628e7589e4b6a188d626\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://f4a99aced25a842721a2495760af84b874c1f730c94f8b3e76c71c8b757c90f5\",\"dweb:/ipfs/QmacEJqVFbwQxE4HTzqvWWAFT7uSbH2Yd7EMqdCx1DxzBz\"]},\"lib/account-abstraction/contracts/core/UserOperationLib.sol\":{\"keccak256\":\"0x1e28b1f8dac93be686129400777b000c960b0bcc2896a2e0535806f2f0dd7cca\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://76911056faaf865efff923267e5c5b556f6b019787a2ec55ffa856bace497108\",\"dweb:/ipfs/QmSFQj5DraQNMJCrn7GWSrN6iXRJ9Q9RpcmCGZ1bZg9emR\"]},\"lib/account-abstraction/contracts/interfaces/UserOperation.sol\":{\"keccak256\":\"0x093777cb7097dccaffd631d07dfdbd0f731371efe3770fbe22a0c992af4eb4f6\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://6da218e65b43a3f99247b2c66c5946eaa48f2719a0f58469d3a80b4d24b28f00\",\"dweb:/ipfs/QmQ3np8AwPkWw9Ey4DMMQNJgPSVw3fdrX8wnLaVgYyiaQn\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.23+commit.f704f362"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "account-abstraction/=lib/account-abstraction/contracts/",
+        "chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/contracts/src/v0.6/vendor/@arbitrum/nitro-contracts/src/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "erc4626-tests/=lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "iden3/=lib/contracts/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/",
+        "solidity-bytes-utils/=lib/solidity-bytes-utils/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "lib/account-abstraction/contracts/core/UserOperationLib.sol": "UserOperationLib"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "lib/account-abstraction/contracts/core/Helpers.sol": {
+        "keccak256": "0x81b70ea6183fd28e6c00dc3cf357c8453abdd4cc46ec628e7589e4b6a188d626",
+        "urls": [
+          "bzz-raw://f4a99aced25a842721a2495760af84b874c1f730c94f8b3e76c71c8b757c90f5",
+          "dweb:/ipfs/QmacEJqVFbwQxE4HTzqvWWAFT7uSbH2Yd7EMqdCx1DxzBz"
+        ],
+        "license": "GPL-3.0"
+      },
+      "lib/account-abstraction/contracts/core/UserOperationLib.sol": {
+        "keccak256": "0x1e28b1f8dac93be686129400777b000c960b0bcc2896a2e0535806f2f0dd7cca",
+        "urls": [
+          "bzz-raw://76911056faaf865efff923267e5c5b556f6b019787a2ec55ffa856bace497108",
+          "dweb:/ipfs/QmSFQj5DraQNMJCrn7GWSrN6iXRJ9Q9RpcmCGZ1bZg9emR"
+        ],
+        "license": "GPL-3.0"
+      },
+      "lib/account-abstraction/contracts/interfaces/UserOperation.sol": {
+        "keccak256": "0x093777cb7097dccaffd631d07dfdbd0f731371efe3770fbe22a0c992af4eb4f6",
+        "urls": [
+          "bzz-raw://6da218e65b43a3f99247b2c66c5946eaa48f2719a0f58469d3a80b4d24b28f00",
+          "dweb:/ipfs/QmQ3np8AwPkWw9Ey4DMMQNJgPSVw3fdrX8wnLaVgYyiaQn"
+        ],
+        "license": "GPL-3.0"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "lib/account-abstraction/contracts/core/UserOperationLib.sol",
+    "id": 565,
+    "exportedSymbols": {
+      "UserOperation": [
+        918
+      ],
+      "UserOperationLib": [
+        564
+      ],
+      "calldataKeccak": [
+        384
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "36:2978:2",
+    "nodes": [
+      {
+        "id": 386,
+        "nodeType": "PragmaDirective",
+        "src": "36:24:2",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".12"
+        ]
+      },
+      {
+        "id": 387,
+        "nodeType": "ImportDirective",
+        "src": "104:41:2",
+        "nodes": [],
+        "absolutePath": "lib/account-abstraction/contracts/interfaces/UserOperation.sol",
+        "file": "../interfaces/UserOperation.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 565,
+        "sourceUnit": 919,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 389,
+        "nodeType": "ImportDirective",
+        "src": "146:45:2",
+        "nodes": [],
+        "absolutePath": "lib/account-abstraction/contracts/core/Helpers.sol",
+        "file": "./Helpers.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 565,
+        "sourceUnit": 385,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 388,
+              "name": "calldataKeccak",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 384,
+              "src": "154:14:2",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 564,
+        "nodeType": "ContractDefinition",
+        "src": "271:2742:2",
+        "nodes": [
+          {
+            "id": 412,
+            "nodeType": "FunctionDefinition",
+            "src": "410:317:2",
+            "nodes": [],
+            "body": {
+              "id": 411,
+              "nodeType": "Block",
+              "src": "506:221:2",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    400
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 400,
+                      "mutability": "mutable",
+                      "name": "data",
+                      "nameLocation": "524:4:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 411,
+                      "src": "516:12:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 399,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "516:7:2",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 401,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "516:12:2"
+                },
+                {
+                  "AST": {
+                    "nativeSrc": "630:52:2",
+                    "nodeType": "YulBlock",
+                    "src": "630:52:2",
+                    "statements": [
+                      {
+                        "nativeSrc": "644:28:2",
+                        "nodeType": "YulAssignment",
+                        "src": "644:28:2",
+                        "value": {
+                          "arguments": [
+                            {
+                              "name": "userOp",
+                              "nativeSrc": "665:6:2",
+                              "nodeType": "YulIdentifier",
+                              "src": "665:6:2"
+                            }
+                          ],
+                          "functionName": {
+                            "name": "calldataload",
+                            "nativeSrc": "652:12:2",
+                            "nodeType": "YulIdentifier",
+                            "src": "652:12:2"
+                          },
+                          "nativeSrc": "652:20:2",
+                          "nodeType": "YulFunctionCall",
+                          "src": "652:20:2"
+                        },
+                        "variableNames": [
+                          {
+                            "name": "data",
+                            "nativeSrc": "644:4:2",
+                            "nodeType": "YulIdentifier",
+                            "src": "644:4:2"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "evmVersion": "paris",
+                  "externalReferences": [
+                    {
+                      "declaration": 400,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "644:4:2",
+                      "valueSize": 1
+                    },
+                    {
+                      "declaration": 394,
+                      "isOffset": false,
+                      "isSlot": false,
+                      "src": "665:6:2",
+                      "valueSize": 1
+                    }
+                  ],
+                  "id": 402,
+                  "nodeType": "InlineAssembly",
+                  "src": "621:61:2"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 407,
+                            "name": "data",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 400,
+                            "src": "714:4:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 406,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "nodeType": "ElementaryTypeNameExpression",
+                          "src": "706:7:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_uint160_$",
+                            "typeString": "type(uint160)"
+                          },
+                          "typeName": {
+                            "id": 405,
+                            "name": "uint160",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "706:7:2",
+                            "typeDescriptions": {}
+                          }
+                        },
+                        "id": 408,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "706:13:2",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint160",
+                          "typeString": "uint160"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint160",
+                          "typeString": "uint160"
+                        }
+                      ],
+                      "id": 404,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "698:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_address_$",
+                        "typeString": "type(address)"
+                      },
+                      "typeName": {
+                        "id": 403,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "698:7:2",
+                        "typeDescriptions": {}
+                      }
+                    },
+                    "id": 409,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "698:22:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 398,
+                  "id": 410,
+                  "nodeType": "Return",
+                  "src": "691:29:2"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 391,
+              "nodeType": "StructuredDocumentation",
+              "src": "302:103:2",
+              "text": " Get sender from user operation data.\n @param userOp - The user operation data."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getSender",
+            "nameLocation": "419:9:2",
+            "parameters": {
+              "id": 395,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 394,
+                  "mutability": "mutable",
+                  "name": "userOp",
+                  "nameLocation": "461:6:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 412,
+                  "src": "438:29:2",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                    "typeString": "struct UserOperation"
+                  },
+                  "typeName": {
+                    "id": 393,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 392,
+                      "name": "UserOperation",
+                      "nameLocations": [
+                        "438:13:2"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 918,
+                      "src": "438:13:2"
+                    },
+                    "referencedDeclaration": 918,
+                    "src": "438:13:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_UserOperation_$918_storage_ptr",
+                      "typeString": "struct UserOperation"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "428:45:2"
+            },
+            "returnParameters": {
+              "id": 398,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 397,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 412,
+                  "src": "497:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 396,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "497:7:2",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "496:9:2"
+            },
+            "scope": 564,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 448,
+            "nodeType": "FunctionDefinition",
+            "src": "932:522:2",
+            "nodes": [],
+            "body": {
+              "id": 447,
+              "nodeType": "Block",
+              "src": "1027:427:2",
+              "nodes": [],
+              "statements": [
+                {
+                  "id": 446,
+                  "nodeType": "UncheckedBlock",
+                  "src": "1037:411:2",
+                  "statements": [
+                    {
+                      "assignments": [
+                        422
+                      ],
+                      "declarations": [
+                        {
+                          "constant": false,
+                          "id": 422,
+                          "mutability": "mutable",
+                          "name": "maxFeePerGas",
+                          "nameLocation": "1069:12:2",
+                          "nodeType": "VariableDeclaration",
+                          "scope": 446,
+                          "src": "1061:20:2",
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "typeName": {
+                            "id": 421,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "1061:7:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "visibility": "internal"
+                        }
+                      ],
+                      "id": 425,
+                      "initialValue": {
+                        "expression": {
+                          "id": 423,
+                          "name": "userOp",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 416,
+                          "src": "1084:6:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                            "typeString": "struct UserOperation calldata"
+                          }
+                        },
+                        "id": 424,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1091:12:2",
+                        "memberName": "maxFeePerGas",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 911,
+                        "src": "1084:19:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "VariableDeclarationStatement",
+                      "src": "1061:42:2"
+                    },
+                    {
+                      "assignments": [
+                        427
+                      ],
+                      "declarations": [
+                        {
+                          "constant": false,
+                          "id": 427,
+                          "mutability": "mutable",
+                          "name": "maxPriorityFeePerGas",
+                          "nameLocation": "1125:20:2",
+                          "nodeType": "VariableDeclaration",
+                          "scope": 446,
+                          "src": "1117:28:2",
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "typeName": {
+                            "id": 426,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "1117:7:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "visibility": "internal"
+                        }
+                      ],
+                      "id": 430,
+                      "initialValue": {
+                        "expression": {
+                          "id": 428,
+                          "name": "userOp",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 416,
+                          "src": "1148:6:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                            "typeString": "struct UserOperation calldata"
+                          }
+                        },
+                        "id": 429,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1155:20:2",
+                        "memberName": "maxPriorityFeePerGas",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 913,
+                        "src": "1148:27:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "VariableDeclarationStatement",
+                      "src": "1117:58:2"
+                    },
+                    {
+                      "condition": {
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 433,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 431,
+                          "name": "maxFeePerGas",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 422,
+                          "src": "1193:12:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "id": 432,
+                          "name": "maxPriorityFeePerGas",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 427,
+                          "src": "1209:20:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "1193:36:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "id": 437,
+                      "nodeType": "IfStatement",
+                      "src": "1189:173:2",
+                      "trueBody": {
+                        "id": 436,
+                        "nodeType": "Block",
+                        "src": "1231:131:2",
+                        "statements": [
+                          {
+                            "expression": {
+                              "id": 434,
+                              "name": "maxFeePerGas",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 422,
+                              "src": "1335:12:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "functionReturnParameters": 420,
+                            "id": 435,
+                            "nodeType": "Return",
+                            "src": "1328:19:2"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "expression": {
+                        "arguments": [
+                          {
+                            "id": 439,
+                            "name": "maxFeePerGas",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 422,
+                            "src": "1386:12:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          {
+                            "commonType": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            "id": 443,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "leftExpression": {
+                              "id": 440,
+                              "name": "maxPriorityFeePerGas",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 427,
+                              "src": "1400:20:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "nodeType": "BinaryOperation",
+                            "operator": "+",
+                            "rightExpression": {
+                              "expression": {
+                                "id": 441,
+                                "name": "block",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": -4,
+                                "src": "1423:5:2",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_magic_block",
+                                  "typeString": "block"
+                                }
+                              },
+                              "id": 442,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "memberLocation": "1429:7:2",
+                              "memberName": "basefee",
+                              "nodeType": "MemberAccess",
+                              "src": "1423:13:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            },
+                            "src": "1400:36:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "id": 438,
+                          "name": "min",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 563,
+                          "src": "1382:3:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
+                            "typeString": "function (uint256,uint256) pure returns (uint256)"
+                          }
+                        },
+                        "id": 444,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1382:55:2",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "functionReturnParameters": 420,
+                      "id": 445,
+                      "nodeType": "Return",
+                      "src": "1375:62:2"
+                    }
+                  ]
+                }
+              ]
+            },
+            "documentation": {
+              "id": 413,
+              "nodeType": "StructuredDocumentation",
+              "src": "733:194:2",
+              "text": " Relayer/block builder might submit the TX with higher priorityFee,\n but the user should not pay above what he signed for.\n @param userOp - The user operation data."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "gasPrice",
+            "nameLocation": "941:8:2",
+            "parameters": {
+              "id": 417,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 416,
+                  "mutability": "mutable",
+                  "name": "userOp",
+                  "nameLocation": "982:6:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 448,
+                  "src": "959:29:2",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                    "typeString": "struct UserOperation"
+                  },
+                  "typeName": {
+                    "id": 415,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 414,
+                      "name": "UserOperation",
+                      "nameLocations": [
+                        "959:13:2"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 918,
+                      "src": "959:13:2"
+                    },
+                    "referencedDeclaration": 918,
+                    "src": "959:13:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_UserOperation_$918_storage_ptr",
+                      "typeString": "struct UserOperation"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "949:45:2"
+            },
+            "returnParameters": {
+              "id": 420,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 419,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 448,
+                  "src": "1018:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 418,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1018:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1017:9:2"
+            },
+            "scope": 564,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 529,
+            "nodeType": "FunctionDefinition",
+            "src": "1584:956:2",
+            "nodes": [],
+            "body": {
+              "id": 528,
+              "nodeType": "Block",
+              "src": "1684:856:2",
+              "nodes": [],
+              "statements": [
+                {
+                  "assignments": [
+                    458
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 458,
+                      "mutability": "mutable",
+                      "name": "sender",
+                      "nameLocation": "1702:6:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 528,
+                      "src": "1694:14:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      },
+                      "typeName": {
+                        "id": 457,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1694:7:2",
+                        "stateMutability": "nonpayable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 462,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "id": 460,
+                        "name": "userOp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 452,
+                        "src": "1721:6:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                          "typeString": "struct UserOperation calldata"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                          "typeString": "struct UserOperation calldata"
+                        }
+                      ],
+                      "id": 459,
+                      "name": "getSender",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 412,
+                      "src": "1711:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_UserOperation_$918_calldata_ptr_$returns$_t_address_$",
+                        "typeString": "function (struct UserOperation calldata) pure returns (address)"
+                      }
+                    },
+                    "id": 461,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1711:17:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1694:34:2"
+                },
+                {
+                  "assignments": [
+                    464
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 464,
+                      "mutability": "mutable",
+                      "name": "nonce",
+                      "nameLocation": "1746:5:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 528,
+                      "src": "1738:13:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 463,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1738:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 467,
+                  "initialValue": {
+                    "expression": {
+                      "id": 465,
+                      "name": "userOp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 452,
+                      "src": "1754:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                        "typeString": "struct UserOperation calldata"
+                      }
+                    },
+                    "id": 466,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberLocation": "1761:5:2",
+                    "memberName": "nonce",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 899,
+                    "src": "1754:12:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1738:28:2"
+                },
+                {
+                  "assignments": [
+                    469
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 469,
+                      "mutability": "mutable",
+                      "name": "hashInitCode",
+                      "nameLocation": "1784:12:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 528,
+                      "src": "1776:20:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 468,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1776:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 474,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 471,
+                          "name": "userOp",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 452,
+                          "src": "1814:6:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                            "typeString": "struct UserOperation calldata"
+                          }
+                        },
+                        "id": 472,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1821:8:2",
+                        "memberName": "initCode",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 901,
+                        "src": "1814:15:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_calldata_ptr",
+                          "typeString": "bytes calldata"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_calldata_ptr",
+                          "typeString": "bytes calldata"
+                        }
+                      ],
+                      "id": 470,
+                      "name": "calldataKeccak",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 384,
+                      "src": "1799:14:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_bytes_calldata_ptr_$returns$_t_bytes32_$",
+                        "typeString": "function (bytes calldata) pure returns (bytes32)"
+                      }
+                    },
+                    "id": 473,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1799:31:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1776:54:2"
+                },
+                {
+                  "assignments": [
+                    476
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 476,
+                      "mutability": "mutable",
+                      "name": "hashCallData",
+                      "nameLocation": "1848:12:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 528,
+                      "src": "1840:20:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 475,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1840:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 481,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 478,
+                          "name": "userOp",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 452,
+                          "src": "1878:6:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                            "typeString": "struct UserOperation calldata"
+                          }
+                        },
+                        "id": 479,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "1885:8:2",
+                        "memberName": "callData",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 903,
+                        "src": "1878:15:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_calldata_ptr",
+                          "typeString": "bytes calldata"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_calldata_ptr",
+                          "typeString": "bytes calldata"
+                        }
+                      ],
+                      "id": 477,
+                      "name": "calldataKeccak",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 384,
+                      "src": "1863:14:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_bytes_calldata_ptr_$returns$_t_bytes32_$",
+                        "typeString": "function (bytes calldata) pure returns (bytes32)"
+                      }
+                    },
+                    "id": 480,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1863:31:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1840:54:2"
+                },
+                {
+                  "assignments": [
+                    483
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 483,
+                      "mutability": "mutable",
+                      "name": "callGasLimit",
+                      "nameLocation": "1912:12:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 528,
+                      "src": "1904:20:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 482,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1904:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 486,
+                  "initialValue": {
+                    "expression": {
+                      "id": 484,
+                      "name": "userOp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 452,
+                      "src": "1927:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                        "typeString": "struct UserOperation calldata"
+                      }
+                    },
+                    "id": 485,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberLocation": "1934:12:2",
+                    "memberName": "callGasLimit",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 905,
+                    "src": "1927:19:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1904:42:2"
+                },
+                {
+                  "assignments": [
+                    488
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 488,
+                      "mutability": "mutable",
+                      "name": "verificationGasLimit",
+                      "nameLocation": "1964:20:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 528,
+                      "src": "1956:28:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 487,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1956:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 491,
+                  "initialValue": {
+                    "expression": {
+                      "id": 489,
+                      "name": "userOp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 452,
+                      "src": "1987:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                        "typeString": "struct UserOperation calldata"
+                      }
+                    },
+                    "id": 490,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberLocation": "1994:20:2",
+                    "memberName": "verificationGasLimit",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 907,
+                    "src": "1987:27:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1956:58:2"
+                },
+                {
+                  "assignments": [
+                    493
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 493,
+                      "mutability": "mutable",
+                      "name": "preVerificationGas",
+                      "nameLocation": "2032:18:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 528,
+                      "src": "2024:26:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 492,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2024:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 496,
+                  "initialValue": {
+                    "expression": {
+                      "id": 494,
+                      "name": "userOp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 452,
+                      "src": "2053:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                        "typeString": "struct UserOperation calldata"
+                      }
+                    },
+                    "id": 495,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberLocation": "2060:18:2",
+                    "memberName": "preVerificationGas",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 909,
+                    "src": "2053:25:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2024:54:2"
+                },
+                {
+                  "assignments": [
+                    498
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 498,
+                      "mutability": "mutable",
+                      "name": "maxFeePerGas",
+                      "nameLocation": "2096:12:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 528,
+                      "src": "2088:20:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 497,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2088:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 501,
+                  "initialValue": {
+                    "expression": {
+                      "id": 499,
+                      "name": "userOp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 452,
+                      "src": "2111:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                        "typeString": "struct UserOperation calldata"
+                      }
+                    },
+                    "id": 500,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberLocation": "2118:12:2",
+                    "memberName": "maxFeePerGas",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 911,
+                    "src": "2111:19:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2088:42:2"
+                },
+                {
+                  "assignments": [
+                    503
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 503,
+                      "mutability": "mutable",
+                      "name": "maxPriorityFeePerGas",
+                      "nameLocation": "2148:20:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 528,
+                      "src": "2140:28:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 502,
+                        "name": "uint256",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2140:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 506,
+                  "initialValue": {
+                    "expression": {
+                      "id": 504,
+                      "name": "userOp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 452,
+                      "src": "2171:6:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                        "typeString": "struct UserOperation calldata"
+                      }
+                    },
+                    "id": 505,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberLocation": "2178:20:2",
+                    "memberName": "maxPriorityFeePerGas",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 913,
+                    "src": "2171:27:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2140:58:2"
+                },
+                {
+                  "assignments": [
+                    508
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 508,
+                      "mutability": "mutable",
+                      "name": "hashPaymasterAndData",
+                      "nameLocation": "2216:20:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 528,
+                      "src": "2208:28:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bytes32",
+                        "typeString": "bytes32"
+                      },
+                      "typeName": {
+                        "id": 507,
+                        "name": "bytes32",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2208:7:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 513,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "id": 510,
+                          "name": "userOp",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 452,
+                          "src": "2254:6:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                            "typeString": "struct UserOperation calldata"
+                          }
+                        },
+                        "id": 511,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberLocation": "2261:16:2",
+                        "memberName": "paymasterAndData",
+                        "nodeType": "MemberAccess",
+                        "referencedDeclaration": 915,
+                        "src": "2254:23:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_calldata_ptr",
+                          "typeString": "bytes calldata"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_calldata_ptr",
+                          "typeString": "bytes calldata"
+                        }
+                      ],
+                      "id": 509,
+                      "name": "calldataKeccak",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 384,
+                      "src": "2239:14:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_bytes_calldata_ptr_$returns$_t_bytes32_$",
+                        "typeString": "function (bytes calldata) pure returns (bytes32)"
+                      }
+                    },
+                    "id": 512,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2239:39:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2208:70:2"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 516,
+                        "name": "sender",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 458,
+                        "src": "2320:6:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 517,
+                        "name": "nonce",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 464,
+                        "src": "2328:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 518,
+                        "name": "hashInitCode",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 469,
+                        "src": "2347:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "id": 519,
+                        "name": "hashCallData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 476,
+                        "src": "2361:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "id": 520,
+                        "name": "callGasLimit",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 483,
+                        "src": "2387:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 521,
+                        "name": "verificationGasLimit",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 488,
+                        "src": "2401:20:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 522,
+                        "name": "preVerificationGas",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 493,
+                        "src": "2423:18:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 523,
+                        "name": "maxFeePerGas",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 498,
+                        "src": "2455:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 524,
+                        "name": "maxPriorityFeePerGas",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 503,
+                        "src": "2469:20:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      {
+                        "id": 525,
+                        "name": "hashPaymasterAndData",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 508,
+                        "src": "2503:20:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      ],
+                      "expression": {
+                        "id": 514,
+                        "name": "abi",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": -1,
+                        "src": "2296:3:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_abi",
+                          "typeString": "abi"
+                        }
+                      },
+                      "id": 515,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "memberLocation": "2300:6:2",
+                      "memberName": "encode",
+                      "nodeType": "MemberAccess",
+                      "src": "2296:10:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_abiencode_pure$__$returns$_t_bytes_memory_ptr_$",
+                        "typeString": "function () pure returns (bytes memory)"
+                      }
+                    },
+                    "id": 526,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2296:237:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_memory_ptr",
+                      "typeString": "bytes memory"
+                    }
+                  },
+                  "functionReturnParameters": 456,
+                  "id": 527,
+                  "nodeType": "Return",
+                  "src": "2289:244:2"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 449,
+              "nodeType": "StructuredDocumentation",
+              "src": "1460:119:2",
+              "text": " Pack the user operation data into bytes for hashing.\n @param userOp - The user operation data."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "pack",
+            "nameLocation": "1593:4:2",
+            "parameters": {
+              "id": 453,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 452,
+                  "mutability": "mutable",
+                  "name": "userOp",
+                  "nameLocation": "1630:6:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 529,
+                  "src": "1607:29:2",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                    "typeString": "struct UserOperation"
+                  },
+                  "typeName": {
+                    "id": 451,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 450,
+                      "name": "UserOperation",
+                      "nameLocations": [
+                        "1607:13:2"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 918,
+                      "src": "1607:13:2"
+                    },
+                    "referencedDeclaration": 918,
+                    "src": "1607:13:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_UserOperation_$918_storage_ptr",
+                      "typeString": "struct UserOperation"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1597:45:2"
+            },
+            "returnParameters": {
+              "id": 456,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 455,
+                  "mutability": "mutable",
+                  "name": "ret",
+                  "nameLocation": "1679:3:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 529,
+                  "src": "1666:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes_memory_ptr",
+                    "typeString": "bytes"
+                  },
+                  "typeName": {
+                    "id": 454,
+                    "name": "bytes",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1666:5:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_storage_ptr",
+                      "typeString": "bytes"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1665:18:2"
+            },
+            "scope": 564,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 545,
+            "nodeType": "FunctionDefinition",
+            "src": "2647:138:2",
+            "nodes": [],
+            "body": {
+              "id": 544,
+              "nodeType": "Block",
+              "src": "2738:47:2",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 540,
+                            "name": "userOp",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 533,
+                            "src": "2770:6:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                              "typeString": "struct UserOperation calldata"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                              "typeString": "struct UserOperation calldata"
+                            }
+                          ],
+                          "id": 539,
+                          "name": "pack",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 529,
+                          "src": "2765:4:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_internal_pure$_t_struct$_UserOperation_$918_calldata_ptr_$returns$_t_bytes_memory_ptr_$",
+                            "typeString": "function (struct UserOperation calldata) pure returns (bytes memory)"
+                          }
+                        },
+                        "id": 541,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "nameLocations": [],
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "2765:12:2",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes_memory_ptr",
+                          "typeString": "bytes memory"
+                        }
+                      ],
+                      "id": 538,
+                      "name": "keccak256",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": -8,
+                      "src": "2755:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                        "typeString": "function (bytes memory) pure returns (bytes32)"
+                      }
+                    },
+                    "id": 542,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2755:23:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 537,
+                  "id": 543,
+                  "nodeType": "Return",
+                  "src": "2748:30:2"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 530,
+              "nodeType": "StructuredDocumentation",
+              "src": "2546:96:2",
+              "text": " Hash the user operation data.\n @param userOp - The user operation data."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "hash",
+            "nameLocation": "2656:4:2",
+            "parameters": {
+              "id": 534,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 533,
+                  "mutability": "mutable",
+                  "name": "userOp",
+                  "nameLocation": "2693:6:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 545,
+                  "src": "2670:29:2",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_UserOperation_$918_calldata_ptr",
+                    "typeString": "struct UserOperation"
+                  },
+                  "typeName": {
+                    "id": 532,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 531,
+                      "name": "UserOperation",
+                      "nameLocations": [
+                        "2670:13:2"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 918,
+                      "src": "2670:13:2"
+                    },
+                    "referencedDeclaration": 918,
+                    "src": "2670:13:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_UserOperation_$918_storage_ptr",
+                      "typeString": "struct UserOperation"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2660:45:2"
+            },
+            "returnParameters": {
+              "id": 537,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 536,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 545,
+                  "src": "2729:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 535,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2729:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2728:9:2"
+            },
+            "scope": 564,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "id": 563,
+            "nodeType": "FunctionDefinition",
+            "src": "2907:104:2",
+            "nodes": [],
+            "body": {
+              "id": 562,
+              "nodeType": "Block",
+              "src": "2974:37:2",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "condition": {
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 557,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "id": 555,
+                        "name": "a",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 548,
+                        "src": "2991:1:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "<",
+                      "rightExpression": {
+                        "id": 556,
+                        "name": "b",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 550,
+                        "src": "2995:1:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "2991:5:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "falseExpression": {
+                      "id": 559,
+                      "name": "b",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 550,
+                      "src": "3003:1:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 560,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "Conditional",
+                    "src": "2991:13:2",
+                    "trueExpression": {
+                      "id": 558,
+                      "name": "a",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 548,
+                      "src": "2999:1:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 554,
+                  "id": 561,
+                  "nodeType": "Return",
+                  "src": "2984:20:2"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 546,
+              "nodeType": "StructuredDocumentation",
+              "src": "2791:111:2",
+              "text": " The minimum of two numbers.\n @param a - First number.\n @param b - Second number."
+            },
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "min",
+            "nameLocation": "2916:3:2",
+            "parameters": {
+              "id": 551,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 548,
+                  "mutability": "mutable",
+                  "name": "a",
+                  "nameLocation": "2928:1:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 563,
+                  "src": "2920:9:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 547,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2920:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 550,
+                  "mutability": "mutable",
+                  "name": "b",
+                  "nameLocation": "2939:1:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 563,
+                  "src": "2931:9:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 549,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2931:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2919:22:2"
+            },
+            "returnParameters": {
+              "id": 554,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 553,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 563,
+                  "src": "2965:7:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 552,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2965:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2964:9:2"
+            },
+            "scope": 564,
+            "stateMutability": "pure",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "UserOperationLib",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "documentation": {
+          "id": 390,
+          "nodeType": "StructuredDocumentation",
+          "src": "193:77:2",
+          "text": " Utility functions helpful when working with UserOperation structs."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          564
+        ],
+        "name": "UserOperationLib",
+        "nameLocation": "279:16:2",
+        "scope": 565,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "GPL-3.0"
+  },
+  "id": 2
+}
