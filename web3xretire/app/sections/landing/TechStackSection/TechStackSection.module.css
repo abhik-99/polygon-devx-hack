@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    position: relative;   
+    align-items: center;
+}
+
+.container img{
+    position: absolute;
+    top: 2%;
+    left: 29%;
+    width: 100px;
+}
+
+.container img:nth-child(2){
+    top: 10%;
+    left: 65%;
+    width: 80px;
+    transform: rotate(270deg);
+}
