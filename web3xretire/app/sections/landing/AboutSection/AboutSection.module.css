@@ -1,0 +1,147 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    position: relative;   
+}
+
+.container img{
+    position: absolute;
+    top: 2%;
+    left: 29%;
+    width: 100px;
+}
+
+.container img:nth-child(2){
+    top: 10%;
+    left: 65%;
+    width: 80px;
+    transform: rotate(270deg);
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 60px 0;
+}
+
+.heading h1 {
+    font-family: var(--font-playfair-display);
+    margin: 0;
+    font-size: 4rem;
+}
+
+.heading p {
+    font-family: var(--font-ibm-plex-sans);
+    text-align: center;
+    max-width: 50%;
+    font-weight: 399;
+}
+
+.body{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 0 30px 0;    
+}
+
+.card{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color: var(--violet); */
+    border: 4px solid var(--violet);
+    margin: 20px;
+    padding: 45px 0px;
+    border-radius: 30px;
+    color: #fff;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+    background-color: var(--violet);    
+}
+
+.card h2{
+    font-family: var(--font-playfair-display);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 43px;
+    text-align: center;
+
+    margin: 25px 0;
+}
+
+.card p{
+    font-family: var(--font-ibm-plex-sans);
+    font-style: normal;
+    font-weight: 399;
+    font-size: 1rem;
+    
+    text-align: justify;
+
+    margin: 0 20px 120px 20px;
+}
+
+.card button {
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-family: var(--font-ibm-plex-sans);
+    font-style: normal;
+    font-weight: 399;
+    font-size: 1rem;
+    line-height: 43px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: #fff;
+    color: var(--default-bg);
+}
+
+.card:nth-child(2){
+    border: 4px solid var(--green);
+}
+
+.card:nth-child(2):hover{
+    background-color: var(--green);
+}
+
+.card:nth-child(3){
+    background-color: var(--orange);
+    border: none;
+    color: var(--default-bg);
+}
+
+.card:nth-child(3) button{
+    border: none;
+    background-color: var(--default-bg);
+}
+
+.card:nth-child(3) button:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.card img{
+    position: static;
+    width: 80px;
+}

@@ -1,0 +1,114 @@
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    position: relative;   
+    align-items: center;
+}
+
+.container img{
+    position: absolute;
+    top: 2%;
+    left: 29%;
+    width: 100px;
+}
+
+.container img:nth-child(2){
+    top: 10%;
+    left: 65%;
+    width: 80px;
+    transform: rotate(270deg);
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 60px 0;
+}
+
+.heading h1 {
+    font-family: var(--font-playfair-display);
+    margin: 0;
+    font-size: 4rem;
+}
+
+.heading p {
+    font-family: var(--font-ibm-plex-sans);
+    text-align: center;
+    max-width: 50%;
+    font-weight: 399;
+}
+
+.body{
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 0 30px 0;    
+    background-color: var(--blue);
+}
+
+.card{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 0 30px 0;
+}
+
+.card img{
+    width: 200px;
+    object-fit: cover;
+    border-radius: 30px;
+    position: static;
+}
+
+.social{
+    text-decoration: none;
+}
+
+.card:nth-child(even){
+    margin-top: 120px;
+}
+
+.card h2{
+    font-family: var(--font-playfair-display);
+    font-size: 2.5rem;
+    margin: 30px 0 0 0;
+}
+
+.card p{
+    font-family: var(--font-ibm-plex-sans);
+    text-align: center;
+    
+    font-weight: 399;
+    margin-top: 0;
+}
+
+.card:hover>img{
+    transform: scale(1.1);
+    transition: 0.5s;
+    animation: infinite-spinning 4s infinite linear;
+}
+
+@keyframes infinite-spinning {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.social img{
+    width: 30px;
+    margin: 0 10px;
+}

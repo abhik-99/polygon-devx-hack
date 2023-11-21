@@ -7,15 +7,19 @@ import { AuthButton } from "..";
 const OPEN_NAV_LINKS = [
   {
     name: "Home",
+    active: true,
   },
   {
     name: "About",
+    active: false,
   },
   {
     name: "Team",
+    active: false, 
   },
   {
     name: "Tech Stack",
+    active: false,
   },
 ];
 
